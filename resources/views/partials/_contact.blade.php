@@ -28,23 +28,28 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <form>
+                        <form action="{{ url('ajax/contact') }}" method="post" id="contactForm">
                             <div class="form-group">
                                 <label>Dein Name <span>*</span></label>
-                                <input type="text" class="form-control" />
+                                <input type="text" class="form-control" name="name" id="name" />
+                                <span class="has-error"></span>
                             </div>
                             <div class="form-group">
                                 <label>Deine Email <span>*</span></label>
-                                <input type="email" class="form-control" />
+                                <input type="text" class="form-control" name="email" id="email" />
+                                <span class="has-error"></span>
                             </div>
                             <div class="form-group">
                                 <label>Gegenstand </label>
-                                <input type="text" class="form-control" />
+                                <input type="text" class="form-control" name="subject" id="subject" />
+                                <span class="has-error"></span>
                             </div>
                             <div class="form-group">
-                                <label>Deine Nachricht</label>
-                                <textarea class="form-control" rows="5"></textarea>
+                                <label>Deine Nachricht*</label>
+                                <textarea class="form-control" rows="5" name="message" id="message" ></textarea>
+                                <span class="has-error"></span>
                             </div>
+                            {{ csrf_field() }}
                             <button type="submit" class="btn">Einreichen</button>
                         </form>
                     </div>

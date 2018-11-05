@@ -69,7 +69,7 @@
                 <div class="col-md-2 col-lg-3">
                     <div id="logo">
                         <a href="#home">
-                            <img src="img/logo/logo.png" class="logo" alt="img/logo/logo.png" />
+                            <img src="{{ asset('img/logo/logo.png') }}" class="logo" alt="img/logo/logo.png" />
                         </a>
                     </div>
                 </div>
@@ -96,18 +96,11 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#services">Dienstleistungen</a>
                                 <ul class="dropdown">
-                                    <li class="nav-item">
-                                        <a href="#service1" class="nav-link">Service 1</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#service2" class="nav-link">Service 2</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#service3" class="nav-link">Service 3</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#service4" class="nav-link">Service 4</a>
-                                    </li>
+                                    @for($i=1; $i<=4; $i++)
+                                        <li class="nav-item">
+                                            <a href="#service{{ $i }}" class="nav-link">Service {{ $i }}</a>
+                                        </li>
+                                    @endfor
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -149,26 +142,13 @@
     <!-- Particles end -->
     <!-- Social start -->
     <div id="social-bar">
-        <div class="social">
-            <a href="javascript:void(0)" title="Facebook">
-                <img src="img/social/facebook.png" alt="img/social/facebook.png" />
-            </a>
-        </div>
-        <div class="social">
-            <a href="javascript:void(0)" title="Telegram">
-                <img src="img/social/telegram.png" alt="img/social/telegram.png" />
-            </a>
-        </div>
-        <div class="social">
-            <a href="javascript:void(0)" title="Reddit">
-                <img src="img/social/reddit.png" alt="img/social/reddit.png" />
-            </a>
-        </div>
-        <div class="social">
-            <a href="javascript:void(0)" title="Bitcointalk">
-                <img src="img/social/bitcointalk.png" alt="img/social/bitcointalk.png" />
-            </a>
-        </div>
+        @for($i=1; $i<=4; $i++)
+            <div class="social">
+                <a href="javascript:void(0)" title="Facebook">
+                    <img src="{{ asset('img/social/facebook.png') }}" alt="img/social/facebook.png" />
+                </a>
+            </div>
+        @endfor
     </div>
     <!-- Social end -->
     <!-- Owl carousel start -->

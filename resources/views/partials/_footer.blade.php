@@ -35,26 +35,13 @@
             <div class="col-md-6 text-md-right">
                 <!-- Social start -->
                 <div id="social-footer">
-                    <div class="social">
-                        <a href="javascript:void(0)" title="Facebook">
-                            <img src="img/social/facebook.png" alt="img/social/facebook.png" />
-                        </a>
-                    </div>
-                    <div class="social">
-                        <a href="javascript:void(0)" title="Telegram">
-                            <img src="img/social/telegram.png" alt="img/social/telegram.png" />
-                        </a>
-                    </div>
-                    <div class="social">
-                        <a href="javascript:void(0)" title="Reddit">
-                            <img src="img/social/reddit.png" alt="img/social/reddit.png" />
-                        </a>
-                    </div>
-                    <div class="social">
-                        <a href="javascript:void(0)" title="Bitcointalk">
-                            <img src="img/social/bitcointalk.png" alt="img/social/bitcointalk.png" />
-                        </a>
-                    </div>
+                    @for($i=1; $i<=4; $i++)
+                        <div class="social">
+                            <a href="javascript:void(0)" title="Facebook">
+                                <img src="{{ asset('img/social/facebook.png') }}" alt="img/social/facebook.png" />
+                            </a>
+                        </div>
+                    @endfor
                 </div>
                 <!-- Social end -->
             </div>
