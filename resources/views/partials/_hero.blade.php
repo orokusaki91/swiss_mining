@@ -21,7 +21,7 @@
     <!-- mySidenav start -->
     <div id="mySidenav">
         <div class="logo">
-            <img src="img/logo/logo.png" alt="img/logo/logo.png" />
+            <img src="{{ asset('img/logo/logo.png') }}" alt="img/logo/logo.png" />
         </div>
         <nav id="navbar">
             <ul>
