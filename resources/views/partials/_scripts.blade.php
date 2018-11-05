@@ -5,6 +5,5 @@
 <script type="text/javascript" src="js/particles.min.js"></script>
 <script type="text/javascript" src="js/wow.min.js"></script>
 <script type="text/javascript" src="js/wow.js"></script>
-<script src="https://player.vimeo.com/api/player.js"></script>
 <script type="text/javascript" src="js/all.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="{{ asset('js/main.js?ver=' . str_random(5)) }}"></script>
