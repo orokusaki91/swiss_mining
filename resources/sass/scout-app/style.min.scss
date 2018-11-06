@@ -133,7 +133,7 @@ svg {
 	transform: translate(-50%, -50%);
 	width: 100vw;
 	height: 100vh;
-	background: #03161D url('../img/loader.gif') center no-repeat;
+	background: #03161D url('../../img/loader2.gif') center no-repeat;
 	background-size: 10%;
 	z-index: 9999;
 }
@@ -174,7 +174,7 @@ svg {
 	/* The progress bar (scroll indicator) */
 	.progress-bar {
 		height: 5px;
-		background: $red;
+		background: $victoria;
 		width: 0;
 	}
 }
@@ -275,7 +275,7 @@ svg {
 				color: #FFFFFF;
 
 				&.active {
-					background: $red;
+					background: $victoria;
 					font-weight: 600;
 				}
 
@@ -696,7 +696,7 @@ svg {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: url('../img/home.jpg') center no-repeat;
+	background: url('../../img/home.jpg') center no-repeat;
 	background-size: cover;
 
 	h1 {
@@ -727,31 +727,42 @@ svg {
 
 	#social-bar {
 		position: absolute;
-		top: 78px;
+		top: 100px;
 		right: 2%;
 		transform: translate(-2%, 0);
 		z-index: 3;
+		text-align: left;
 
 		.social {
-			text-align: center;
-			margin: 10px 0;
-			cursor: pointer;
-
 			a {
+				position: relative;
 				display: block;
-				padding: 5px 10px;
-				opacity: .5;
+				border-radius: 50%;
+				border: 2px solid $white;
 				transition: $transition;
-				border-left: 4px solid transparent;
+				margin-bottom: 20%;
 
 				&:hover {
-					border-left: 4px solid $white;
-					opacity: 1;
+					box-shadow: 0 0 10px $white;
 				}
 
-				img {
-					width: 30px;
+				&::before {
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					display: block;
+					width: 38px;
+					height: 38px;
+					border: 3px solid #fff;
+					border-radius: 50%;
 				}
+			}
+
+			img {
+				width: 22px;
+				margin: 12px;
 			}
 		}
 	}
@@ -826,7 +837,7 @@ svg {
 		.background {
 			position: relative;
 			padding: 0;
-			background: url('../img/ai/4.jpg') center top no-repeat;
+			background: url('../../img/ai/4.jpg') center top no-repeat;
 			background-size: cover;
 
 			.wrapper {
@@ -856,44 +867,45 @@ svg {
 	#team {
 		padding-top: 100px;
 
-		.row {
-			&:last-child .item {
-				margin-bottom: 0;
-			}
-		}
-
 		.item {
-			padding: 25px 0 20px;
+			padding: 10% 0;
 			text-align: center;
 			margin-bottom: 30px;
 			border: 1px solid #dddddd;
 
-			img {
-				width: 50%;
-				margin-bottom: 20px;
-			}
+			.profile {
+				position: relative;
 
-			.info {
-
-				.name {
-					color: #3f3755;
-					margin-bottom: 5px;
-				}
-
-				.position {
-					color: #3c79c2;
+				img {
+					width: 50%;
 				}
 
 				.btn {
 					background-color: transparent;
-					font-size: 20px;
-					color: #aaaaaa;
-					transition: $transition;
 					padding: 0;
+					border: none;
 
-					&:hover {
-						color: #3c79c2;
+					.linkedin {
+						position: absolute;
+						bottom: 5%;
+						left: 30%;
+						transform: translate(-30%, 5%);
+						width: 10%;
 					}
+				}
+			}
+
+			.info {
+				margin-top: 5%;
+
+				.name {
+					color: #3f3755;
+					margin-bottom: 1%;
+				}
+
+				.position {
+					color: #3c79c2;
+					margin-bottom: 0;
 				}
 			}
 		}
@@ -954,7 +966,7 @@ svg {
 		transition: $transition;
 
 		&:hover {
-			background-color: $red;
+			background-color: $victoria;
 		}
 	}
 }
@@ -1002,7 +1014,7 @@ svg {
 	padding-top: 120px;
 
 	.contact {
-		background: url('../img/section-bg.jpg') center no-repeat;
+		background: url('../../img/section-bg.jpg') center no-repeat;
 		background-size: cover;
 		position: relative;
 
@@ -1043,7 +1055,7 @@ svg {
 			min-width: 100px;
 
 			&:hover {
-				background-color: $victoria
+				background-color: $victoria;
 			}
 		}
 	}
@@ -1118,8 +1130,8 @@ footer {
 			a {
 				display: block;
 				margin-right: 10px;
-				border-radius: 100%;
-				border: 1px solid $white;
+				border-radius: 50%;
+				border: 2px solid $white;
 				transition: $transition;
 				position: relative;
 
@@ -1130,10 +1142,10 @@ footer {
 					left: 50%;
 					transform: translate(-50%, -50%);
 					display: block;
-					width: 38px;
-					height: 38px;
-					border: 2px solid $white;
-					border-radius: 100%;
+					width: 36px;
+					height: 36px;
+					border: 3px solid $white;
+					border-radius: 50%;
 				}
 
 				&:hover {
@@ -1141,8 +1153,8 @@ footer {
 				}
 
 				img {
-					width: 26px;
-					margin: 10px;
+					width: 20px;
+					margin: 12px;
 				}
 			}
 		}
