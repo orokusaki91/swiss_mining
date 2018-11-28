@@ -23,3 +23,5 @@ public/.DS_Store
 .DS_Store
 .DS_Store
 .DS_Store
+*.lock
+composer.lock
