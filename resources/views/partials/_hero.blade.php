@@ -20,32 +20,47 @@
     <!-- Top menu end -->
     <!-- mySidenav start -->
     <div id="mySidenav">
-        <div class="logo">
-            <img src="{{ asset('img/logo/logo.png') }}" alt="img/logo/logo.png" />
+        <div class="navbar-logo">
+            <img src="{{ asset("img/logo/swiss-mining.png") }}" alt="img/logo/swiss-mining.png" />
         </div>
         <nav id="navbar">
             <ul>
-                <li>
+                <li class="nav-item">
                     <a class="nav-link" href="#home">
                         Home
                     </a>
                 </li>
-                <li>
+                <li class="nav-item">
                     <a class="nav-link" href="#about-us">
                         Über<span>Uns</span>
                     </a>
+                    <button class="btn btn-collapse" type="button" data-toggle="collapse" data-target="#dropdown-about-us" aria-expanded="false" aria-controls="dropdown-about-us">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
                 </li>
-                <li>
+                <li id="dropdown-about-us" class="nav-item collapse">
+                    <a href="#mission-vision" class="nav-link">Mission<span>Vision</span></a>
+                    <a href="#roadmap" class="nav-link">Roadmap</a>
+                    <a href="#team" class="nav-link">Team</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#services">
                         Dienstleistungen
                     </a>
+                    <button class="btn btn-collapse" type="button" data-toggle="collapse" data-target="#dropdown-services" aria-expanded="false" aria-controls="dropdown-services">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
                 </li>
-                <li>
-                    <a class="nav-link" href="#partner">
-                        Partner
+                <li id="dropdown-services" class="nav-item collapse">
+                    <a href="#solutions" class="nav-link">Swissmining<span>Solutions</span></a>
+                    <a href="#token" class="nav-link">Swiss<span>Turbo</span><span>Token</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#partners">
+                        Partners
                     </a>
                 </li>
-                <li>
+                <li class="nav-item">
                     <a class="nav-link" href="#contact">
                         Kontakt
                     </a>
@@ -58,7 +73,6 @@
     <div id="close-nav"></div>
     <!-- Close nav end -->
 </div>
-
 <!-- mobile end -->
 <!-- Header start -->
 <header id="header" class="fixed-top d-none d-md-block">
@@ -66,14 +80,14 @@
         <!-- Navbar start -->
         <div id="navbar">
             <div class="row align-items-md-center">
-                <div class="col-md-2 col-lg-3">
+                <div class="col-md-2 col-lg-4">
                     <div id="logo">
                         <a href="#home">
-                            <img src="{{ asset('img/logo/logo.png') }}" class="logo" alt="img/logo/logo.png" />
+                            <img src="{{ asset("img/logo/swiss-mining.png") }}" class="logo" alt="img/logo/swiss-mining.png" />
                         </a>
                     </div>
                 </div>
-                <div class="col-md-10 col-lg-9">
+                <div class="col-md-10 col-lg-8">
                     <nav id="nav-bar" class="navbar float-md-right pr-md-0">
                         <ul id="nav" class="nav nav-pills">
                             <li class="nav-item">
@@ -83,10 +97,10 @@
                                 <a class="nav-link" href="#about-us">Über uns</a>
                                 <ul class="dropdown">
                                     <li class="nav-item">
-                                        <a href="#mission-vision" class="nav-link">Mission<br />-<br />Vision</a>
+                                        <a href="#mission-vision" class="nav-link">Mission<span class="divider">-</span>Vision</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#road-map" class="nav-link">Roadmap</a>
+                                        <a href="#roadmap" class="nav-link">Roadmap</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="#team" class="nav-link">Team</a>
@@ -96,15 +110,16 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#services">Dienstleistungen</a>
                                 <ul class="dropdown">
-                                    @for($i=1; $i<=4; $i++)
-                                        <li class="nav-item">
-                                            <a href="#service{{ $i }}" class="nav-link">Service {{ $i }}</a>
-                                        </li>
-                                    @endfor
+                                    <li class="nav-item">
+                                        <a href="#solutions" class="nav-link">Swissmining Solutions</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#token" class="nav-link">Swiss Turbo Token</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#partner">Partner</a>
+                                <a class="nav-link" href="#partners">Partners</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#contact">Kontakt</a>
@@ -112,16 +127,23 @@
                         </ul>
                         <ul id="language">
                             <li class="nav-item language">
-                                <a class="nav-link text-uppercase lang" href="javascript:void(0)"><i class="fas fa-angle-down"></i>De</a>
+                                <a class="nav-link text-uppercase lang" href="javascript:void(0)">
+                                    De
+                                    <span class="flag-icon flag-icon-de"></span>
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
                                 <ul class="dropdown">
                                     <li class="nav-item active">
                                         <a href="javascript:void(0)" class="nav-link">De</a>
+                                        <span class="flag-icon flag-icon-de"></span>
                                     </li>
                                     <li class="nav-item">
                                         <a href="javascript:void(0)" class="nav-link">En</a>
+                                        <span class="flag-icon flag-icon-gb"></span>
                                     </li>
                                     <li class="nav-item">
                                         <a href="javascript:void(0)" class="nav-link">It</a>
+                                        <span class="flag-icon flag-icon-it"></span>
                                     </li>
                                 </ul>
                             </li>
@@ -133,49 +155,4 @@
         <!-- Navbar end -->
     </div>
 </header>
-
 <!-- Header end -->
-<!-- Home start -->
-<div id="home">
-    <!-- Particles start -->
-    <div id="particles-js"></div>
-    <!-- Particles end -->
-    <!-- Social start -->
-    <div id="social-bar">
-        @for($i=1; $i<=4; $i++)
-            <div class="social">
-                <a href="javascript:void(0)" title="Facebook">
-                    <img src="{{ asset('img/social/facebook.png') }}" alt="img/social/facebook.png" />
-                </a>
-            </div>
-        @endfor
-    </div>
-    <!-- Social end -->
-    <!-- Owl carousel start -->
-    <div class="owl-carousel owl-theme">
-        <div class="item">
-            <div class="row no-gutters">
-                <div class="col-md-6">
-                    <h1 class="wow slideInUp" data-wow-delay="2s">Willkommen zu<span><b>swiss</b>mining</span></h1>
-                </div>
-                <div class="col-md-6">
-                    <h1 class="wow slideInUp" data-wow-delay="2s">Willkommen zu<span><b>swiss</b>mining</span></h1>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="row no-gutters">
-                <div class="col-md-6">
-                    <h1>Willkommen zu<span><b>swiss</b>mining</span></h1>
-                </div>
-                <div class="col-md-6">
-                    <h1>Willkommen zu<span><b>swiss</b>mining</span></h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Owl carousel end -->
-</div>
-<!-- Home end -->
-<!-- Home-div start -->
-<div id="home-div"></div>

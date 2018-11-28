@@ -1,39 +1,63 @@
+<!-- Services start -->
 <div id="services">
-    <div class="line-through">
-        <h3>Dienstleistungen</h3>
-    </div>
+    <h2 class="wow slideInLeft">Dienstleistungen</h2>
     <div class="container">
-        <p class="info wow slideInLeft">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        <p class="info wow slideInUp">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </p>
-        @for($i=1; $i<=4; $i++)
-            <div id="service{{ $i }}" class="service wow slideInUp">
-                <i class="fab fa-bitcoin"></i>
-                <h4>Service {{ $i }}</h4>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-            </div>
-        @endfor
-        <div class="row align-items-md-center">
-            <div class="col-md-6">
-                <div id="solutions" class="wow slideInLeft">
-                    <h4>Swissmining Solutions</h4>
-                    <img src="{{ asset('img/logo/logo-black.png') }}" alt="img/logo/logo-black.png" />
-                    <a id="btn-solution" href="https://www.swissmining.solutions/" class="btn" target="_blank">
-                        Swissmining Solutions
-                    </a>
+    </div>
+    <div id="solutions" class="services">
+        <div class="wow slideInLeft">
+            <img src="{{ asset("img/services/bitcoin.png") }}" class="bitcoin" alt="img/services/bitcoin.png" />
+            <h3>Swissmining Solutions</h3>
+        </div>
+        <div class="solutions">
+            <div class="container">
+                <div class="solutions-div">
+                    <div class="info wow zoomIn">
+                        <h5>
+                            <b>Unsere Token werden vollständig durch Börsen Bonds abgesichert!</b>
+                        </h5>
+                        <p>
+                            Swissmining bietet durch die <b>Absicherung des investierten Kapitals</b> eine Anlage mit hohen Gewinnchancen bei minimalem Risiko. Wir geben jedem die Möglichkeit, am hochprofitablen Markt für Kryptowährungen teilzunehmen, mit dem Kauf der von uns angebotenen Investitionspläne ab 250 €. Der Gewinn und die Kapitaleinlage werden monatlich oder am Ende der vertraglichen Laufzeit (je nach Wahl des Investitionsplans) gezahlt. Durch verschiedene Kollaborationen kann Swissmining ihren Kunden eine einfache und sichere Möglichkeit bieten, zusätzliches Geld aus zwei verschiedenen Quellen zu verdienen: <b>Krypto-Mining</b> und <b>Krypto-Trading</b>.
+                        </p>
+                    </div>
+                    <div class="services-button wow slideInLeft">
+                        <img class="logo-btn" src="{{ asset("img/logo/logo-black.png") }}" alt="img/logo/logo-black.png" />
+                        <div class="btn-div">
+                            <a id="btn-solutions" href="https://www.swissmining.solutions/" class="btn" target="_blank">
+                                Read more
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div id="token" class="wow slideInLeft">
-                    <h4>Swiss Turbo Token</h4>
-                    <img src="{{ asset('img/logo/swiss-turbo.png') }}" alt="img/logo/swiss-turbo.png" />
-                    <a id="btn-token" href="https://swiss-turbo.com/" class="btn" target="_blank">
-                        Swiss Turbo Token
-                    </a>
+        </div>
+    </div>
+    <div id="token" class="services">
+        <div class="wow slideInLeft">
+            <img src="{{ asset("img/services/bitcoin.png") }}" class="bitcoin" alt="img/services/bitcoin.png" />
+            <h3>Swiss Turbo Token</h3>
+        </div>
+        <div class="token">
+            <div class="container">
+                <div class="token-div">
+                    <div class="info wow zoomIn">
+                        <p>
+                            Swiss Turbo offers the opportunity for investors to take advantage of using the resources from a large scale mining operation without the need to buy expensive mining equipment and furthermore to optimize profits through our arbitrage trading.
+                        </p>
+                    </div>
+                    <div class="services-button wow slideInLeft">
+                        <img class="logo-btn" src="{{ asset("img/logo/swiss-turbo.png") }}" alt="img/logo/swiss-turbo.png" />
+                        <div class="btn-div">
+                            <a id="btn-token" href="https://swiss-turbo.com/" class="btn" target="_blank">
+                                Read more
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<!-- Services end -->

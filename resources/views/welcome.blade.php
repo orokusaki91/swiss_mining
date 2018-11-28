@@ -6,12 +6,13 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar">
-    <div id="loader"></div>
+    {{-- <div id="loader"></div> --}}
 
     <div id="app">
         @include('partials._hero')
 
         <div id="content">
+            @include('partials._home')
             @include('partials._about_us')
             @include('partials._services')
             @include('partials._partners')

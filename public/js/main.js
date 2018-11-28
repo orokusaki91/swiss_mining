@@ -1,11 +1,9 @@
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', 'particles.json', function () {
-	//
-});
+particlesJS.load('particles-home', 'json/particles-home.json', function () {});
 
-particlesJS.load('particles-js2', 'particles.json', function () {
-	//
-});
+particlesJS.load('particles-roadmap', 'json/particles-roadmap.json', function () {});
+
+particlesJS.load('particles-contact', 'json/particles-contact.json', function () {});
 
 $(document).ready(function () {
 	var height = $("footer").outerHeight();
@@ -16,18 +14,18 @@ $(document).ready(function () {
 $(document).ready(function () {
 	setTimeout(function () {
 		$("#loader").hide();
-	}, 1500);
+	}, 2500);
 });
 
 $(window).scroll(function () {
-	if ($(window).scrollTop() > 87) {
+	if ($(window).scrollTop() > 62) {
 		$(".logo").css({
-			'width': "90%"
+			'width': "60%"
 		});
 		$("#header").addClass("active");
 	} else {
 		$(".logo").css({
-			'width': "80%"
+			'width': "50%"
 		});
 		$("#header").removeClass("active");
 	}
@@ -74,7 +72,7 @@ $(document).ready(function () {
 				dots: false
 			},
 			768: {
-				items: 4
+				items: 3
 			}
 		}
 	});
@@ -142,7 +140,7 @@ $('body').scrollspy({
 });
 
 $(document).ready(function () {
-	$("#navbar .nav-link").click(function () {
+	$("#nav .nav-link").click(function () {
 		var href = $(this).attr('href');
 		$('html, body').animate({
 			scrollTop: $(href).offset().top
@@ -166,12 +164,52 @@ $(document).ready(function () {
 		$(".hamburger").removeClass("is-active");
 		$("#close-nav").removeClass("active");
 		document.body.style.overflowY = "auto";
+		$("#dropdown-about-us").collapse("hide");
+		$("#dropdown-services").collapse("hide");
+	});
+});
+
+function wow() {
+	var windowWidth = $(window).width();
+	if (windowWidth >= 768) {
+		$(".wow").each(function () {
+			var wowHeight = $(this).height();
+			$(this).attr("data-wow-offset", wowHeight);
+		});
+	}
+}
+
+$(document).ready(function () {
+	wow();
+	$(window).resize(function () {
+		wow();
 	});
 });
 
 $(document).ready(function () {
-	$(".wow").each(function () {
-		var wowHeight = $(this).height();
-		$(this).attr("data-wow-offset", wowHeight);
+	var scrollWidth = 150;
+	$(".btn-left").click(function () {
+		var scrollPosition = $("#roadmap").scrollLeft();
+		var scroll = scrollPosition - scrollWidth;
+		$("#roadmap").animate({
+			scrollLeft: scroll
+		}, 1500);
+		if (scrollPosition === 0) {
+			$(".btn-left").prop("disabled", true);
+		} else {
+			$(".btn-right").prop("disabled", false);
+		};
+	});
+	$(".btn-right").click(function () {
+		$(".btn-left").prop("disabled", false);
+		var scrollPosition = $("#roadmap").scrollLeft();
+		var scroll = scrollPosition + scrollWidth;
+		$("#roadmap").animate({
+			scrollLeft: scroll
+		}, 1500);
+		var widthScroll = $("#roadmap").width();
+		if (scroll >= widthScroll) {
+			$(".btn-right").prop("disabled", true);
+		};
 	});
 });
