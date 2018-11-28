@@ -44,8 +44,8 @@
                 <div class="token-div">
                     <div class="info wow zoomIn">
                         <p>
-                            Swiss Turbo offers the opportunity for investors to take advantage of using the resources from a large scale mining operation without the need to buy expensive mining equipment and furthermore to optimize profits through our arbitrage trading.
-                        </p>
+							Swiss Turbo bietet Anlegern die Möglichkeit, die Ressourcen eines großen Mining-Betriebs zu nutzen, ohne teure Mining-Maschinen kaufen zu müssen und darüber hinaus die Gewinne durch unser Arbitrage-Trading zu optimieren.
+						</p>
                     </div>
                     <div class="services-button wow slideInLeft">
                         <img class="logo-btn" src="{{ asset("img/logo/swiss-turbo.png") }}" alt="img/logo/swiss-turbo.png" />
