@@ -1,11 +1,10 @@
+<!-- Contact start -->
 <div id="contact">
-    <div class="line-through">
-        <h3>Kontakt</h3>
-    </div>
+    <h2 class="wow slideInLeft">Kontakt</h2>
     <div class="contact">
-        <!-- Particles2 start -->
-        <div id="particles-js2"></div>
-        <!-- Particles2 end -->
+        <!-- Particles-contact start -->
+        <div id="particles-contact" class="particles"></div>
+        <!-- Particles-contact end -->
         <div class="container">
             <div class="wrapper">
                 <div class="row wow slideInLeft">
@@ -28,28 +27,23 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <form action="{{ url('ajax/contact') }}" method="post" id="contactForm">
+                        <form>
                             <div class="form-group">
                                 <label>Dein Name <span>*</span></label>
-                                <input type="text" class="form-control" name="name" id="name" />
-                                <span class="has-error"></span>
+                                <input type="text" class="form-control" />
                             </div>
                             <div class="form-group">
                                 <label>Deine Email <span>*</span></label>
-                                <input type="text" class="form-control" name="email" id="email" />
-                                <span class="has-error"></span>
+                                <input type="email" class="form-control" />
                             </div>
                             <div class="form-group">
                                 <label>Gegenstand </label>
-                                <input type="text" class="form-control" name="subject" id="subject" />
-                                <span class="has-error"></span>
+                                <input type="text" class="form-control" />
                             </div>
                             <div class="form-group">
-                                <label>Deine Nachricht*</label>
-                                <textarea class="form-control" rows="5" name="message" id="message" ></textarea>
-                                <span class="has-error"></span>
+                                <label>Deine Nachricht</label>
+                                <textarea class="form-control" rows="5"></textarea>
                             </div>
-                            {{ csrf_field() }}
                             <button type="submit" class="btn">Einreichen</button>
                         </form>
                     </div>
@@ -58,3 +52,4 @@
         </div>
     </div>
 </div>
+<!-- Contact end -->
