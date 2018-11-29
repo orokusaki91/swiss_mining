@@ -32,7 +32,7 @@ CREATE TABLE `about_us` (
 -- ----------------------------
 -- Records of about_us
 -- ----------------------------
-INSERT INTO `about_us` VALUES ('1', 'Proba', 'probaprobaprobaproba', '', '0000-00-00 00:00:00', null);
+INSERT INTO `about_us` VALUES ('1', 'Proba', 'probaprobaprobaproba', '', '2017-01-02 12:12:23', '2017-01-02 12:12:23');
 
 -- ----------------------------
 -- Table structure for migrations
