@@ -6,7 +6,7 @@
             <div class="about-us-div">
                 <div class="info wow zoomIn">
                     <h4 class="header">{{ $aboutUs->header }}</h4>
-                    <p class="description">{!! $aboutUs->header !!}</p>
+                    <p class="description">{!! $aboutUs->body !!}</p>
                 </div>
                 <!-- Owl carousel start -->
                 {{-- <div class="owl-carousel owl-theme">
