@@ -19,6 +19,5 @@
 
 </script>
 -->
-<script src="https://player.vimeo.com/api/player.js"></script>
 <script type="text/javascript" src="js/all.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
