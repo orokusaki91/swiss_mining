@@ -18,7 +18,7 @@ $(document).ready(function () {
 });
 
 $(window).scroll(function () {
-	if ($(window).scrollTop() > 62) {
+	if ($(window).scrollTop() >= 62) {
 		$(".logo").css({
 			'width': "60%"
 		});
@@ -140,7 +140,7 @@ $('body').scrollspy({
 });
 
 $(document).ready(function () {
-	$("#nav .nav-link").click(function () {
+	$("#nav-bar .nav-link").click(function () {
 		var href = $(this).attr('href');
 		$('html, body').animate({
 			scrollTop: $(href).offset().top
@@ -193,7 +193,7 @@ $(document).ready(function () {
 		var scroll = scrollPosition - scrollWidth;
 		$("#roadmap").animate({
 			scrollLeft: scroll
-		}, 1500);
+		}, 500);
 		if (scrollPosition === 0) {
 			$(".btn-left").prop("disabled", true);
 		} else {
@@ -206,7 +206,7 @@ $(document).ready(function () {
 		var scroll = scrollPosition + scrollWidth;
 		$("#roadmap").animate({
 			scrollLeft: scroll
-		}, 1500);
+		}, 500);
 		var widthScroll = $("#roadmap").width();
 		if (scroll >= widthScroll) {
 			$(".btn-right").prop("disabled", true);
