@@ -8,7 +8,7 @@
     </div>
     <div id="solutions" class="services">
         <div class="wow slideInLeft">
-            <img src="{{ asset("img/services/bitcoin.png") }}" class="bitcoin" alt="img/services/bitcoin.png" />
+            <img src="{{ asset('img/services/bitcoin.png') }}" class="bitcoin" alt="img/services/bitcoin.png" />
             <h3>Swissmining Solutions</h3>
         </div>
         <div class="solutions">
@@ -23,7 +23,7 @@
                         </p>
                     </div>
                     <div class="services-button wow slideInLeft">
-                        <img class="logo-btn" src="{{ asset("img/logo/logo-black.png") }}" alt="img/logo/logo-black.png" />
+                        <img class="logo-btn" src="{{ asset('img/logo/logo-black.png') }}" alt="img/logo/logo-black.png" />
                         <div class="btn-div">
                             <a id="btn-solutions" href="https://www.swissmining.solutions/" class="btn" target="_blank">
                                 Read more
@@ -36,7 +36,7 @@
     </div>
     <div id="token" class="services">
         <div class="wow slideInLeft">
-            <img src="{{ asset("img/services/bitcoin.png") }}" class="bitcoin" alt="img/services/bitcoin.png" />
+            <img src="{{ asset('img/services/bitcoin.png') }}" class="bitcoin" alt="img/services/bitcoin.png" />
             <h3>Swiss Turbo Token</h3>
         </div>
         <div class="token">
@@ -48,7 +48,7 @@
 						</p>
                     </div>
                     <div class="services-button wow slideInLeft">
-                        <img class="logo-btn" src="{{ asset("img/logo/swiss-turbo.png") }}" alt="img/logo/swiss-turbo.png" />
+                        <img class="logo-btn" src="{{ asset('img/logo/swiss-turbo.png') }}" alt="img/logo/swiss-turbo.png" />
                         <div class="btn-div">
                             <a id="btn-token" href="https://swiss-turbo.com/" class="btn" target="_blank">
                                 Read more

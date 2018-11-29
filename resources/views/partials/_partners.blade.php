@@ -7,7 +7,7 @@
                 @for($i = 0; $i < 11; $i++)
                 <div class="col-6 col-md-4 item-div">
                     <div class="item">
-                        <img src="{{ asset("img/partners/apple.png") }}" alt="img/partners/apple.png" />
+                        <img src="{{ asset('img/partners/apple.png') }}" alt="img/partners/apple.png" />
                     </div>
                 </div>
                 @endfor

@@ -9,51 +9,25 @@
     <div id="social-bar">
         <div class="social">
             <a href="javascript:void(0)" title="Facebook">
-                <img src="{{ asset("img/social/facebook.png") }}" alt="img/social/facebook.png" />
+                <img src="{{ asset('img/social/facebook.png') }}" alt="img/social/facebook.png" />
             </a>
         </div>
         <div class="social">
             <a href="javascript:void(0)" title="Telegram">
-                <img src="{{ asset("img/social/telegram.png") }}" alt="img/social/telegram.png" />
+                <img src="{{ asset('img/social/telegram.png') }}" alt="img/social/telegram.png" />
             </a>
         </div>
         <div class="social">
             <a href="javascript:void(0)" title="Reddit">
-                <img src="{{ asset("img/social/reddit.png") }}" alt="img/social/reddit.png" />
+                <img src="{{ asset('img/social/reddit.png') }}" alt="img/social/reddit.png" />
             </a>
         </div>
         <div class="social">
             <a href="javascript:void(0)" title="Bitcointalk">
-                <img src="{{ asset("img/social/bitcointalk.png") }}" alt="img/social/bitcointalk.png" />
+                <img src="{{ asset('img/social/bitcointalk.png') }}" alt="img/social/bitcointalk.png" />
             </a>
         </div>
     </div>
     <!-- Social end -->
-    <!-- Owl carousel start -->
-    <!--
-    <div class="owl-carousel owl-theme">
-        <div class="item">
-            <div class="row no-gutters">
-                <div class="col-md-6">
-                    <h1 class="wow slideInUp" data-wow-delay="2s">Willkommen zu<span><b>swiss</b>mining</span></h1>
-                </div>
-                <div class="col-md-6">
-                    <h1 class="wow slideInUp" data-wow-delay="2s">Willkommen zu<span><b>swiss</b>mining</span></h1>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="row no-gutters">
-                <div class="col-md-6">
-                    <h1>Willkommen zu<span><b>swiss</b>mining</span></h1>
-                </div>
-                <div class="col-md-6">
-                    <h1>Willkommen zu<span><b>swiss</b>mining</span></h1>
-                </div>
-            </div>
-        </div>
-    </div>
--->
-    <!-- Owl carousel end -->
 </div>
 <!-- Home end -->
