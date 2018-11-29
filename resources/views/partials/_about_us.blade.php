@@ -5,10 +5,8 @@
         <div class="container">
             <div class="about-us-div">
                 <div class="info wow zoomIn">
-                    <h4 class="header">Lorem Ipsum</h4>
-                    <p class="description">Wir sind ein Team mit einer grossen Vision im Bereich Blockchain Technologie, künstlicher Intelligenz und Datamining.</p>
-                    <p class="description">Die Swiss Mining Ltd wurde 2018 von André Kunz und der R&amp;R Investment Ltd(FinanceConsulting), vertreten durch Nicole Grütter-Thurneysen, gegründet mit dem Ziel, die Blockchain Technologie verbunden mit künstlicher Intelligenz und deren Möglichkeiten, der Bevölkerung zugänglich zu machen.</p>
-                    <p class="description">Swiss Mining Ltd ist eine in London registrierte Firma, mit einem Aktienkapital von 20 Mio. Euro.</p>
+                    <h4 class="header">{{ $aboutUs->header }}</h4>
+                    <p class="description">{!! $aboutUs->header !!}</p>
                 </div>
                 <!-- Owl carousel start -->
                 {{-- <div class="owl-carousel owl-theme">
