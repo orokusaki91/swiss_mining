@@ -28,6 +28,10 @@ Route::namespace('Admin\Auth')
     Route::get('login', 'LoginController@showLoginForm')->name('login');
     Route::post('login', 'LoginController@login');
 
+    // Registration Routes...
+    Route::get('register', 'RegisterController@showRegistrationForm')->name('register');
+    Route::post('register', 'RegisterController@register');
+
     // Password Reset Routes...
     Route::get('password/reset', 'ForgotPasswordController@showLinkRequestForm')->name('password.request');
     Route::post('password/email', 'ForgotPasswordController@sendResetLinkEmail')->name('password.email');
@@ -52,12 +56,6 @@ Route::namespace('Admin')
         });
 
         Route::get('/abous-use', 'AboutUsController@index')->name('admin.aboutUs');
-
-
-
-        // Registration Routes...
-        Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
-        Route::post('register', 'Auth\RegisterController@register');
         
         // Logout
         Route::post('logout', 'LoginController@logout')->name('logout');
