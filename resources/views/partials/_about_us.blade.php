@@ -68,9 +68,9 @@
                             <div class="col-md-3 wow fadeInUp" data-wow-delay=".2s">
                                 <div class="item three">
                                     <div class="icon">
-                                        <img class="icon-img" src="{{ asset("img/mission-vision/item-3.png") }}" />
-                                        <img class="visible" src="{{ asset("img/mission-vision/item-3-visible.png") }}" />
-                                        <img class="glow" src="{{ asset("img/mission-vision/item-3-glow.png") }}" />
+                                        <img class="icon-img" src="{{ asset('img/mission-vision/item-3.png') }}" />
+                                        <img class="visible" src="{{ asset('img/mission-vision/item-3-visible.png') }}" />
+                                        <img class="glow" src="{{ asset("'img/mission-vision/item-3-glow.png'') }}" />
                                     </div>
                                     <div class="info">
                                         <h2>03.</h2>
