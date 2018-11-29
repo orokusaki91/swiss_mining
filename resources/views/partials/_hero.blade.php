@@ -145,6 +145,14 @@
                                         <a href="javascript:void(0)" class="nav-link">It</a>
                                         <span class="flag-icon flag-icon-it"></span>
                                     </li>
+									<li class="nav-item">
+                                        <a href="javascript:void(0)" class="nav-link">Fr</a>
+                                        <span class="flag-icon flag-icon-fr"></span>
+                                    </li>
+									<li class="nav-item">
+                                        <a href="javascript:void(0)" class="nav-link">Es</a>
+                                        <span class="flag-icon flag-icon-es"></span>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
