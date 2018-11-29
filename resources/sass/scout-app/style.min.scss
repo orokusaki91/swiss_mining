@@ -133,7 +133,7 @@ svg {
 	transform: translate(-50%, -50%);
 	width: 100vw;
 	height: 100vh;
-	background: #03161D url('../../img/loader2.gif') center no-repeat;
+	background: #03161D url('../img/loader2.gif') center no-repeat;
 	background-size: 10%;
 	z-index: 9999;
 }
@@ -696,7 +696,7 @@ svg {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: url('../../img/home.jpg') center no-repeat;
+	background: url('../img/home.jpg') center no-repeat;
 	background-size: cover;
 
 	h1 {
@@ -837,7 +837,7 @@ svg {
 		.background {
 			position: relative;
 			padding: 0;
-			background: url('../../img/ai/4.jpg') center top no-repeat;
+			background: url('../img/ai/4.jpg') center top no-repeat;
 			background-size: cover;
 
 			.wrapper {
@@ -1014,7 +1014,7 @@ svg {
 	padding-top: 120px;
 
 	.contact {
-		background: url('../../img/section-bg.jpg') center no-repeat;
+		background: url('../img/section-bg.jpg') center no-repeat;
 		background-size: cover;
 		position: relative;
 
