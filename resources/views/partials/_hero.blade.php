@@ -21,7 +21,7 @@
     <!-- mySidenav start -->
     <div id="mySidenav">
         <div class="navbar-logo">
-            <img src="{{ asset("img/logo/swiss-mining.png") }}" alt="img/logo/swiss-mining.png" />
+            <img src="{{ asset('img/logo/swiss-mining.png') }}" alt="img/logo/swiss-mining.png" />
         </div>
         <nav id="navbar">
             <ul>
@@ -83,7 +83,7 @@
                 <div class="col-md-2 col-lg-4">
                     <div id="logo">
                         <a href="#home">
-                            <img src="{{ asset("img/logo/swiss-mining.png") }}" class="logo" alt="img/logo/swiss-mining.png" />
+                            <img src="{{ asset('img/logo/swiss-mining.png') }}" class="logo" alt="img/logo/swiss-mining.png" />
                         </a>
                     </div>
                 </div>
