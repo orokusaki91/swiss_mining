@@ -1819,22 +1819,50 @@ footer {
 
 		li {
 			list-style: none;
-			padding-bottom: 10px;
+			position: relative;
 
 			a {
 				color: #e6e6e6;
 				text-transform: uppercase;
 				transition: $transition;
-				display: inline-block;
+				display: block;
+				position: relative;
+				padding: 6px 0 4px;
+				font-size: 16px;
 
 				&:hover {
 					color: $white;
 				}
 			}
-			
+
 			.btn {
 				padding: 0;
 				background-color: transparent;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				transform: translate(0, -50%);
+
+				svg {
+					transition: $transition;
+					color: $white;
+					font-size: 18px;
+				}
+
+				&[aria-expanded="true"] {
+					svg {
+						transform: rotate(90deg);
+					}
+				}
+			}
+		}
+
+		.dropdown {
+			padding-left: 10px;
+
+			a {
+				padding: 3px 0;
+				font-size: 14px;
 			}
 		}
 	}
@@ -1868,7 +1896,7 @@ footer {
 			border: 1px solid $gray;
 		}
 	}
-	
+
 	.btn-submit {
 		background-color: $victoria;
 		transition: $transition;
@@ -1876,7 +1904,7 @@ footer {
 		cursor: pointer;
 		border: none;
 		padding: 5px 12px;
-		
+
 		&:hover {
 			background-color: $bleachedcedar;
 		}
