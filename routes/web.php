@@ -59,6 +59,10 @@ Route::namespace('Admin')
 
         Route::get('/about-us', 'AboutUsController@index')->name('admin.aboutUs');
         Route::post('/about-us-update', 'AboutUsController@update')->name('admin.aboutUs.update');
+
+        Route::get('/mission-vision', 'MissionVisionController@index')->name('admin.missionVision');
+        Route::get('/mission-vision/{id}', 'MissionVisionController@index')->name('admin.missionVision');
+        Route::post('/mission-vision-update/{id}', 'MissionVisionController@update')->name('admin.missionVision.update');
         
         // Logout
         Route::post('logout', 'LoginController@logout')->name('logout');

@@ -20,23 +20,27 @@
     <label for="header">Header - ES</label>
     <input type="text" name="header_es" value="{{ $content->header_es }}" />
 
-    <label for="body">Description - EN</label>
-    <input type="text" name="body_en" value="{!! $content->body_en !!}" />
-    
-    <label for="body">Description - DE</label>
-    <input type="text" name="body_de" value="{!! $content->body_de !!}" />
-    
-    <label for="body">Description - FR</label>
-    <input type="text" name="body_fr" value="{!! $content->body_fr !!}" />
-    
-    <label for="body">Description - IT</label>
-    <input type="text" name="body_it" value="{!! $content->body_it !!}" />
-    
-    <label for="body">Description - ES</label>
-    <input type="text" name="body_es" value="{!! $content->body_es !!}" />
+    <label for="body">Description - EN</label><br>
+    <textarea name="body_en">{!! $content->body_en !!}</textarea>
+
+    <label for="body">Description - DE</label><br>
+    <textarea name="body_de">{!! $content->body_de !!}</textarea>
+
+    <label for="body">Description - FR</label><br>
+    <textarea name="body_fr">{!! $content->body_fr !!}</textarea>
+
+    <label for="body">Description - IT</label><br>
+    <textarea name="body_it">{!! $content->body_it !!}</textarea>
+
+    <label for="body">Description - ES</label><br>
+    <textarea name="body_es">{!! $content->body_es !!}</textarea>
 
     <input class="btn-submit" type="submit" value="Change content" />
 
     @include('admin.errors')
 </form>
+@endsection
+
+@section('scripts')
+    @include('admin.scripts')
 @endsection
