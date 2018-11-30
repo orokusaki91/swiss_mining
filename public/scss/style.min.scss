@@ -1831,6 +1831,11 @@ footer {
 					color: $white;
 				}
 			}
+			
+			.btn {
+				padding: 0;
+				background-color: transparent;
+			}
 		}
 	}
 }
