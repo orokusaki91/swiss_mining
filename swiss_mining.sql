@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 100132
 File Encoding         : 65001
 
-Date: 2018-11-29 14:28:18
+Date: 2018-11-30 15:59:14
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -21,8 +21,16 @@ SET FOREIGN_KEY_CHECKS=0;
 DROP TABLE IF EXISTS `about_us`;
 CREATE TABLE `about_us` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `header` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `body` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `header_en` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `header_de` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `header_fr` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `header_it` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `header_es` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `body_en` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `body_de` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `body_fr` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `body_it` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `body_es` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `picture` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
@@ -32,7 +40,7 @@ CREATE TABLE `about_us` (
 -- ----------------------------
 -- Records of about_us
 -- ----------------------------
-INSERT INTO `about_us` VALUES ('1', 'Proba', 'probaprobaprobaproba', '', '2017-01-02 12:12:23', '2017-01-02 12:12:23');
+INSERT INTO `about_us` VALUES ('1', 'Header eng', 'Header de', 'Header fra', 'Header it', 'Header es', 'body eng', 'body de', 'body fra', 'body it', 'body es', '', null, '2018-11-30 14:56:29');
 
 -- ----------------------------
 -- Table structure for migrations
