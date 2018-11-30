@@ -4,8 +4,8 @@ namespace App\Database;
 
 use Illuminate\Database\Eloquent\Model;
 
-class AboutUs extends Model
+class OneRowPage extends Model
 {
-    protected $table = 'about_us';
+    protected $table = 'one_row_page';
     protected $guarded = ['id'];
 }

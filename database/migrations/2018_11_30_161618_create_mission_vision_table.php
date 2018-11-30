@@ -32,6 +32,6 @@ class CreateMissionVisionTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mision_visions');
+        Schema::dropIfExists('mision_vision');
     }
 }

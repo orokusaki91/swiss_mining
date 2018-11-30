@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Database\AboutUs;
+use App\Database\OneRowPage;
 use App\Http\Requests\AboutUsUpdateRequest;
 use App\Http\Controllers\Controller;
 
@@ -15,7 +15,7 @@ class AboutUsController extends Controller
      */
     public function index()
     {
-        $content = AboutUs::get()->first();
+        $content = OneRowPage::where('page', 'aboutUs')->first();
         return view('admin.partials.aboutUs', compact('content'));
     }
 
@@ -28,7 +28,7 @@ class AboutUsController extends Controller
      */
     public function update(AboutUsUpdateRequest $request)
     {
-        $content = AboutUs::get()->first();
+        $content = OneRowPage::where('page', 'aboutUs')->first();
         $content->update($request->all());
 
         return redirect()->back()->with(['success' => 'You successfuly made changes of content']);

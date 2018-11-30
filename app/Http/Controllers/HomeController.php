@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Database\AboutUs;
+use App\Database\OneRowPage;
 use App\Database\MissionVision;
 use Illuminate\Http\Request;
 
@@ -12,7 +12,7 @@ class HomeController extends Controller
     public function index()
     {
 
-        $aboutUs = AboutUs::get()->first();
+        $aboutUs = OneRowPage::where('page', 'aboutUs')->first();
 
         $missionVisions = MissionVision::all();
 
