@@ -64,6 +64,16 @@ Route::namespace('Admin')
         Route::get('/mission-vision/{vision}', 'MissionVisionController@edit')->name('admin.missionVision.show');
         Route::post('/mission-vision-update/{vision}', 'MissionVisionController@update')->name('admin.missionVision.update');
         
+        Route::get('/services', 'ServiceController@index')->name('admin.services');
+        Route::post('/services-update', 'ServiceController@update')->name('admin.services.update');
+
+        Route::get('/partners', 'PartnersController@index')->name('admin.partners');
+        Route::get('/partners/create', 'PartnersController@create')->name('admin.partners.create');
+        Route::post('/partners/store', 'PartnersController@store')->name('admin.partners.store');
+        Route::get('/partners-edit/{partner}', 'PartnersController@edit')->name('admin.partners.edit');
+        Route::post('/partners-update/{partner}', 'PartnersController@update')->name('admin.partners.update');
+        Route::post('/partners-delete/{partner}', 'PartnersController@destroy')->name('admin.partners.destroy');
+        
         // Logout
         Route::post('logout', 'LoginController@logout')->name('logout');
 

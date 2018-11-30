@@ -2,6 +2,9 @@
 
 @section('main')
 
+<h1>About Us</h1>
+<hr>
+
 @include('admin.flash')
 <form class="admin-form" action="{{ route('admin.aboutUs.update') }}" method="POST">
     @csrf

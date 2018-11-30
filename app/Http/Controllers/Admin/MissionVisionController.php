@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Database\MissionVision;
-use App\Http\Requests\RequestMissionVissionUpdateRequest;
+use App\Http\Requests\MissionVissionUpdateRequest;
 use App\Http\Controllers\Controller;
 
 class MissionVisionController extends Controller
@@ -38,7 +38,7 @@ class MissionVisionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(RequestMissionVissionUpdateRequest $request, MissionVision $vision)
+    public function update(MissionVissionUpdateRequest $request, MissionVision $vision)
     {
         $vision->update($request->all());
         return redirect()->back()->with(['success' => 'You successfuly made changes of content']);

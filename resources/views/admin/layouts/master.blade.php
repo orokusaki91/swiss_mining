@@ -15,7 +15,6 @@
 		<div id="admin-content">
 			@yield('main')
 		</div>
-		@in
 		@yield('scripts')
 </body>
 </html> 

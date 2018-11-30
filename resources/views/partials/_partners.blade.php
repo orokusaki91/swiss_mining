@@ -4,13 +4,15 @@
     <div class="partners">
         <div class="container">
             <div class="row align-items-md-center no-gutters">
-                @for($i = 0; $i < 11; $i++)
+                @foreach($partners as $partner)
                 <div class="col-6 col-md-4 item-div">
                     <div class="item">
-                        <img src="{{ asset('img/partners/apple.png') }}" alt="img/partners/apple.png" />
+                        <a href="{{ $partner->website }}" target="_blank">
+                            <img src="{{ asset($partner->image) }}" alt="img/partners/apple.png" />
+                        </a>
                     </div>
                 </div>
-                @endfor
+                @endforeach
             </div>
         </div>
     </div>
