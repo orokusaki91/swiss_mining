@@ -2,6 +2,9 @@
 
 @section('main')
 
+<h1>Mission and Vision</h1>
+<hr>
+
 @include('admin.flash')
     <ul>
         @foreach ($all as $item)

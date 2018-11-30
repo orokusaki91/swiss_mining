@@ -18,16 +18,26 @@
 		</button>
 	</li>
 	<li>
-		<a href="{{ route('admin.aboutUs') }}">Services</a>
+		<a href="{{ route('admin.services') }}">Services</a>
 		<button class="btn" type="button" data-toggle="collapse" data-target="#dropdown-services" aria-expanded="false" aria-controls="dropdown-services">
 			<i class="fas fa-arrow-circle-right" ></i>
 		</button>
 	</li>
-	<li id="dropdown-services" class="dropdown collapse">
-		<a href="javasript:void(0)">Swissmining Solutions</a>
+	<li id="dropdown-about" class="dropdown collapse">
 		<a href="javasript:void(0)">Swiss Turbo Token</a>
+		<button class="btn" type="button" data-toggle="collapse" data-target="#dropdown-services" aria-expanded="false" aria-controls="dropdown-services">
+			<i class="fas fa-arrow-circle-right" ></i>
+		</button>
 	</li>
+	<li id="dropdown-about" class="dropdown collapse">
+		<a href="javasript:void(0)">Swissmining Solutions</a>
+		<button class="btn" type="button" data-toggle="collapse" data-target="#dropdown-services" aria-expanded="false" aria-controls="dropdown-services">
+			<i class="fas fa-arrow-circle-right" ></i>
+		</button>
 	<li>
-		<a href="{{ route('admin.aboutUs') }}">Partners</a>
+		<a href="{{ route('admin.partners') }}">Partners</a>
+		<button class="btn" type="button" data-toggle="collapse" data-target="#dropdown-services" aria-expanded="false" aria-controls="dropdown-services">
+			<i class="fas fa-arrow-circle-right" ></i>
+		</button>
 	</li>
 </ul>
