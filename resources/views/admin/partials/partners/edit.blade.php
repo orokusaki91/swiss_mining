@@ -25,7 +25,7 @@
 
 <form method="POST" action="{{ route('admin.partners.destroy', $partner->id) }}">
         @csrf
-        <button type="submit" class="btn btn-danger">I want to DELETE trip!</button>
+        <button type="submit" class="btn btn-danger">I want to DELETE this Partner!</button>
 </form>
 
 
