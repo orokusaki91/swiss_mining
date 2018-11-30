@@ -1,7 +1,10 @@
 @extends('admin.layouts.master')
 
 @section('main')
-<form action="">
+
+@include('admin.flash')
+<form action="{{ route('admin.aboutUs.update') }}" method="POST">
+    @csrf
     <label for="header">Header - EN</label><br>
     <input type="text" name="header_en" value="{{ $content->header_en }}"><br>
 
@@ -20,20 +23,22 @@
 
 
     <label for="body">Description - EN</label><br>
-    <input type="text" name="body_en" value="{{ $content->body_en }}"><br>
+    <input type="text" name="body_en" value="{!! $content->body_en !!}"><br>
     
     <label for="body">Description - DE</label><br>
-    <input type="text" name="body_de" value="{{ $content->body_de }}"><br>
+    <input type="text" name="body_de" value="{!! $content->body_de !!}"><br>
     
     <label for="body">Description - FR</label><br>
-    <input type="text" name="body_fr" value="{{ $content->body_fr }}"><br>
+    <input type="text" name="body_fr" value="{!! $content->body_fr !!}"><br>
     
     <label for="body">Description - IT</label><br>
-    <input type="text" name="body_it" value="{{ $content->body_it }}"><br>
+    <input type="text" name="body_it" value="{!! $content->body_it !!}"><br>
     
     <label for="body">Description - ES</label><br>
-    <input type="text" name="body_es" value="{{ $content->body_es }}"><br>
+    <input type="text" name="body_es" value="{!! $content->body_es !!}"><br>
 
     <input type="submit" value="Change content">
+
+    @include('admin.errors')
 </form>
 @endsection

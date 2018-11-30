@@ -21,6 +21,8 @@ Route::get('/admin', function(){
     return redirect()->route('login');
 });
 
+Route::get('/lang/{lang}', 'LangController@changeLang')->name('change-lang');
+
 Route::namespace('Admin\Auth')
     ->prefix('admin')
     ->group(function(){
@@ -55,7 +57,8 @@ Route::namespace('Admin')
             return view('admin.partials.home');
         });
 
-        Route::get('/abous-use', 'AboutUsController@index')->name('admin.aboutUs');
+        Route::get('/about-us', 'AboutUsController@index')->name('admin.aboutUs');
+        Route::post('/about-us-update', 'AboutUsController@update')->name('admin.aboutUs.update');
         
         // Logout
         Route::post('logout', 'LoginController@logout')->name('logout');
