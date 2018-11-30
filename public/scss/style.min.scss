@@ -1801,6 +1801,88 @@ footer {
 ----------------------------*/
 
 /*----------------------------
+    Admin start
+----------------------------*/
+
+#vertical-menu {
+	background-color: $victoria;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 20vw;
+	padding: 15px;
+
+	#admin-nav {
+		margin: 0;
+		padding: 0;
+
+		li {
+			list-style: none;
+			padding-bottom: 10px;
+
+			a {
+				color: #e6e6e6;
+				text-transform: uppercase;
+				transition: $transition;
+				display: inline-block;
+
+				&:hover {
+					color: $white;
+				}
+			}
+		}
+	}
+}
+
+#admin-content {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 80vw;
+	padding: 15px;
+	overflow: auto;
+}
+
+.admin-form {
+	label {
+		display: block;
+		margin-bottom: 2px;
+	}
+
+	input {
+		display: block;
+		margin-bottom: 20px;
+		border: 1px solid $gray-2;
+		padding: 3px;
+		transition: $transition;
+		border-radius: 3px;
+
+		&:focus {
+			border: 1px solid $gray;
+		}
+	}
+	
+	.btn-submit {
+		background-color: $victoria;
+		transition: $transition;
+		color: $white;
+		cursor: pointer;
+		border: none;
+		padding: 5px 12px;
+		
+		&:hover {
+			background-color: $bleachedcedar;
+		}
+	}
+}
+
+/*----------------------------
+    Admin end
+----------------------------*/
+
+/*----------------------------
     Back-to-top start
 ----------------------------*/
 
@@ -2061,7 +2143,7 @@ footer {
 			.solutions,
 			.token {
 				background-position: center;
-				background-size: 150% 100%;
+				background-size: 100% 100%;
 
 				.solutions-div,
 				.token-div {
@@ -2099,6 +2181,7 @@ footer {
 			.solutions {
 				background-image: url('../img/services/solutions-mobile.jpg');
 				background-attachment: fixed;
+				background-size: 200% 100%;
 			}
 
 			.token {
@@ -2138,6 +2221,29 @@ footer {
 
 	#loader {
 		background-size: 50%;
+	}
+
+	#top-menu {
+		height: 10vh;
+	}
+
+	#home {
+		#social-bar {
+			top: 15vh;
+		}
+	}
+
+	#mySidenav {
+		.navbar-logo {
+			img {
+				height: 10vh;
+				width: 30vw;
+			}
+		}
+	}
+
+	#close-nav {
+		top: 11vh;
 	}
 }
 
