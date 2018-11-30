@@ -1825,9 +1825,9 @@ footer {
 				color: #e6e6e6;
 				text-transform: uppercase;
 				transition: $transition;
-				display: block;
+				display: inline-block;
 				position: relative;
-				padding: 6px 0 4px;
+				padding: 5px 0;
 				font-size: 16px;
 
 				&:hover {
@@ -1839,9 +1839,9 @@ footer {
 				padding: 0;
 				background-color: transparent;
 				position: absolute;
-				top: 50%;
+				top: 40%;
 				right: 0;
-				transform: translate(0, -50%);
+				transform: translate(0, -40%);
 
 				svg {
 					transition: $transition;
@@ -1906,7 +1906,7 @@ footer {
 		padding: 5px 12px;
 
 		&:hover {
-			background-color: $bleachedcedar;
+			background-color: #463663;
 		}
 	}
 }
