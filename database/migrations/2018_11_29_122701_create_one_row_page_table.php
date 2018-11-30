@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAboutUsTable extends Migration
+class CreateOneRowPageTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class CreateAboutUsTable extends Migration
      */
     public function up()
     {
-        Schema::create('about_us', function (Blueprint $table) {
+        Schema::create('one_row_page', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('page');
             $table->string('header_en')->nullable(false);
             $table->string('header_de')->nullable(false);
             $table->string('header_fr')->nullable(false);
@@ -37,6 +38,6 @@ class CreateAboutUsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('about_uses');
+        Schema::dropIfExists('one_row_page');
     }
 }
