@@ -128,11 +128,6 @@ $(document).ready(function () {
 		$("#mySidenav").addClass("no-active");
 		$("body").css("overflow", "auto");
 	});
-	$(".profile").click(function () {
-		$(".hamburger").removeClass("is-active");
-		$("#mySidenav").removeClass("active");
-		$("body").css("overflow", "auto");
-	});
 });
 
 $('body').scrollspy({

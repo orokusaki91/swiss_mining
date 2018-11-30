@@ -1338,7 +1338,7 @@ svg {
 				position: absolute;
 				left: 50%;
 				top: 50%;
-				width: 80%;
+				width: 90%;
 				transform: translate(-50%, -50%);
 			}
 		}
@@ -1512,7 +1512,7 @@ svg {
 				width: 40%;
 				text-align: left;
 				color: $white;
-				
+
 				p {
 					margin-bottom: 0
 				}
@@ -2060,14 +2060,15 @@ footer {
 
 			.solutions,
 			.token {
-				background-size: 160% 100%;
-				background-position: right center;
+				background-position: center;
+				background-size: 150% 100%;
 
 				.solutions-div,
 				.token-div {
 					padding: 10% 0;
 					min-height: auto;
 					height: auto;
+					text-align: center;
 
 					.info {
 						position: static;
@@ -2080,6 +2081,7 @@ footer {
 					.services-button {
 						position: static;
 						width: 100%;
+						margin-top: 10%;
 
 						.logo-btn {
 							width: 50%;
@@ -2092,6 +2094,15 @@ footer {
 						}
 					}
 				}
+			}
+
+			.solutions {
+				background-image: url('../img/services/solutions-mobile.jpg');
+				background-attachment: fixed;
+			}
+
+			.token {
+				background-image: url('../img/services/turbo-token-mobile.jpg');
 			}
 		}
 	}

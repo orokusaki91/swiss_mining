@@ -10,7 +10,7 @@
     <!-- Top menu start -->
     <div id="top-menu">
         <!-- Sidenav start -->
-        <div id="sidenav" class="hamburger hamburger--spin d-md-none" data-toggle="collapse" role="button" aria-expanded="false">
+        <div id="sidenav" class="hamburger hamburger--spin">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
             </span>
