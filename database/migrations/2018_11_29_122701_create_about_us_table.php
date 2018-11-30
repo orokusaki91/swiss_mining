@@ -15,8 +15,16 @@ class CreateAboutUsTable extends Migration
     {
         Schema::create('about_us', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('header');
-            $table->text('body');
+            $table->string('header_en')->nullable(false);
+            $table->string('header_de')->nullable(false);
+            $table->string('header_fr')->nullable(false);
+            $table->string('header_it')->nullable(false);
+            $table->string('header_es')->nullable(false);
+            $table->text('body_en')->nullable(false);
+            $table->text('body_de')->nullable(false);
+            $table->text('body_fr')->nullable(false);
+            $table->text('body_it')->nullable(false);
+            $table->text('body_es')->nullable(false);
             $table->string('picture');
             $table->timestamps();
         });
