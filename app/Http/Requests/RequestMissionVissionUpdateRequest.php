@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class AboutUsUpdateRequest extends FormRequest
+class RequestMissionVissionUpdateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,11 +24,6 @@ class AboutUsUpdateRequest extends FormRequest
     public function rules()
     {
         return [
-            'header_de' => 'required|min:3',
-            'header_fr' => 'required|min:3',
-            'header_en' => 'required|min:3',
-            'header_it' => 'required|min:3',
-            'header_es' => 'required|min:3',
             'body_en'   => 'required|min:3',
             'body_de'   => 'required|min:3',
             'body_fr'   => 'required|min:3',
