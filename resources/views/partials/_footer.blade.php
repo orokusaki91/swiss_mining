@@ -67,6 +67,6 @@
         </div>
     </div>
 </footer>
-<!-- Footer start -->
+<!-- Footer end -->
 @include('partials._scripts')
 @yield('scripts')
