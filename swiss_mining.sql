@@ -54,7 +54,7 @@ CREATE TABLE `mission_vision` (
 -- ----------------------------
 -- Records of mission_vision
 -- ----------------------------
-INSERT INTO `mission_vision` VALUES ('1', '01', '<p>proba</p>\r\n<p>&nbsp;</p>\r\n<p>aaaa</p>', '<p>proba1</p>', '<p>proba1</p>', '<p>proba1</p>', '<p>proba1</p>', '0000-00-00 00:00:00', '2018-11-30 18:21:59');
+INSERT INTO `mission_vision` VALUES ('1', '01', '<p>proba</p>\r\n<p>&nbsp;</p>\r\n<p>aaaa</p>', '<p>proba1</p>', '<p>proba1</p>', '<p>proba1</p>', '<p>proba1</p>', '2018-11-11 12:12:12', '2018-11-30 18:21:59');
 INSERT INTO `mission_vision` VALUES ('2', '02', 'proba2', 'proba2', 'proba2', 'proba2', 'proba2', null, null);
 INSERT INTO `mission_vision` VALUES ('3', '03', 'proba3', 'proba3', 'proba3', 'proba3', 'proba3', null, null);
 INSERT INTO `mission_vision` VALUES ('4', '04', 'proba4', 'proba4', 'proba4', 'proba4', 'proba4', null, null);
