@@ -94,7 +94,7 @@
             <div class="wrapper">
                 <div class="container">
                     <div class="row">
-                        @for($i = 0; $i < 6; $i++)
+                        @foreach($team as $member)
                         <div class="col-md-6">
                             <div class="box wow zoomIn wow zoomIn">
                                 <div class="row">
@@ -102,27 +102,27 @@
                                         <div class="item">
                                             <div class="profile">
                                                 <div class="profile-img">
-                                                    <img src="{{ asset('img/team/profile.png') }}" alt="img/team/profile.png" />
+                                                    <img src="{{ asset("{$member->image}") }}" alt="img/team/profile.png" />
                                                 </div>
                                                 <button class="btn">
                                                     <img src="{{ asset('img/team/linkedin.png') }}" class="linkedin" alt="img/team/linkedin.png" />
                                                 </button>
                                             </div>
                                             <div class="info">
-                                                <p class="name">Lorem Ipsum</p>
-                                                <p class="position">Lorem Ipsum</p>
+                                                <p class="name">{{ $member->name }}</p>
+                                                <a href="{{ $member->linkedin }}" class="position" target="_blank">LinkedIn Profile</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-lg-8">
                                         <p class="description">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                            {{ $member->about }}
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        @endfor
+                        @endforeach
                     </div>
                 </div>
             </div>

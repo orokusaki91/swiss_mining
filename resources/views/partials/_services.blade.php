@@ -16,10 +16,10 @@
                 <div class="solutions-div">
                     <div class="info wow zoomIn">
                         <h5>
-                            <b>Unsere Token werden vollständig durch Börsen Bonds abgesichert!</b>
+                            <b>{{ $solution->{'header_' . $language} }}</b>
                         </h5>
                         <p>
-                            Swissmining bietet durch die <b>Absicherung des investierten Kapitals</b> eine Anlage mit hohen Gewinnchancen bei minimalem Risiko. Wir geben jedem die Möglichkeit, am hochprofitablen Markt für Kryptowährungen teilzunehmen, mit dem Kauf der von uns angebotenen Investitionspläne ab 250 €. Der Gewinn und die Kapitaleinlage werden monatlich oder am Ende der vertraglichen Laufzeit (je nach Wahl des Investitionsplans) gezahlt. Durch verschiedene Kollaborationen kann Swissmining ihren Kunden eine einfache und sichere Möglichkeit bieten, zusätzliches Geld aus zwei verschiedenen Quellen zu verdienen: <b>Krypto-Mining</b> und <b>Krypto-Trading</b>.
+                            {{ $solution->{'body_' . $language} }}
                         </p>
                     </div>
                     <div class="services-button wow slideInLeft">
@@ -44,7 +44,7 @@
                 <div class="token-div">
                     <div class="info wow zoomIn">
                         <p>
-							Swiss Turbo bietet Anlegern die Möglichkeit, die Ressourcen eines großen Mining-Betriebs zu nutzen, ohne teure Mining-Maschinen kaufen zu müssen und darüber hinaus die Gewinne durch unser Arbitrage-Trading zu optimieren.
+							{{ $turboToken->{'body_' . $language} }}
 						</p>
                     </div>
                     <div class="services-button wow slideInLeft">

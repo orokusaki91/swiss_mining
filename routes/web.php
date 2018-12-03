@@ -23,6 +23,8 @@ Route::get('/admin', function(){
 
 Route::get('/lang/{lang}', 'LangController@changeLang')->name('change-lang');
 
+Route::post('/newsletter', 'NewsletterController@store')->name('newsletter');
+
 Route::namespace('Admin\Auth')
     ->prefix('admin')
     ->group(function(){
@@ -63,9 +65,22 @@ Route::namespace('Admin')
         Route::get('/mission-vision', 'MissionVisionController@index')->name('admin.missionVision');
         Route::get('/mission-vision/{vision}', 'MissionVisionController@edit')->name('admin.missionVision.show');
         Route::post('/mission-vision-update/{vision}', 'MissionVisionController@update')->name('admin.missionVision.update');
+
+        Route::get('/team', 'TeamController@index')->name('admin.team');
+        Route::get('/team/create', 'TeamController@create')->name('admin.team.create');
+        Route::post('/team/store', 'TeamController@store')->name('admin.team.store');
+        Route::get('/team-edit/{teamMember}', 'TeamController@edit')->name('admin.team.edit');
+        Route::post('/team-update/{teamMember}', 'TeamController@update')->name('admin.team.update');
+        Route::post('/team-delete/{teamMember}', 'TeamController@destroy')->name('admin.team.destroy');
         
         Route::get('/services', 'ServiceController@index')->name('admin.services');
         Route::post('/services-update', 'ServiceController@update')->name('admin.services.update');
+
+        Route::get('/solutions', 'SolutionsController@index')->name('admin.solutions');
+        Route::post('/solutions-update', 'SolutionsController@update')->name('admin.solutions.update');
+
+        Route::get('/turbo-token', 'TurboTokenController@index')->name('admin.turboToken');
+        Route::post('/turbo-token-update', 'TurboTokenController@update')->name('admin.turboToken.update');
 
         Route::get('/partners', 'PartnersController@index')->name('admin.partners');
         Route::get('/partners/create', 'PartnersController@create')->name('admin.partners.create');
@@ -77,5 +92,7 @@ Route::namespace('Admin')
         // Logout
         Route::post('logout', 'LoginController@logout')->name('logout');
 
-
     });
+    
+Route::get('admin/newsletter', 'NewsletterController@index')->name('admin.newsletter');
+Route::post('admin/newsletter-delete/{newsletter}', 'NewsletterController@destroy')->name('admin.newsletter.destroy');

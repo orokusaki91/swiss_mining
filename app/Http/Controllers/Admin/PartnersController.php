@@ -1,10 +1,10 @@
 <?php
 namespace App\Http\Controllers\Admin;
 
+use App\Database\Partners;
 use App\Http\Requests\CreatePartnerRequest;
 use App\Http\Requests\UpdatePartnerRequest;
 use Illuminate\Support\Facades\File;
-use App\Database\Partners;
 use App\Http\Controllers\Controller;
 
 
@@ -94,4 +94,5 @@ class PartnersController extends Controller
 
         return redirect()->route('admin.partners')->with(['success' => 'You successfuly deleted partner']);
     }
+
 }
