@@ -3,8 +3,8 @@
     <!-- Particles-home start -->
     <div id="particles-home" class="particles"></div>
     <!-- Particles-home end -->
-    <div class="home-background"></div>
-    <div class="home-logo"></div>
+    <div class="home-background" style="background-image: url('../img/home/background.jpg')"></div>
+    <div class="home-logo" style="background-image: url('../img/home/logo.png');"></div>
     <!-- Social start -->
     <div id="social-bar">
         <div class="social">
