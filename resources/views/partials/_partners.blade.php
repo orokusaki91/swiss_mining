@@ -1,6 +1,6 @@
 <!-- Partners start -->
 <div id="partners">
-    <h2 class="wow slideInLeft">Partners</h2>
+    <h2 class="wow slideInLeft">{{ __('translate.partners') }}</h2>
     <div class="partners">
         <div class="container">
             <div class="row align-items-md-center no-gutters">

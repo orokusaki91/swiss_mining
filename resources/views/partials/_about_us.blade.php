@@ -1,12 +1,12 @@
 <!-- About us start -->
 <div id="about-us">
-    <h2 class="wow slideInLeft">Über uns</h2>
+    <h2 class="wow slideInLeft">{{ __('translate.about-us') }}</h2>
     <div class="about-us">
         <div class="container">
             <div class="about-us-div">
                 <div class="info wow zoomIn">
-                    <h4 class="header">{{ $aboutUs->{'header_' . config()->get('app.locale')} }}</h4>
-                    <p class="description">{!! $aboutUs->{'body_' . config()->get('app.locale')} !!}</p>
+                    <h4 class="header">{{ $aboutUs->{'header_' . $language} }}</h4>
+                    <p class="description">{!! $aboutUs->{'body_' . $language} !!}</p>
                 </div>
                 <!-- Owl carousel start -->
                 {{-- <div class="owl-carousel owl-theme">
@@ -21,7 +21,7 @@
     </div>
     <!-- Mission - Vision start -->
     <div id="mission-vision">
-        <h3 class="wow slideInLeft">Mission - Vision</h3>
+        <h3 class="wow slideInLeft">{{ __('translate.mission-vision') }}</h3>
         <div class="mission-vision-div">
             <div class="container p-0">
                 <div class="mission-vision">
@@ -57,7 +57,7 @@
     <!-- Mission - Vision end -->
     <!-- Roadmap start -->
     <div id="roadmap">
-        <h3 class="wow slideInLeft" data-wow-delay="1s">Roadmap</h3>
+        <h3 class="wow slideInLeft" data-wow-delay="1s">{{ __('translate.roadmap') }}</h3>
         <div class="roadmap">
             <!-- Particles-roadmap start -->
             <div id="particles-roadmap" class="particles"></div>
@@ -89,7 +89,7 @@
     <!-- Roadmap-controls end -->
     <!-- Team start -->
     <div id="team">
-        <h3 class="wow slideInLeft">Team</h3>
+        <h3 class="wow slideInLeft">{{ __('translate.team') }}</h3>
         <div class="team">
             <div class="wrapper">
                 <div class="container">

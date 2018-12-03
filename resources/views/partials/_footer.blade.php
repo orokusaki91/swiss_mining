@@ -24,10 +24,10 @@
                             @csrf
                             <div class="input-group">
                                 <div class="newsletter-border">
-                                    <input name="email" type="email" class="form-control" placeholder="Email eingeben" required/>
+                                    <input name="email" type="email" class="form-control" placeholder="{{ __('translate.enter-email') }}" required/>
                                 </div>
                                 <div class="input-group-append">
-                                    <button type="submit" class="btn">Abonnieren</button>
+                                    <button type="submit" class="btn">{{ __('translate.subscribe') }}</button>
                                 </div>
                             </div>
                         </form>
@@ -65,7 +65,7 @@
             <div class="text-center py-3">
                 <div class="copyright">
                     <p class="m-0">
-                        © 2018 <a href="http://www.mpsoft.ch/" target="_blank"><b>MPSoft</b></a> - Alle Rechte Vorbehalten
+                        © 2018 <a href="http://www.mpsoft.ch/" target="_blank"><b>MPSoft</b></a> - {{ __('translate.rights-reserved') }}
                     </p>
                 </div>
             </div>
