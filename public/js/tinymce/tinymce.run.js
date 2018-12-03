@@ -6,7 +6,7 @@ $(function () {
         skin: "lightgray",
   branding: false,
   
-        width: 550,
+        width: '100%',
         height: 300,
 
         statubar: true,

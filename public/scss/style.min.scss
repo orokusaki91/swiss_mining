@@ -635,7 +635,7 @@ svg {
 			display: block;
 
 			.logo {
-				width: 70%;
+				width: 60%;
 				transition: $transition;
 			}
 		}
@@ -1878,6 +1878,47 @@ footer {
 	width: 80vw;
 	padding: 15px;
 	overflow: auto;
+	
+	&.home {
+		width: auto;
+		left: 0;
+	}
+
+	#admin-home {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+
+		li {
+			list-style: none;
+			text-align: center;
+			display: inline-block;
+			flex: 1 0 21%;
+			background-color: $victoria;
+			border-radius: 3px;
+			transition: $transition;
+			margin-right: 15px;
+			margin-bottom: 15px;
+
+			a {
+				color: $white;
+				display: block;
+				width: 100%;
+				height: 100%;
+				padding: 10%;
+				text-transform: uppercase;
+			}
+
+			&:hover {
+				background-color: #463663;
+			}
+			
+			&:nth-child(4n) {
+				margin-right: 0;
+			}
+		}
+	}
 }
 
 .admin-form {
@@ -1887,12 +1928,14 @@ footer {
 	}
 
 	input {
+		width: 100%;
 		display: block;
 		margin-bottom: 20px;
 		border: 1px solid $gray-2;
 		padding: 3px;
 		transition: $transition;
 		border-radius: 3px;
+		padding: 5px 8px;
 
 		&:focus {
 			border: 1px solid $gray;
@@ -1906,6 +1949,7 @@ footer {
 		cursor: pointer;
 		border: none;
 		padding: 5px 12px;
+		width: auto;
 
 		&:hover {
 			background-color: #463663;
