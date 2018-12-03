@@ -18,7 +18,7 @@
 		<a {{ Request::segment(2) == 'solutions' ? "class=active" : '' }} href="{{ route('admin.solutions') }}">Solutions</a>
 	</li>
 	<li>
-		<a {{ Request::segment(2) == 'turbo-token' ? "class=active" : '' }} href="{{ route('admin.solutions') }}">Turbo token</a>
+		<a {{ Request::segment(2) == 'turbo-token' ? "class=active" : '' }} href="{{ route('admin.turboToken') }}">Turbo token</a>
 	</li>
 	<li>
 		<a {{ Request::segment(2) == 'newsletter' ? "class=active" : '' }} href="{{ route('admin.newsletter') }}">Newsletters</a>
