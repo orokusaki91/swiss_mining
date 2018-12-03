@@ -20,14 +20,19 @@
                 <div class="col-md-4 pb-4 pb-md-0">
                     <h4>Newsletter</h4>
                     <div class="newsletter">
-                        <div class="input-group">
-                            <div class="newsletter-border">
-                                <input type="email" class="form-control" placeholder="Email eingeben" />
+                        <form action="{{ route('newsletter') }}" method="POST">
+                            @csrf
+                            <div class="input-group">
+                                <div class="newsletter-border">
+                                    <input name="email" type="email" class="form-control" placeholder="Email eingeben" required/>
+                                </div>
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn">Abonnieren</button>
+                                </div>
                             </div>
-                            <div class="input-group-append">
-                                <button class="btn">Abonnieren</button>
-                            </div>
-                        </div>
+                        </form>
+                        {{ Session::has('email') ? Session::get('email') : '' }}
+                        {{ $errors->has('email') ? $errors->first('email') : '' }}
                     </div>
                 </div>
                 <div class="col-md-4 text-center text-md-right">
