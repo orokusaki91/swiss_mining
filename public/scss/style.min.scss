@@ -1831,7 +1831,7 @@ footer {
 				position: relative;
 				padding: 5px 0;
 				font-size: 16px;
-				
+
 				&.active {
 					font-weight: bold;
 					color: $white;
@@ -1883,7 +1883,7 @@ footer {
 	width: 80vw;
 	padding: 15px;
 	overflow: auto;
-	
+
 	&.home {
 		width: auto;
 		left: 0;
@@ -1918,9 +1918,21 @@ footer {
 			&:hover {
 				background-color: #463663;
 			}
-			
+
 			&:nth-child(4n) {
 				margin-right: 0;
+			}
+		}
+	}
+
+	ol {
+		margin: 0;
+
+		li {
+
+			a {
+				color: $black;
+				font-size: 18px;
 			}
 		}
 	}
@@ -1946,6 +1958,10 @@ footer {
 			border: 1px solid $gray;
 		}
 	}
+	
+	textarea {
+		display: block;
+	}
 
 	.btn-submit {
 		background-color: $victoria;
@@ -1956,8 +1972,15 @@ footer {
 		padding: 5px 12px;
 		width: auto;
 
-		&:hover {
+		&:hover,
+		&:focus {
 			background-color: #463663;
+		}
+	}
+
+	.admin-edit {
+		input {
+			width: 30%;
 		}
 	}
 }

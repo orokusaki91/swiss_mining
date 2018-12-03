@@ -11,12 +11,15 @@
 
 <form class="admin-form" action="{{ route('admin.partners.update', $partner->id) }}" method="POST" enctype="multipart/form-data">
     @csrf
-    <label for="name">name</label>
-    <input type="text" name="name" value="{{ $partner->name }}"/>
+	
+	<div class="admin-edit">
+		<label for="name">name</label>
+		<input type="text" name="name" value="{{ $partner->name }}"/>
 
-    <label for="website">Website</label>
-    <p class="text-muted">Example: "http://swissmining.com/"</p>
-    <input type="url" name="website" value="{{ $partner->website }}"/>
+		<label for="website">Website</label>
+		<p class="text-muted">Example: "http://swissmining.com/"</p>
+		<input type="url" name="website" value="{{ $partner->website }}"/>
+	</div>
 
     <input class="btn-submit" type="submit" value="Edit Partner" />
 
