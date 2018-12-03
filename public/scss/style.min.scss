@@ -1831,6 +1831,10 @@ footer {
 				position: relative;
 				padding: 5px 0;
 				font-size: 16px;
+				
+				&.active {
+					font-weight: bold;
+				}
 
 				&:hover {
 					color: $white;
