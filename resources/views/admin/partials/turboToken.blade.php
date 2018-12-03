@@ -6,7 +6,7 @@
 <hr>
 
 @include('admin.flash')
-<form class="admin-form" action="{{ route('admin.solutions.update') }}" method="POST">
+<form class="admin-form" action="{{ route('admin.turboToken.update') }}" method="POST">
     @csrf
 
     <label for="body">Description - EN</label><br>

@@ -19,7 +19,7 @@
                             <b>{{ $solution->{'header_' . $language} }}</b>
                         </h5>
                         <p>
-                            {{ $solution->{'body_' . $language} }}
+                            {!! $solution->{'body_' . $language} !!}
                         </p>
                     </div>
                     <div class="services-button wow slideInLeft">
@@ -44,7 +44,7 @@
                 <div class="token-div">
                     <div class="info wow zoomIn">
                         <p>
-							{{ $turboToken->{'body_' . $language} }}
+							{!! $turboToken->{'body_' . $language} !!}
 						</p>
                     </div>
                     <div class="services-button wow slideInLeft">
