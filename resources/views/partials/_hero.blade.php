@@ -1,5 +1,5 @@
 <!-- mobile start -->
-<div id="mobile" class="d-md-none">
+<div id="mobile" class="d-lg-none">
     <!-- scroll-progress start -->
     <div class="scroll-progress">
         <div class="progress-container">
@@ -75,19 +75,19 @@
 </div>
 <!-- mobile end -->
 <!-- Header start -->
-<header id="header" class="fixed-top d-none d-md-block">
+<header id="header" class="fixed-top d-none d-lg-block">
     <div class="container-fluid">
         <!-- Navbar start -->
         <div id="navbar">
             <div class="row align-items-md-center">
-                <div class="col-md-2 col-lg-4">
+                <div class="col-lg-3">
                     <div id="logo">
                         <a href="#home">
                             <img src="{{ asset('img/logo/swiss-mining.png') }}" class="logo" alt="img/logo/swiss-mining.png" />
                         </a>
                     </div>
                 </div>
-                <div class="col-md-10 col-lg-8">
+                <div class="col-lg-9">
                     <nav id="nav-bar" class="navbar float-md-right pr-md-0">
                         <ul id="nav" class="nav nav-pills">
                             <li class="nav-item">
