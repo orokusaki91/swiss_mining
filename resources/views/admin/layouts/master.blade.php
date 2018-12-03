@@ -9,9 +9,11 @@
 
 </head>
 <body>
+		@if (Request::segment(2) != 'home')
 		<div id="vertical-menu">
 			@include('admin.layouts.nav')
 		</div>
+		@endif
 		<div id="admin-content">
 			@yield('main')
 		</div>

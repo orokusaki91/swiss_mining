@@ -1,6 +1,6 @@
 <!-- Contact start -->
 <div id="contact">
-    <h2 class="wow slideInLeft">Kontakt</h2>
+    <h2 class="wow slideInLeft">{{ __('translate.contact') }}</h2>
     <div class="contact">
         <!-- Particles-contact start -->
         <div id="particles-contact" class="particles"></div>
@@ -29,22 +29,22 @@
                     <div class="col-md-6">
                         <form>
                             <div class="form-group">
-                                <label>Dein Name <span>*</span></label>
+                                <label>{{ __('translate.your-name') }} <span>*</span></label>
                                 <input type="text" class="form-control" />
                             </div>
                             <div class="form-group">
-                                <label>Deine Email <span>*</span></label>
+                                <label>{{ __('translate.your-email') }} <span>*</span></label>
                                 <input type="email" class="form-control" />
                             </div>
                             <div class="form-group">
-                                <label>Gegenstand </label>
+                                <label>{{ __('translate.subject') }} </label>
                                 <input type="text" class="form-control" />
                             </div>
                             <div class="form-group">
-                                <label>Deine Nachricht</label>
+                                <label>{{ __('translate.your-message') }}</label>
                                 <textarea class="form-control" rows="5"></textarea>
                             </div>
-                            <button type="submit" class="btn">Einreichen</button>
+                            <button type="submit" class="btn">{{ __('translate.submit') }}</button>
                         </form>
                     </div>
                 </div>

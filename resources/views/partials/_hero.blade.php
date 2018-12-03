@@ -27,42 +27,42 @@
             <ul>
                 <li class="nav-item">
                     <a class="nav-link" href="#home">
-                        Home
+                        {{ __('translate.home') }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#about-us">
-                        Über<span>Uns</span>
+                        {{ __('translate.about-us') }}
                     </a>
                     <button class="btn btn-collapse" type="button" data-toggle="collapse" data-target="#dropdown-about-us" aria-expanded="false" aria-controls="dropdown-about-us">
                         <i class="fas fa-arrow-right"></i>
                     </button>
                 </li>
                 <li id="dropdown-about-us" class="nav-item collapse">
-                    <a href="#mission-vision" class="nav-link">Mission<span>Vision</span></a>
-                    <a href="#roadmap" class="nav-link">Roadmap</a>
-                    <a href="#team" class="nav-link">Team</a>
+                    <a href="#mission-vision" class="nav-link">{{ __('translate.mission-vision') }}</a>
+                    <a href="#roadmap" class="nav-link">{{ __('translate.roadmap') }}</a>
+                    <a href="#team" class="nav-link">{{ __('translate.team') }}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#services">
-                        Dienstleistungen
+                        {{ __('translate.services') }}
                     </a>
                     <button class="btn btn-collapse" type="button" data-toggle="collapse" data-target="#dropdown-services" aria-expanded="false" aria-controls="dropdown-services">
                         <i class="fas fa-arrow-right"></i>
                     </button>
                 </li>
                 <li id="dropdown-services" class="nav-item collapse">
-                    <a href="#solutions" class="nav-link">Swissmining<span>Solutions</span></a>
-                    <a href="#token" class="nav-link">Swiss<span>Turbo</span><span>Token</span></a>
+                    <a href="#solutions" class="nav-link">{{ __('translate.swissmining-solutions') }}</a>
+                    <a href="#token" class="nav-link">{{ __('translate.swiss-turbo-token') }}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#partners">
-                        Partners
+                        {{ __('translate.partners') }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">
-                        Kontakt
+                        {{ __('translate.contact') }}
                     </a>
                 </li>
             </ul>
@@ -91,38 +91,38 @@
                     <nav id="nav-bar" class="navbar float-md-right pr-md-0">
                         <ul id="nav" class="nav nav-pills">
                             <li class="nav-item">
-                                <a class="nav-link" href="#home">Home</a>
+                                <a class="nav-link" href="#home">{{ __('translate.home') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#about-us">Über uns</a>
+                                <a class="nav-link" href="#about-us">{{ __('translate.about-us') }}</a>
                                 <ul class="dropdown">
                                     <li class="nav-item">
-                                        <a href="#mission-vision" class="nav-link">Mission<span class="divider">-</span>Vision</a>
+                                        <a href="#mission-vision" class="nav-link">{{ __('translate.mission-vision') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#roadmap" class="nav-link">Roadmap</a>
+                                        <a href="#roadmap" class="nav-link">{{ __('translate.roadmap') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#team" class="nav-link">Team</a>
+                                        <a href="#team" class="nav-link">{{ __('translate.team') }}</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#services">Dienstleistungen</a>
+                                <a class="nav-link" href="#services">{{ __('translate.services') }}</a>
                                 <ul class="dropdown">
                                     <li class="nav-item">
-                                        <a href="#solutions" class="nav-link">Swissmining Solutions</a>
+                                        <a href="#solutions" class="nav-link">{{ __('translate.swissmining-solutions') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#token" class="nav-link">Swiss Turbo Token</a>
+                                        <a href="#token" class="nav-link">{{ __('translate.swiss-turbo-token') }}</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#partners">Partners</a>
+                                <a class="nav-link" href="#partners">{{ __('translate.partners') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact">Kontakt</a>
+                                <a class="nav-link" href="#contact">{{ __('translate.contact') }}</a>
                             </li>
                         </ul>
                         <ul id="language">

@@ -1,5 +1,11 @@
 <ul id="admin-nav">
 	<li>
+		<a href="{{ route('admin.home') }}">Home</a>
+		<button class="btn" type="button" data-toggle="collapse" data-target="#dropdown-about" aria-expanded="false" aria-controls="dropdown-about">
+			<i class="fas fa-arrow-circle-right" ></i>
+		</button>
+	</li>
+	<li>
 		<a href="{{ route('admin.aboutUs') }}">About us</a>
 		<button class="btn" type="button" data-toggle="collapse" data-target="#dropdown-about" aria-expanded="false" aria-controls="dropdown-about">
 			<i class="fas fa-arrow-circle-right" ></i>

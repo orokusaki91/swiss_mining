@@ -57,7 +57,7 @@ Route::namespace('Admin')
 
         Route::get('/home', function(){
             return view('admin.partials.home');
-        });
+        })->name('admin.home');
 
         Route::get('/about-us', 'AboutUsController@index')->name('admin.aboutUs');
         Route::post('/about-us-update', 'AboutUsController@update')->name('admin.aboutUs.update');
