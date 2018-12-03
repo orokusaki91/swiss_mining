@@ -14,7 +14,7 @@
 			@include('admin.layouts.nav')
 		</div>
 		@endif
-		<div id="admin-content">
+		<div id="admin-content" class="{{ Request::segment(2) == 'home' ? 'home' : '' }}">
 			@yield('main')
 		</div>
 		@yield('scripts')
