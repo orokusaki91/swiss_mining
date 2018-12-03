@@ -1927,12 +1927,26 @@ footer {
 
 	ol {
 		margin: 0;
+		padding-left: 20px;
 
 		li {
-
 			a {
 				color: $black;
 				font-size: 18px;
+				margin-left: 5px;
+				vertical-align: baseline;
+			}
+		}
+	}
+
+	.alert {
+
+		ul {
+			margin: 0;
+			padding-left: 10px;
+
+			li {
+				text-align: left;
 			}
 		}
 	}
@@ -1958,9 +1972,28 @@ footer {
 			border: 1px solid $gray;
 		}
 	}
-	
+
 	textarea {
 		display: block;
+		padding: 5px;
+		border: 1px solid $border;
+
+		&:focus {
+			border: 1px solid $gray-2;
+		}
+	}
+
+	&.mission {
+		textarea {
+			width: 100%;
+		}
+	}
+
+	.admin-create,
+	.admin-edit {
+		input {
+			width: 30%;
+		}
 	}
 
 	.btn-submit {
@@ -1974,13 +2007,8 @@ footer {
 
 		&:hover,
 		&:focus {
-			background-color: #463663;
-		}
-	}
-
-	.admin-edit {
-		input {
-			width: 30%;
+			background-color: #463663 !important;
+			border: none;
 		}
 	}
 }
