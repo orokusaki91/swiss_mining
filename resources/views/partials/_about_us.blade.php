@@ -62,7 +62,7 @@
             <!-- Particles-roadmap start -->
             <div id="particles-roadmap" class="particles"></div>
             <!-- Particles-roadmap end -->
-            <img class="roadmap-image" src="{{ asset('img/roadmap/roadmap.png') }}" alt="img/roadmap/roadmap.png" />
+            <img class="roadmap-image" src="{{ asset("img/roadmap/{$language}/roadmap.png") }}" alt="img/roadmap/roadmap.png" />
         </div>
     </div>
     <!-- Roadmap end -->
