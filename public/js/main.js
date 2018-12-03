@@ -20,12 +20,12 @@ $(document).ready(function () {
 $(window).scroll(function () {
 	if ($(window).scrollTop() >= 62) {
 		$(".logo").css({
-			'width': "90%"
+			'width': "80%"
 		});
 		$("#header").addClass("active");
 	} else {
 		$(".logo").css({
-			'width': "70%"
+			'width': "60%"
 		});
 		$("#header").removeClass("active");
 	}

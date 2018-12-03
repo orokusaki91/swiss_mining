@@ -6,12 +6,30 @@
 <h1>Home</h1>
 <hr>
 
-<a href="{{ route('admin.aboutUs') }}">About us</a>
-<a href="{{ route('admin.missionVision') }}">Mission and Vision</a>
-<a href="{{ route('admin.team') }}">Team</a>
-<a href="{{ route('admin.services') }}">Services</a>
-<a href="{{ route('admin.solutions') }}">Solutions</a>
-<a href="{{ route('admin.turboToken') }}">Turbo Token</a>
-<a href="{{ route('admin.partners') }}">Partners</a>
-<a href="{{ route('admin.newsletter') }}">Newsletters</a>
+<ul id="admin-home">
+	<li>
+		<a href="{{ route('admin.aboutUs') }}">About us</a>
+	</li>
+	<li>
+		<a href="{{ route('admin.missionVision') }}">Mission and Vision</a>
+	</li>
+	<li>
+		<a href="{{ route('admin.team') }}">Team</a>
+	</li>
+	<li>
+		<a href="{{ route('admin.services') }}">Services</a>
+	</li>
+	<li>
+		<a href="{{ route('admin.solutions') }}">Solutions</a>
+	</li>
+	<li>
+		<a href="{{ route('admin.turboToken') }}">Turbo Token</a>
+	</li>
+	<li>
+		<a href="{{ route('admin.partners') }}">Partners</a>
+	</li>
+	<li>
+		<a href="{{ route('admin.newsletter') }}">Newsletters</a>
+	</li>
+</ul>
 @endsection
