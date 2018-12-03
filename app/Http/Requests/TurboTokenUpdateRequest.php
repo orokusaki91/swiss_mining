@@ -24,11 +24,6 @@ class TurboTokenUpdateRequest extends FormRequest
     public function rules()
     {
         return [
-            'header_de' => 'required|min:3',
-            'header_fr' => 'required|min:3',
-            'header_en' => 'required|min:3',
-            'header_it' => 'required|min:3',
-            'header_es' => 'required|min:3',
             'body_en'   => 'required|min:3',
             'body_de'   => 'required|min:3',
             'body_fr'   => 'required|min:3',
