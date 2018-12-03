@@ -6,16 +6,18 @@
 <hr>
 
 @include('admin.flash')
+<div class="mb-3">
     <a href="{{ route('admin.partners.create') }}" class="btn btn-success">Create New Partner</a>
-        @if($partners->count())
-            @foreach ($partners as $partner)
-            <ul>
-                <li>
-                    <a href="{{ route('admin.partners.edit', $partner->id) }}">{{ $partner->name }}</a>
-                </li>
-            </ul>
-            @endforeach
-        @else
-            <p>No partners</p>
-        @endif
+</div>
+	@if($partners->count())
+		<ol>
+			@foreach ($partners as $partner)
+				<li>
+					<a href="{{ route('admin.partners.edit', $partner->id) }}">{{ $partner->name }}</a>
+				</li>
+			@endforeach
+		</ol>
+	@else
+		<p>No partners</p>
+	@endif
 @endsection
