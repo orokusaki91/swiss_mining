@@ -14,18 +14,18 @@ $(document).ready(function () {
 $(document).ready(function () {
 	setTimeout(function () {
 		$("#loader").hide();
-	}, 2500);
+	}, 2000);
 });
 
 $(window).scroll(function () {
 	if ($(window).scrollTop() >= 62) {
 		$(".logo").css({
-			'width': "60%"
+			'width': "90%"
 		});
 		$("#header").addClass("active");
 	} else {
 		$(".logo").css({
-			'width': "50%"
+			'width': "70%"
 		});
 		$("#header").removeClass("active");
 	}

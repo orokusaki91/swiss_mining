@@ -635,7 +635,7 @@ svg {
 			display: block;
 
 			.logo {
-				width: 50%;
+				width: 70%;
 				transition: $transition;
 			}
 		}
@@ -2214,7 +2214,7 @@ footer {
 			.solutions {
 				background-image: url('../img/services/solutions-mobile.jpg');
 				background-attachment: fixed;
-				background-size: 200% 100%;
+				background-size: 250% 100%;
 			}
 
 			.token {
@@ -2253,7 +2253,126 @@ footer {
 @media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
 
 	#loader {
-		background-size: 50%;
+		background-size: 40%;
+	}
+
+	#mySidenav {
+		.navbar-logo {
+			img {
+				height: 9vh;
+				width: 25vw;
+			}
+		}
+
+		&.active {
+			-webkit-animation: .4s linear activeWidth forwards;
+			animation: .4s linear activeWidth forwards;
+
+			@keyframes activeWidth {
+				0% {
+					width: 0;
+				}
+
+				10% {
+					width: 06vw;
+				}
+
+				20% {
+					width: 12vw;
+				}
+
+				30% {
+					width: 18vw;
+				}
+
+				40% {
+					width: 24vw;
+				}
+
+				50% {
+					width: 30vw;
+				}
+
+				60% {
+					width: 36vw;
+				}
+
+				70% {
+					width: 42vw;
+				}
+
+				80% {
+					width: 48vw;
+				}
+
+				90% {
+					width: 54vw;
+				}
+
+				100% {
+					width: 60vw;
+				}
+			}
+		}
+
+		&.no-active {
+			-webkit-animation: .4s linear no-activeWidth forwards;
+			animation: .4s linear no-activeWidth forwards;
+
+			@keyframes no-activeWidth {
+				0% {
+					width: 60vw;
+				}
+
+				10% {
+					width: 54vw;
+				}
+
+				20% {
+					width: 48vw;
+				}
+
+				30% {
+					width: 42vw;
+				}
+
+				40% {
+					width: 36vw;
+				}
+
+				50% {
+					width: 30vw;
+				}
+
+				60% {
+					width: 24vw;
+				}
+
+				70% {
+					width: 18vw;
+				}
+
+				80% {
+					width: 12vw;
+				}
+
+				90% {
+					width: 06vw;
+				}
+
+				90% {
+					width: 01vw;
+				}
+
+				100% {
+					width: 0;
+				}
+			}
+		}
+	}
+
+	#close-nav {
+		top: 11vh;
 	}
 
 	#top-menu {
@@ -2261,22 +2380,33 @@ footer {
 	}
 
 	#home {
+		#particles-home {
+			height: 89vh;
+			margin-top: 11vh;
+		}
+
+		.home-background {
+			height: 89vh;
+			top: 11vh;
+		}
+
+		.home-logo {
+			height: 89vh;
+			top: 11vh;
+		}
+
 		#social-bar {
 			top: 15vh;
 		}
 	}
 
-	#mySidenav {
-		.navbar-logo {
-			img {
-				height: 10vh;
-				width: 30vw;
+	#about-us {
+		#roadmap {
+			.roadmap {
+				height: 100vh;
+				min-height: auto;
 			}
 		}
-	}
-
-	#close-nav {
-		top: 11vh;
 	}
 }
 
@@ -2290,7 +2420,173 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
+	#loader {
+		background-size: 50%;
+	}
+
+	#top-menu {
+		height: 8vh;
+	}
+
+	#mySidenav {
+		.navbar-logo {
+			img {
+				height: 7vh;
+				width: 40vw;
+			}
+		}
+
+		&.active {
+			-webkit-animation: .4s linear activeWidth forwards;
+			animation: .4s linear activeWidth forwards;
+
+			@keyframes activeWidth {
+				0% {
+					width: 0;
+				}
+
+				10% {
+					width: 06vw;
+				}
+
+				20% {
+					width: 12vw;
+				}
+
+				30% {
+					width: 18vw;
+				}
+
+				40% {
+					width: 24vw;
+				}
+
+				50% {
+					width: 30vw;
+				}
+
+				60% {
+					width: 36vw;
+				}
+
+				70% {
+					width: 42vw;
+				}
+
+				80% {
+					width: 48vw;
+				}
+
+				90% {
+					width: 54vw;
+				}
+
+				100% {
+					width: 60vw;
+				}
+			}
+		}
+
+		&.no-active {
+			-webkit-animation: .4s linear no-activeWidth forwards;
+			animation: .4s linear no-activeWidth forwards;
+
+			@keyframes no-activeWidth {
+				0% {
+					width: 60vw;
+				}
+
+				10% {
+					width: 54vw;
+				}
+
+				20% {
+					width: 48vw;
+				}
+
+				30% {
+					width: 42vw;
+				}
+
+				40% {
+					width: 36vw;
+				}
+
+				50% {
+					width: 30vw;
+				}
+
+				60% {
+					width: 24vw;
+				}
+
+				70% {
+					width: 18vw;
+				}
+
+				80% {
+					width: 12vw;
+				}
+
+				90% {
+					width: 06vw;
+				}
+
+				90% {
+					width: 01vw;
+				}
+
+				100% {
+					width: 0;
+				}
+			}
+		}
+	}
+
+
+	#close-nav {
+		top: 9vh;
+		height: 91vh;
+	}
+
+	#home {
+		height: 100vh;
+
+		#particles-home {
+			margin-top: 9vh;
+			height: 91vh;
+			z-index: 1;
+		}
+
+		.home-background {
+			position: relative;
+			height: 91vh;
+			top: 9vh;
+		}
+
+		.home-logo {
+			height: 91vh;
+			top: 9vh;
+			z-index: 1;
+		}
+
+		#social-bar {
+			top: 15vh;
+		}
+	}
+
 	#about-us {
+		#roadmap {
+			.roadmap {
+				height: 50vh;
+				min-height: auto;
+
+				img {
+					width: 100%;
+				}
+			}
+		}
+
 		#team {
 			.team {
 				.wrapper {
@@ -2300,6 +2596,39 @@ footer {
 						.description {
 							text-align: left;
 						}
+					}
+				}
+			}
+		}
+	}
+
+	#services {
+
+		.bitcoin {
+			width: 10%;
+		}
+
+		.solutions,
+		.token {
+
+			.solutions-div,
+			.token-div {
+				height: 60vh;
+				min-height: auto;
+
+				.info {
+					top: 20%;
+					font-size: 14px;
+				}
+
+				.services-button {
+					img {
+						min-width: 200px;
+					}
+
+					#btn-solutions,
+					#btn-token {
+						margin-right: 0;
 					}
 				}
 			}
@@ -2315,7 +2644,81 @@ footer {
 	@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) start
 ----------------------------*/
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {}
+@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+
+	#loader {
+		background-size: 35%;
+	}
+
+	#top-menu {
+		height: 12vh;
+	}
+
+	#mySidenav {
+		.navbar-logo {
+			img {
+				height: 11vh;
+				width: 30vw;
+			}
+		}
+	}
+
+
+	#close-nav {
+		top: 13vh;
+		height: 87vh;
+	}
+
+	#home {
+		#particles-home {
+			margin-top: 13vh;
+			height: 87vh;
+			z-index: 1;
+		}
+
+		.home-background {
+			position: relative;
+			height: 87vh;
+			top: 13vh;
+		}
+
+		.home-logo {
+			height: 87vh;
+			top: 13vh;
+			z-index: 1;
+		}
+
+		#social-bar {
+			top: 20vh;
+		}
+	}
+
+	#about-us {
+		#roadmap {
+			.roadmap {
+				height: 70vh;
+				min-height: auto;
+			}
+		}
+	}
+
+	#services {
+
+		.solutions,
+		.token {
+
+			.solutions-div,
+			.token-div {
+				height: 150vh;
+				min-height: auto;
+
+				.info {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
 
 /*----------------------------
 	@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) end
@@ -2325,7 +2728,22 @@ footer {
 	@media only screen and (min-width: 1024px) and (max-width: 1365px) start
 ----------------------------*/
 
-@media only screen and (min-width: 1024px) and (max-width: 1365px) {}
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+
+	#loader {
+		background-size: 33%;
+	}
+
+	#header {
+		#nav-bar {
+			.nav-item {
+				.nav-link {
+					padding: 20px 10px;
+				}
+			}
+		}
+	}
+}
 
 /*----------------------------
 	@media only screen and (min-width: 1024px) and (max-width: 1365px) end
