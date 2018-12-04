@@ -26,4 +26,10 @@
 	<li>
 		<a {{ Request::segment(2) == 'newsletter' ? "class=active" : '' }} href="{{ route('admin.newsletter') }}">Newsletters</a>
 	</li>
+	<li>
+		<a {{ Request::segment(2) == 'change-password' ? "class=active" : '' }} href="{{ route('admin.changePass') }}">Change password</a>
+	</li>
+	<li>
+		<a href="{{ route('logout') }}">Logout</a>
+	</li>
 </ul>

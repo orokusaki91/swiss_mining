@@ -88,9 +88,13 @@ Route::namespace('Admin')
         Route::get('/partners-edit/{partner}', 'PartnersController@edit')->name('admin.partners.edit');
         Route::post('/partners-update/{partner}', 'PartnersController@update')->name('admin.partners.update');
         Route::post('/partners-delete/{partner}', 'PartnersController@destroy')->name('admin.partners.destroy');
+
+        // Change password
+        Route::get('/change-password', 'Auth\ChangePasswordController@index')->name('admin.changePass');
+        Route::post('/change-password', 'Auth\ChangePasswordController@update')->name('admin.changePass.update');
         
         // Logout
-        Route::post('logout', 'LoginController@logout')->name('logout');
+        Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 
     });
     
