@@ -6,11 +6,11 @@
 <hr>
 
 @include('admin.flash')
-    <ul>
+    <ol>
         @foreach ($all as $item)
             <li>
                 <a href="{{ route('admin.missionVision.show', $item->id) }}">{{ $item->name }}</a>
             </li>
         @endforeach
-    </ul>
+    </ol>
 @endsection
