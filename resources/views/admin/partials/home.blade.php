@@ -31,5 +31,11 @@
 	<li>
 		<a href="{{ route('admin.newsletter') }}">Newsletters</a>
 	</li>
+	<li>
+		<a href="{{ route('admin.changePass') }}">Change Password</a>
+	</li>
+	<li>
+		<a href="{{ route('logout') }}">Logout</a>
+	</li>
 </ul>
 @endsection
