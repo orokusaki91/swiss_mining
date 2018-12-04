@@ -62,16 +62,16 @@
             });
 
             @if(Session::has('success'))
-            swal(
-                'Erledigt!',
-                '{{ Session::get('success') }}',
-                'success'
+                swal(
+                    'Erledigt!',
+                    '{{ Session::get('success') }}',
+                    'success'
                 );
             @elseif(Session::has('error'))
-            swal(
-                'Fehler!',
-                '{{ Session::get('error') }}',
-                'error'
+                swal(
+                    'Fehler!',
+                    '{{ Session::get('error') }}',
+                    'error'
                 );
             @endif
         });

@@ -11,39 +11,44 @@
                     <div class="col-md-6">
                         <div class="info">
                             <p class="key">Name:</p>
-                            <p class="value">Lorem Ipsum</p>
+                            <p class="value"></p>
                         </div>
                         <div class="info">
                             <p class="key">Adresse:</p>
-                            <p class="value">Lorem Ipsum</p>
+                            <p class="value"></p>
                         </div>
                         <div class="info">
                             <p class="key">Email:</p>
-                            <p class="value">Lorem Ipsum</p>
+                            <p class="value"></p>
                         </div>
                         <div class="info">
                             <p class="key">Telefon:</p>
-                            <p class="value">Lorem Ipsum</p>
+                            <p class="value"></p>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <form>
+                        <form id="contactForm">
                             <div class="form-group">
                                 <label>{{ __('translate.your-name') }} <span>*</span></label>
-                                <input type="text" class="form-control" />
+                                <input type="text" class="form-control" name="name" />
+                                <span></span>
                             </div>
                             <div class="form-group">
                                 <label>{{ __('translate.your-email') }} <span>*</span></label>
-                                <input type="email" class="form-control" />
+                                <input type="email" class="form-control" name="email" />
+                                <span></span>
                             </div>
                             <div class="form-group">
                                 <label>{{ __('translate.subject') }} </label>
-                                <input type="text" class="form-control" />
+                                <input type="text" class="form-control" name="subject" />
+                                <span></span>
                             </div>
                             <div class="form-group">
                                 <label>{{ __('translate.your-message') }}</label>
-                                <textarea class="form-control" rows="5"></textarea>
+                                <textarea class="form-control" rows="5" name="message"></textarea>
+                                <span></span>
                             </div>
+                            {!! csrf_field() !!}
                             <button type="submit" class="btn">{{ __('translate.submit') }}</button>
                         </form>
                     </div>

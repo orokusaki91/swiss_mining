@@ -16,7 +16,7 @@
 		<input type="text" name="name" value="{{ $teamMember->name }}"/>
 
 		<label for="about">About Member</label>
-		<textarea name="about" cols="30" rows="10">{{ $teamMember->about }}</textarea>
+		<textarea class="mb-3" name="about" cols="30" rows="10">{{ $teamMember->about }}</textarea>
 
 		<label for="linkedin">LinkedIn</label>
 		<p class="text-muted">Example: "https://www.linkedin.com/specific-url-of-profile/"</p>
