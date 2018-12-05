@@ -131,7 +131,7 @@
 										</div>
 										<div class="col-md-6 col-lg-8">
 											<p class="description">
-												{{ $member->about }}
+												{!! $member->about !!}
 											</p>
 										</div>
 									</div>

@@ -41,3 +41,7 @@
 	</li>
 </ul>
 @endsection
+
+@section('scripts')
+	<script type="text/javascript" src="{{ asset('js/all.min.js') }}"></script>
+@endsection

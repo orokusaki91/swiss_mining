@@ -33,3 +33,7 @@
     @include('admin.errors')
 </form>
 @endsection
+
+@section('scripts')
+    @include('admin.scripts')
+@endsection

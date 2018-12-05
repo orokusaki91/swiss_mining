@@ -4,7 +4,7 @@
 
 @include('admin.flash')
 
-<div style="height: 80px; width:80px;">
+<div style="height: 80px; width:80px; margin-bottom:40px;">
     <img src="{{ asset($teamMember->image) }}">
 </div>
 
@@ -16,7 +16,7 @@
 		<input type="text" name="name" value="{{ $teamMember->name }}"/>
 
 		<label for="about">About Member</label>
-		<textarea class="mb-3" name="about" cols="30" rows="10">{{ $teamMember->about }}</textarea>
+		<textarea class="mb-3" name="about" cols="30" rows="10">{!! $teamMember->about !!}</textarea>
 
 		<label for="linkedin">LinkedIn</label>
 		<p class="text-muted">Example: "https://www.linkedin.com/specific-url-of-profile/"</p>
@@ -34,4 +34,8 @@
 </form>
 
 
+@endsection
+
+@section('scripts')
+    @include('admin.scripts')
 @endsection
