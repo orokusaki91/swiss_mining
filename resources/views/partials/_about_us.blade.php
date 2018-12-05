@@ -1,6 +1,6 @@
 <!-- About us start -->
 <div id="about-us">
-    <h2 class="wow slideInLeft">{{ __('translate.about-us') }}</h2>
+    <h2 class="wow slideInLeft">{!! __('translate.about-us') !!}</h2>
     <div class="about-us">
         <div class="container">
             <div class="about-us-div">
