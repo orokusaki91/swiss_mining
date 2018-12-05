@@ -16,32 +16,32 @@
 				<span class="flag-icon flag-icon-{{ config()->get('app.locale') == 'en' ? 'gb' : config()->get('app.locale') }}"></span>
 			</a>
 			<ul id="mobile-language-dropdown" class="dropdown collapse">
-				<li class="nav-item {{ config()->get('app.locale') == 'de' ? 'active' : '' }}">
-					<a href="{{ config()->get('app.locale') == 'de' ? 'javascript:void(0)' : route('change-lang', 'de') }}" class="nav-link">
+				<li class="nav-item {{ giveActiveClass('de') }}">
+					<a href="{{ disableHrefIfActive('de') }}" class="nav-link">
 						De
 						<span class="flag-icon flag-icon-de"></span>
 					</a>
 				</li>
-				<li class="nav-item {{ config()->get('app.locale') == 'en' ? 'active' : '' }}">
-					<a href="{{ config()->get('app.locale') == 'en' ? 'javascript:void(0)' : route('change-lang', 'en') }}" class="nav-link">
+				<li class="nav-item {{ giveActiveClass('en') }}">
+					<a href="{{ disableHrefIfActive('en') }}" class="nav-link">
 						En
 						<span class="flag-icon flag-icon-gb"></span>
 					</a>
 				</li>
-				<li class="nav-item {{ config()->get('app.locale') == 'it' ? 'active' : '' }}">
-					<a href="{{ config()->get('app.locale') == 'it' ? 'javascript:void(0)' : route('change-lang', 'it') }}" class="nav-link">
+				<li class="nav-item {{ giveActiveClass('it') }}">
+					<a href="{{ disableHrefIfActive('it') }}" class="nav-link">
 						It
 						<span class="flag-icon flag-icon-it"></span>
 					</a>
 				</li>
-				<li class="nav-item {{ config()->get('app.locale') == 'fr' ? 'active' : '' }}">
-					<a href="{{ config()->get('app.locale') == 'fr' ? 'javascript:void(0)' : route('change-lang', 'fr') }}" class="nav-link">
+				<li class="nav-item {{ giveActiveClass('fr') }}">
+					<a href="{{ disableHrefIfActive('fr') }}" class="nav-link">
 						Fr
 						<span class="flag-icon flag-icon-fr"></span>
 					</a>
 				</li>
-				<li class="nav-item {{ config()->get('app.locale') == 'es' ? 'active' : '' }}">
-					<a href="{{ config()->get('app.locale') == 'es' ? 'javascript:void(0)' : route('change-lang', 'es') }}" class="nav-link">
+				<li class="nav-item {{ giveActiveClass('es') }}">
+					<a href="{{ disableHrefIfActive('es') }}" class="nav-link">
 						Es
 						<span class="flag-icon flag-icon-es"></span>
 					</a>
@@ -173,32 +173,32 @@
                                     <i class="fas fa-angle-down"></i>
                                 </a>
                                 <ul class="dropdown">
-                                    <li class="nav-item {{ config()->get('app.locale') == 'de' ? 'active' : '' }}">
-                                        <a href="{{ config()->get('app.locale') == 'de' ? 'javascript:void(0)' : route('change-lang', 'de') }}" class="nav-link">
+                                    <li class="nav-item {{ giveActiveClass('de') }}">
+                                        <a href="{{ disableHrefIfActive('de') }}" class="nav-link">
 											De
 											<span class="flag-icon flag-icon-de"></span>
 										</a>
                                     </li>
-                                    <li class="nav-item {{ config()->get('app.locale') == 'en' ? 'active' : '' }}">
-                                        <a href="{{ config()->get('app.locale') == 'en' ? 'javascript:void(0)' : route('change-lang', 'en') }}" class="nav-link">
+                                    <li class="nav-item {{ giveActiveClass('en') }}">
+                                        <a href="{{ disableHrefIfActive('en') }}" class="nav-link">
 											En
 											<span class="flag-icon flag-icon-gb"></span>
 										</a>                                    
                                     </li>
-                                    <li class="nav-item {{ config()->get('app.locale') == 'it' ? 'active' : '' }}">
-                                        <a href="{{ config()->get('app.locale') == 'it' ? 'javascript:void(0)' : route('change-lang', 'it') }}" class="nav-link">
+                                    <li class="nav-item {{ giveActiveClass('it') }}">
+                                        <a href="{{ disableHrefIfActive('it') }}" class="nav-link">
 											It
 											<span class="flag-icon flag-icon-it"></span>
 										</a>                                        
                                     </li>
-                                    <li class="nav-item {{ config()->get('app.locale') == 'fr' ? 'active' : '' }}">
-                                        <a href="{{ config()->get('app.locale') == 'fr' ? 'javascript:void(0)' : route('change-lang', 'fr') }}" class="nav-link">
+                                    <li class="nav-item {{ giveActiveClass('fr') }}">
+                                        <a href="{{ disableHrefIfActive('fr') }}" class="nav-link">
 											Fr
 											<span class="flag-icon flag-icon-fr"></span>
 										</a>                                        
                                     </li>
-                                    <li class="nav-item {{ config()->get('app.locale') == 'es' ? 'active' : '' }}">
-                                        <a href="{{ config()->get('app.locale') == 'es' ? 'javascript:void(0)' : route('change-lang', 'es') }}" class="nav-link">
+                                    <li class="nav-item {{ giveActiveClass('es') }}">
+                                        <a href="{{ disableHrefIfActive('es') }}" class="nav-link">
 											Es
 											<span class="flag-icon flag-icon-es"></span>
 										</a>                                        
