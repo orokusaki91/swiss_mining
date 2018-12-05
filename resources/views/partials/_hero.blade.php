@@ -79,7 +79,7 @@
                     </button>
                 </li>
                 <li id="dropdown-about-us" class="nav-item collapse">
-                    <a href="#mission-vision" class="nav-link">{{ __('translate.mission-vision') }}</a>
+                    <a href="#mission-vision" class="nav-link">{!! __('translate.mission-vision') !!}</a>
                     <a href="#roadmap" class="nav-link">{{ __('translate.roadmap') }}</a>
                     <a href="#team" class="nav-link">{{ __('translate.team') }}</a>
                 </li>
@@ -137,7 +137,7 @@
                                 <a class="nav-link" href="#about-us">{{ __('translate.about-us') }}</a>
                                 <ul class="dropdown">
                                     <li class="nav-item">
-                                        <a href="#mission-vision" class="nav-link">{{ __('translate.mission-vision') }}</a>
+                                        <a href="#mission-vision" class="nav-link">{!! __('translate.mission-vision') !!}</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="#roadmap" class="nav-link">{{ __('translate.roadmap') }}</a>

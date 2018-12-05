@@ -13,7 +13,7 @@
     </div>
     <!-- Mission - Vision start -->
     <div id="mission-vision">
-        <h3 class="wow slideInLeft">{{ __('translate.mission-vision') }}</h3>
+        <h3 class="wow slideInLeft">{!! __('translate.mission-vision') !!}</h3>
         <div class="mission-vision-div d-none d-md-block">
             <div class="container p-0">
                 <div class="mission-vision">
@@ -77,7 +77,7 @@
             <!-- Particles-roadmap start -->
             <div id="particles-roadmap" class="particles"></div>
             <!-- Particles-roadmap end -->
-            <img class="roadmap-image" src="{{ asset('img/roadmap/{$language}/roadmap.png') }}" alt="img/roadmap/roadmap.png" />
+            <img class="roadmap-image" src="{{ asset('img/roadmap/'.$language.'/roadmap.png') }}" alt="img/roadmap/roadmap.png" />
         </div>
     </div>
     <!-- Roadmap end -->
