@@ -3,13 +3,13 @@
 return [
 
     'home' => 'Home',
-    'about-us' => 'About Us',
-    'mission-vision' => 'Mission <span class="divider">-</span> Vision',
+    'about-us' => 'About<span class="divider">Us</span>',
+    'mission-vision' => 'Mission<span class="divider-block-minus">-</span>Vision',
     'roadmap' => 'Roadmap',
     'team' => 'Team',
     'services' => 'Services',
-    'swissmining-solutions' => 'Swissmining Solutions',
-    'swiss-turbo-token' => 'Swiss Turbo Token',
+    'swissmining-solutions' => 'Swissmining<span class="divider-block">Solutions</span>',
+    'swiss-turbo-token' => 'Swiss<span class="divider">Turbo</span><span class="divider-block">Token</span>',
     'partners' => 'Partners',
     'read-more' => 'Read more',
 

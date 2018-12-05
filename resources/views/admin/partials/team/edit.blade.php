@@ -4,11 +4,11 @@
 
 @include('admin.flash')
 
-<div style="height: 80px; width:80px; margin-bottom:40px;">
+<div class="profile-img">
     <img src="{{ asset($teamMember->image) }}">
 </div>
 
-
+<div>
 <form class="admin-form" action="{{ route('admin.team.update', $teamMember->id) }}" method="POST" enctype="multipart/form-data">
     @csrf
 	<div class="admin-edit">
@@ -31,6 +31,7 @@
 
     @include('admin.errors')
 </form>
+</div>
 
 <form method="POST" action="{{ route('admin.team.destroy', $teamMember->id) }}">
         @csrf
