@@ -20,7 +20,7 @@
 		<input type="file" name="image"/>
 	</div>
 
-    <input class="btn-submit" type="submit" value="Create New Team Member" />
+    <input class="btn-submit" type="submit" value="Save" />
 
     @include('admin.errors')
 </form>

@@ -17,7 +17,7 @@
 		<input type="url" name="website" value="{{ old('website') ? old('website') : ''}}"/>
 	</div>
 
-    <input class="btn-submit" type="submit" value="Create New User" />
+    <input class="btn-submit" type="submit" value="Save" />
 
     @include('admin.errors')
 </form>
