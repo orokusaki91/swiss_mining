@@ -120,14 +120,14 @@
         <!-- Navbar start -->
         <div id="navbar">
             <div class="row align-items-md-center">
-                <div class="col-lg-3">
+                <div class="col-lg-2">
                     <div id="logo">
                         <a href="#home">
                             <img src="{{ asset('img/logo/swiss-mining.png') }}" class="logo" alt="img/logo/swiss-mining.png" />
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-9">
+                <div class="col-lg-10">
                     <nav id="nav-bar" class="navbar float-md-right pr-md-0">
                         <ul id="nav" class="nav nav-pills">
                             <li class="nav-item">

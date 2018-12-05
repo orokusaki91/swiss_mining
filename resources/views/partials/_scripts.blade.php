@@ -2,7 +2,7 @@
 <script type="text/javascript" src="{{ asset('js/popper.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/owl.carousel.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/particles.min.js') }}"></script>
+<!--<script type="text/javascript" src="{{ asset('js/particles.min.js') }}"></script>-->
 <script type="text/javascript" src="{{ asset('js/wow.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/wow.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/all.min.js') }}"></script>
