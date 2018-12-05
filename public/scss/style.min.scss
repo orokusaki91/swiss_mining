@@ -1997,6 +1997,11 @@ footer {
 	h2 {
 		font-size: 20px;
 		margin-bottom: 20px;
+		
+		.divider.esp {
+			display: block;
+			margin: 0;
+		}
 	}
 
 	h3 {
