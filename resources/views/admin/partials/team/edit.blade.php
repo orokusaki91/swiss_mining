@@ -23,7 +23,7 @@
 		<input type="url" name="linkedin" value="{{ $teamMember->linkedin }}"/>
 	</div>
 
-    <input class="btn-submit" type="submit" value="Edit Team Member" />
+    <input class="btn-submit" type="submit" value="Save" />
 
     @include('admin.errors')
 </form>

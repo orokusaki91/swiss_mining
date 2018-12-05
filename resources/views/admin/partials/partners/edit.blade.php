@@ -21,7 +21,7 @@
 		<input type="url" name="website" value="{{ $partner->website }}"/>
 	</div>
 
-    <input class="btn-submit" type="submit" value="Edit Partner" />
+    <input class="btn-submit" type="submit" value="Save" />
 
     @include('admin.errors')
 </form>
