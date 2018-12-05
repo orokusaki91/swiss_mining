@@ -3,8 +3,8 @@
 return [
 
     'home' => 'Home',
-    'about-us' => 'Misión - visión',
-    'mission-vision' => 'Mission - Vision',
+    'about-us' => 'À propos de nous',
+    'mission-vision' => 'La Mission <span class="divider">é</span> La Vision',
     'roadmap' => 'Roadmap',
     'team' => 'Team',
     'services' => 'Services',

@@ -4,7 +4,7 @@ return [
 
     'home' => 'Home',
     'about-us' => 'About Us',
-    'mission-vision' => 'Mission - Vision',
+    'mission-vision' => 'Mission <span class="divider">-</span> Vision',
     'roadmap' => 'Roadmap',
     'team' => 'Team',
     'services' => 'Services',
