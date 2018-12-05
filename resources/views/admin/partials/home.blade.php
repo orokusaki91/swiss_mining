@@ -34,10 +34,12 @@
 </ul>
 <ul id="buttons">
 	<li>
-		<a href="{{ route('admin.changePass') }}"><i class="fas fa-key"></i> Change Password</a>
+		<i class="fas fa-key"></i>
+		<a href="{{ route('admin.changePass') }}">Change Password</a>
 	</li>
 	<li>
-		<a href="{{ route('logout') }}"><i class="fas fa-sign-out-alt"></i> Logout</a>
+		<i class="fas fa-sign-out-alt"></i>
+		<a href="{{ route('logout') }}">Logout</a>
 	</li>
 </ul>
 @endsection

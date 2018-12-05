@@ -1,9 +1,9 @@
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-home', 'json/particles-home.json', function () {});
-
-particlesJS.load('particles-roadmap', 'json/particles-roadmap.json', function () {});
-
-particlesJS.load('particles-contact', 'json/particles-contact.json', function () {});
+//particlesJS.load('particles-home', 'json/particles-home.json', function () {});
+//
+//particlesJS.load('particles-roadmap', 'json/particles-roadmap.json', function () {});
+//
+//particlesJS.load('particles-contact', 'json/particles-contact.json', function () {});
 
 $(document).ready(function () {
 	var height = $("footer").outerHeight();
@@ -20,12 +20,12 @@ $(document).ready(function () {
 $(window).scroll(function () {
 	if ($(window).scrollTop() >= 62) {
 		$(".logo").css({
-			'width': "60%"
+			'width': "100%"
 		});
 		$("#header").addClass("active");
 	} else {
 		$(".logo").css({
-			'width': "50%"
+			'width': "80%"
 		});
 		$("#header").removeClass("active");
 	}
