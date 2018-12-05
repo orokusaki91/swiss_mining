@@ -31,11 +31,13 @@
 	<li>
 		<a href="{{ route('admin.newsletter') }}">Newsletters</a>
 	</li>
+</ul>
+<ul id="buttons">
 	<li>
-		<a href="{{ route('admin.changePass') }}">Change Password</a>
+		<a href="{{ route('admin.changePass') }}"><i class="fas fa-key"></i> Change Password</a>
 	</li>
 	<li>
-		<a href="{{ route('logout') }}">Logout</a>
+		<a href="{{ route('logout') }}"><i class="fas fa-sign-out-alt"></i> Logout</a>
 	</li>
 </ul>
 @endsection

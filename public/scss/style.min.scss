@@ -37,7 +37,6 @@ $bleachedcedar: #1D1726;
 $endeavour: #025EB4;
 $prussianblue: #01325A;
 
-//$gradient: linear-gradient(to right, $victoria 0%, $bleachedcedar 100%);
 $gradient: linear-gradient(to left, #cc0000 0%, #000099 100%);
 $gradient-2: linear-gradient(to right, #808080 0%, $black 100%);
 $gradient-h3: linear-gradient(to right, #000000 0%, #808080 100%);
@@ -217,8 +216,6 @@ svg {
 	top: 1vh;
 	right: 0;
 	left: 0;
-	opacity: 1;
-	visibility: visible;
 	height: 7vh;
 	z-index: 4;
 	box-shadow: 0 0 1px 1px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
@@ -230,11 +227,82 @@ svg {
 		height: 0;
 	}
 
+	#mobile-language {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 75px;
+		height: 100%;
+		text-align: center;
+
+		.btn-language {
+			position: relative;
+			display: block;
+			height: 100%;
+			padding: 0;
+			background-color: transparent;
+			border: none;
+			color: $white;
+
+			.language {
+				position: absolute;
+				top: 50%;
+				left: 25%;
+				transform: translate(-25%, -50%);
+			}
+
+			.flag-icon {
+				position: absolute;
+				top: 50%;
+				right: 25%;
+				transform: translate(25%, -50%);
+				border-radius: 50%;
+				padding: 2px 0;
+				background-size: cover;
+			}
+		}
+
+		#mobile-language-dropdown {
+			background-color: $black;
+			margin: 0;
+			padding: 0;
+			-webkit-box-shadow: 0px 3px 5px -3px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: 0px 3px 5px -3px rgba(0, 0, 0, 0.75);
+			box-shadow: 0px 3px 5px -3px rgba(0, 0, 0, 0.75);
+
+			.nav-item {
+				list-style: none;
+				text-align: left;
+
+				.nav-link {
+					text-transform: uppercase;
+					padding: 10px 0;
+					padding-left: 15%;
+					color: $white;
+					position: relative;
+
+					.flag-icon {
+						position: absolute;
+						top: 45%;
+						right: 15%;
+						transform: translate(-15%, -45%);
+						font-size: 14px;
+						border-radius: 50%;
+						padding: 2px 0;
+						background-size: cover;
+					}
+				}
+			}
+		}
+	}
+
 	#sidenav {
 		position: absolute;
 		right: 5%;
 		top: 55%;
 		transform: translate(5%, -55%);
+		z-index: 5;
 
 		&.hamburger {
 			padding: 0;
@@ -635,7 +703,7 @@ svg {
 			display: block;
 
 			.logo {
-				width: 60%;
+				width: 50%;
 				transition: $transition;
 			}
 		}
@@ -647,10 +715,10 @@ svg {
 		.nav-item {
 			position: relative;
 			list-style: none;
+			margin: 0 3px;
 
 			.nav-link {
-				padding: 20px 15px;
-				margin: 0 5px;
+				padding: 20px 25px;
 				color: $black;
 				font-size: 15px;
 				text-transform: uppercase;
@@ -690,11 +758,12 @@ svg {
 			.dropdown {
 				display: none;
 				padding: 0;
+				margin: 0;
 				text-align: center;
 				background-color: $white-2;
 				position: absolute;
-				right: 5px;
-				left: 5px;
+				right: 0;
+				left: 0;
 				top: 100%;
 				transition: $transition;
 				-webkit-box-shadow: 0px 3px 5px -3px rgba(0, 0, 0, 0.75);
@@ -703,10 +772,12 @@ svg {
 
 				.nav-item {
 					list-style: none;
+					margin: 0;
 
 					.nav-link {
 						display: block;
-						padding: 10px 10px 8px;
+						font-size: 14px;
+						padding: 8px 5px;
 						margin: 0;
 						cursor: pointer;
 
@@ -725,16 +796,6 @@ svg {
 							}
 						}
 					}
-
-					.flag-icon {
-						border-radius: 50%;
-						font-size: 14px;
-						margin-left: 5px;
-						vertical-align: baseline;
-						background-size: cover;
-						padding: 2px 0;
-						position: relative;
-					}
 				}
 			}
 
@@ -750,6 +811,8 @@ svg {
 			margin: 0;
 
 			.nav-item {
+				margin: 0;
+
 				&.active {
 					color: $black;
 					background-color: $red;
@@ -760,7 +823,9 @@ svg {
 				}
 
 				.nav-link {
-					display: inline-block;
+					&.lang {
+						padding: 20px 10px;
+					}
 
 					svg {
 						color: $black;
@@ -769,21 +834,17 @@ svg {
 					}
 
 					.flag-icon {
-						height: 17px;
-						width: 17px;
 						border-radius: 50%;
-						margin: 0 5px;
-						vertical-align: text-bottom;
+						font-size: 15px;
+						margin-right: 3px;
 						background-size: cover;
-						position: relative;
+						padding: 2px 0;
 					}
 				}
 			}
 
 			&:hover {
-				.nav-link.lang {
-					color: $black;
-
+				.nav-link {
 					svg {
 						color: $black;
 						transform: rotate(180deg);
@@ -793,8 +854,19 @@ svg {
 			}
 
 			.dropdown {
-				a {
-					width: 40%;
+				.nav-link {
+					text-align: left;
+					padding-left: 20px;
+					display: block;
+
+					.flag-icon {
+						font-size: 14px;
+						position: absolute;
+						top: 60%;
+						left: 70%;
+						transform: translate(-60%, -70%);
+						margin: 0;
+					}
 				}
 			}
 		}
@@ -811,6 +883,7 @@ svg {
 
 #home {
 	.home-background {
+		min-height: 500px;
 		width: 100%;
 		height: 100vh;
 		background-position: center;
@@ -818,32 +891,8 @@ svg {
 		background-size: cover;
 	}
 
-	//	h1 {
-	//		margin-bottom: 0;
-	//
-	//		span {
-	//			display: block;
-	//		}
-	//	}
-
-	//	.owl-carousel {
-	//		position: absolute;
-	//		height: 100%;
-	//		color: $white;
-	//
-	//		.owl-stage-outer {
-	//			position: absolute;
-	//			top: 50%;
-	//			left: 0;
-	//			right: 0;
-	//			transform: translate(0, -50%);
-	//
-	//			.item {
-	//				text-align: center;
-	//			}
-	//		}
-	//	}
 	.home-logo {
+		min-height: 500px;
 		position: absolute;
 		left: 0;
 		top: 0;
@@ -956,61 +1005,12 @@ svg {
 		}
 	}
 
-	//	.owl-carousel {
-	//		margin-top: 50px;
-	//
-	//		.item {
-	//			img {
-	//				height: 220px;
-	//			}
-	//		}
-	//
-	//		.owl-nav {
-	//			button {
-	//				font-size: 60px;
-	//				margin: 0;
-	//				padding: 0 8px !important;
-	//				transition: $transition;
-	//				color: $victoria;
-	//
-	//				&:hover {
-	//					background-color: transparent;
-	//				}
-	//			}
-	//		}
-	//
-	//		.owl-dots {
-	//			button {
-	//				zoom: 1.3;
-	//
-	//				&.active,
-	//				&:hover {
-	//					span {
-	//						background-image: $gradient;
-	//					}
-	//				}
-	//			}
-	//		}
-	//	}
-
 	#mission-vision {
 		padding-top: 75px;
 
 		.mission-vision-div {
 			color: $white;
 			position: relative;
-
-			//			&::before {
-			//				content: ' ';
-			//				position: absolute;
-			//				left: 0;
-			//				top: 0;
-			//				width: 100%;
-			//				height: 100%;
-			//				background: url('../img/content3.jpg') center no-repeat;
-			//				background-size: cover;
-			//				z-index: -1;
-			//			}
 
 			.mission-vision {
 				.item {
@@ -1069,7 +1069,7 @@ svg {
 							left: 50%;
 							top: 0;
 							transform: translate(-50%, 0);
-							transition: all .5s ease;
+							visibility: hidden;
 							opacity: 0;
 						}
 					}
@@ -1112,14 +1112,15 @@ svg {
 								opacity: 0;
 							}
 
-
 							.visible {
+								visibility: visible;
 								opacity: 1;
 							}
 
 							.glow {
-								-webkit-animation: 2s animation infinite;
-								animation: 2s animation infinite;
+								-webkit-animation: 1.5s animation infinite;
+								animation: 1.5s animation infinite;
+								visibility: visible;
 
 								@keyframes animation {
 									0 {
@@ -1178,105 +1179,6 @@ svg {
 						}
 					}
 				}
-
-				//			.icon {
-				//				img {
-				//					width: 150px;
-				//					padding: 20% 0;
-				//				}
-				//
-				//				&::before {
-				//					content: ' ';
-				//					position: absolute;
-				//					top: 0;
-				//					left: 0;
-				//					width: 200px;
-				//					height: 200px;
-				//					background: url('../img/mission-vision/bg_item1.png') center no-repeat;
-				//					background-size: cover;
-				//					border-radius: 50%;
-				//				}
-				//
-				//				&::after {
-				//					content: ' ';
-				//					position: absolute;
-				//					top: 0;
-				//					left: 0;
-				//					width: 200px;
-				//					height: 200px;
-				//					background: url('../img/mission-vision/bg_item2.png') center no-repeat;
-				//					background-size: cover;
-				//					opacity: 0;
-				//					border-radius: 50%;
-				//					-webkit-animation: 2s animation infinite;
-				//					animation: 2s animation infinite;
-				//
-				//					@keyframes animation {
-				//						0 {
-				//							opacity: 0;
-				//						}
-				//
-				//						10% {
-				//							opacity: .2;
-				//						}
-				//
-				//						20% {
-				//							opacity: .4;
-				//						}
-				//
-				//						30% {
-				//							opacity: .6;
-				//						}
-				//
-				//						40% {
-				//							opacity: .8;
-				//						}
-				//
-				//						50% {
-				//							opacity: 1;
-				//						}
-				//
-				//						60% {
-				//							opacity: .8;
-				//						}
-				//
-				//						70% {
-				//							opacity: .6;
-				//						}
-				//
-				//						80% {
-				//							opacity: .4;
-				//						}
-				//
-				//						90% {
-				//							opacity: .2;
-				//						}
-				//
-				//						100% {
-				//							opacity: 0;
-				//						}
-				//					}
-				//				}
-				//
-				//				//					&:hover {
-				//				//						&::after {
-				//				//
-				//				//						}
-				//				//					}
-				//			}
-				//
-				//			.info {
-				//				color: $white;
-				//
-				//				h1 {
-				//					font-weight: normal;
-				//					line-height: 100%;
-				//				}
-				//
-				//				p {
-				//					font-size: 30px;
-				//				}
-				//			}
 			}
 		}
 	}
@@ -1291,50 +1193,6 @@ svg {
 			background-size: 100% 100%;
 			height: 80vh;
 			min-height: 600px;
-
-			//			&::before {
-			//				content: ' ';
-			//				position: absolute;
-			//				left: 0;
-			//				top: 0;
-			//				width: 100%;
-			//				height: 100%;
-			//				background: url('../img/background/swiss/333.jpg') center no-repeat;
-			//				background-size: cover;
-			//			}
-			//
-			//			&::after {
-			//				content: ' ';
-			//				position: absolute;
-			//				left: 0;
-			//				top: 0;
-			//				width: 100%;
-			//				height: 100%;
-			//				background-image: $gradient-2;
-			//				z-index: -1;
-			//			}
-
-			//			&::before {
-			//				content: ' ';
-			//				position: absolute;
-			//				left: 0;
-			//				top: 0;
-			//				width: 100%;
-			//				height: 100%;
-			//				background: url('../img/bg_item3.png') center;
-			//				background-size: 200px;
-			//			}
-			//
-			//			&::after {
-			//				content: ' ';
-			//				position: absolute;
-			//				left: 0;
-			//				top: 0;
-			//				width: 100%;
-			//				height: 100%;
-			//				background-image: $gradient-2;
-			//				z-index: -1;
-			//			}
 
 			.roadmap-image {
 				position: absolute;
@@ -1371,35 +1229,13 @@ svg {
 			background: url('../img/team/background.jpg') center;
 			background-attachment: fixed;
 
-			//			&::before {
-			//				content: ' ';
-			//				position: absolute;
-			//				left: 0;
-			//				top: 0;
-			//				width: 100%;
-			//				height: 100%;
-			//				background: url('../img/bg_item3.png') center;
-			//				background-color: rgba(0, 0, 0, .6);
-			//				background-size: 200px;
-			//			}
-			//
-			//			&::after {
-			//				content: ' ';
-			//				position: absolute;
-			//				left: 0;
-			//				top: 0;
-			//				width: 100%;
-			//				height: 100%;
-			//				background: linear-gradient(0deg, rgba(237, 28, 36, .75) 0, rgba(237, 28, 36, .75) 3%, rgba(237, 28, 36, 0) 100%);
-			//				z-index: -1;
-			//			}
-
 			.wrapper {
 				padding: 150px 0 120px;
 			}
 
 			.box {
 				padding: 5%;
+				height: 100%;
 				border-radius: 3px;
 				background-color: rgba(0, 0, 0, .5);
 				margin-bottom: 5%;
@@ -1528,7 +1364,8 @@ svg {
 		.services-button {
 			position: absolute;
 			right: 0;
-			bottom: 13%;
+			bottom: 11%;
+			transform: traslate(0, -11%);
 			width: 60%;
 
 			#btn-solutions,
@@ -1814,6 +1651,11 @@ footer {
 	left: 0;
 	width: 20vw;
 	padding: 15px;
+	
+	h5 {
+		color: $white;
+		letter-spacing: 1px;
+	}
 
 	#admin-nav {
 		margin: 0;
@@ -1872,6 +1714,12 @@ footer {
 				font-size: 14px;
 			}
 		}
+
+		.divider {
+			height: 2px;
+			background-color: $gray-2;
+			border-radius: 3px;
+		}
 	}
 }
 
@@ -1921,6 +1769,20 @@ footer {
 
 			&:nth-child(4n) {
 				margin-right: 0;
+			}
+		}
+	}
+
+	#buttons {
+		margin: 0;
+		padding: 0;
+
+		li {
+			list-style: none;
+
+			a {
+				color: $black;
+				font-size: 16px;
 			}
 		}
 	}
@@ -2107,12 +1969,14 @@ footer {
 		}
 
 		.home-background {
+			min-height: auto;
 			position: relative;
 			top: 8vh;
 			height: 92vh;
 		}
 
 		.home-logo {
+			min-height: auto;
 			top: 8vh;
 			height: 92vh;
 			z-index: 1;
@@ -2146,7 +2010,7 @@ footer {
 
 	#about-us {
 		.about-us {
-			background-size: 150% 100%;
+			background-size: 200% 100%;
 			background-position: left center;
 
 			.about-us-div {
@@ -2189,10 +2053,12 @@ footer {
 								}
 
 								.visible {
+									visibility: visible;
 									opacity: 1;
 								}
 
 								.glow {
+									visibility: visible;
 									-webkit-animation: 2s animation infinite;
 									animation: 2s animation infinite;
 								}
@@ -2248,6 +2114,8 @@ footer {
 					padding: 8vh 0 6vh;
 
 					.box {
+						height: auto;
+
 						.item {
 							width: 50%;
 							margin: 0 auto;
@@ -2661,12 +2529,14 @@ footer {
 		}
 
 		.home-background {
+			min-height: auto;
 			position: relative;
 			height: 91vh;
 			top: 9vh;
 		}
 
 		.home-logo {
+			min-height: auto;
 			height: 91vh;
 			top: 9vh;
 			z-index: 1;
@@ -2678,6 +2548,22 @@ footer {
 	}
 
 	#about-us {
+		#mission-vision {
+			.mission-vision-div {
+				.mission-vision {
+					.item {
+						.info {
+							h2 {
+								&::after {
+									left: 45%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
 		#roadmap {
 			.roadmap {
 				height: 50vh;
@@ -2705,7 +2591,6 @@ footer {
 	}
 
 	#services {
-
 		.bitcoin {
 			width: 10%;
 		}
@@ -2840,7 +2725,8 @@ footer {
 		#nav-bar {
 			.nav-item {
 				.nav-link {
-					padding: 20px 10px;
+					font-size: 12px;
+					padding: 20px;
 				}
 			}
 		}
