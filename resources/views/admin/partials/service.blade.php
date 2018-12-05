@@ -2,7 +2,7 @@
 
 @section('main')
 
-<h1>Sevice</h1>
+<h1>Services</h1>
 <hr>
 
 @include('admin.flash')

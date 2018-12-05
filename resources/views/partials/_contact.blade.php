@@ -11,19 +11,19 @@
                     <div class="col-md-6">
                         <div class="info">
                             <p class="key">Name:</p>
-                            <p class="value"></p>
+                            <p class="value">Rep. Office Swissmining Ltd.</p>
                         </div>
                         <div class="info">
                             <p class="key">Adresse:</p>
-                            <p class="value"></p>
+                            <p class="value">
+                                Web Gates GmbH
+                                Frenkendörferstrasse 27
+                                CH-4410 Liestal
+                            </p>
                         </div>
                         <div class="info">
                             <p class="key">Email:</p>
-                            <p class="value"></p>
-                        </div>
-                        <div class="info">
-                            <p class="key">Telefon:</p>
-                            <p class="value"></p>
+                            <p class="value"><a href="mailto:info@swissmining.io">info@swissmining.io</a></p>
                         </div>
                     </div>
                     <div class="col-md-6">

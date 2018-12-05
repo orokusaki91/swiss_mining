@@ -15,6 +15,6 @@
 	<div id="admin-content" class="{{ Request::segment(2) == 'home' ? 'home' : '' }}">
 		@yield('main')
 	</div>
-	@include('admin.scripts')
+	@yield('scripts')
 </body>
 </html> 
