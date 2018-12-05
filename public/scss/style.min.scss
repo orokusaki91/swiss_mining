@@ -82,6 +82,10 @@ h2 {
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	font-family: cyber;
+
+	.divider {
+		margin-left: 10px;
+	}
 }
 
 h3 {
@@ -96,6 +100,15 @@ h3 {
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	font-family: cyber;
+
+	.divider,
+	.divider-block {
+		margin-left: 10px;
+	}
+
+	.divider-block-minus {
+		margin: 0 10px;
+	}
 }
 
 h3::after {
@@ -293,7 +306,7 @@ svg {
 						background-size: cover;
 					}
 				}
-				
+
 				&.active {
 					background-color: $red;
 				}
@@ -380,8 +393,13 @@ svg {
 					background-image: $gradient;
 				}
 
-				span {
+				.divider,
+				.divider-block {
 					margin-left: 5px;
+				}
+
+				.divider-block-minus {
+					margin: 0 5px;
 				}
 			}
 
@@ -740,6 +758,10 @@ svg {
 					font-size: 13px;
 				}
 
+				.divider {
+					margin-left: 5px;
+				}
+
 				&.active {
 					background-color: transparent;
 					color: $black;
@@ -786,6 +808,14 @@ svg {
 						cursor: pointer;
 
 						.divider {
+							margin-left: 5px;
+						}
+
+						.divider-block {
+							display: block;
+						}
+
+						.divider-block-minus {
 							display: block;
 							line-height: .5;
 						}
@@ -1482,11 +1512,11 @@ svg {
 				background-color: #cc0000;
 			}
 		}
-		
+
 		a {
 			color: $black;
 			transition: $transition;
-			
+
 			&:hover {
 				text-decoration: underline !important;
 			}
@@ -1664,7 +1694,7 @@ footer {
 	left: 0;
 	width: 20vw;
 	padding: 15px;
-	
+
 	h5 {
 		color: $white;
 		letter-spacing: 1px;
@@ -1744,6 +1774,11 @@ footer {
 	width: 80vw;
 	padding: 15px;
 	overflow: auto;
+
+	.profile-img {
+		height: 80px;
+		width: 80px;
+	}
 
 	&.home {
 		width: auto;
@@ -1966,6 +2001,11 @@ footer {
 
 	h3 {
 		font-size: 16px;
+		padding-bottom: 35px;
+
+		&::after {
+			top: 30px;
+		}
 	}
 
 	#loader {
@@ -2362,6 +2402,13 @@ footer {
 		height: 10vh;
 	}
 
+	#about-us,
+	#services,
+	#partners,
+	#contact {
+		padding-top: 50px;
+	}
+
 	#home {
 		#particles-home {
 			height: 89vh;
@@ -2388,6 +2435,15 @@ footer {
 			.roadmap {
 				height: 100vh;
 				min-height: auto;
+			}
+		}
+	}
+
+	#services {
+		#solutions,
+		#token {
+			.bitcoin {
+				width: 10%;
 			}
 		}
 	}

@@ -3,6 +3,7 @@
 @section('main')
 
 @include('admin.flash')
+
 <form class="admin-form" action="{{ route('admin.team.store') }}" method="POST" enctype="multipart/form-data">
     @csrf
 	<div class="admin-create">
