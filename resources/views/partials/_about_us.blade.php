@@ -72,7 +72,7 @@
     <!-- Mission - Vision end -->
     <!-- Roadmap start -->
     <div id="roadmap">
-        <h3 class="wow slideInLeft" data-wow-delay="1s">{{ __('translate.roadmap') }}</h3>
+        <h3 class="wow slideInLeft">{{ __('translate.roadmap') }}</h3>
         <div class="roadmap">
             <!-- Particles-roadmap start -->
             <div id="particles-roadmap" class="particles"></div>

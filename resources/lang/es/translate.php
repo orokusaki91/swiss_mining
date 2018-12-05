@@ -3,7 +3,7 @@
 return [
 
     'home' => 'Home',
-    'about-us' => 'Acerca<span class="divider">de</span><span class="divider">nosotros</span>',
+    'about-us' => 'Acerca<span class="divider">de</span><span class="divider esp">nosotros</span>',
     'mission-vision' => 'Misión<span class="divider">-</span><span class="divider">visión</span>',
     'roadmap' => 'Roadmap',
     'team' => 'Team',
