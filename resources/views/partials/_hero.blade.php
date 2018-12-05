@@ -72,7 +72,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#about-us">
-                        {{ __('translate.about-us') }}
+                        {!! __('translate.about-us') !!}
                     </a>
                     <button class="btn btn-collapse" type="button" data-toggle="collapse" data-target="#dropdown-about-us" aria-expanded="false" aria-controls="dropdown-about-us">
                         <i class="fas fa-arrow-right"></i>
@@ -92,8 +92,8 @@
                     </button>
                 </li>
                 <li id="dropdown-services" class="nav-item collapse">
-                    <a href="#solutions" class="nav-link">{{ __('translate.swissmining-solutions') }}</a>
-                    <a href="#token" class="nav-link">{{ __('translate.swiss-turbo-token') }}</a>
+                    <a href="#solutions" class="nav-link">{!! __('translate.swissmining-solutions') !!}</a>
+                    <a href="#token" class="nav-link">{!! __('translate.swiss-turbo-token') !!}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#partners">
@@ -134,7 +134,7 @@
                                 <a class="nav-link" href="#home">{{ __('translate.home') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#about-us">{{ __('translate.about-us') }}</a>
+                                <a class="nav-link" href="#about-us">{!! __('translate.about-us') !!}</a>
                                 <ul class="dropdown">
                                     <li class="nav-item">
                                         <a href="#mission-vision" class="nav-link">{!! __('translate.mission-vision') !!}</a>
@@ -151,10 +151,10 @@
                                 <a class="nav-link" href="#services">{{ __('translate.services') }}</a>
                                 <ul class="dropdown">
                                     <li class="nav-item">
-                                        <a href="#solutions" class="nav-link">{{ __('translate.swissmining-solutions') }}</a>
+                                        <a href="#solutions" class="nav-link">{!! __('translate.swissmining-solutions') !!}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#token" class="nav-link">{{ __('translate.swiss-turbo-token') }}</a>
+                                        <a href="#token" class="nav-link">{!! __('translate.swiss-turbo-token') !!}</a>
                                     </li>
                                 </ul>
                             </li>
