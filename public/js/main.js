@@ -20,12 +20,12 @@ $(document).ready(function () {
 $(window).scroll(function () {
 	if ($(window).scrollTop() >= 62) {
 		$(".logo").css({
-			'width': "80%"
+			'width': "60%"
 		});
 		$("#header").addClass("active");
 	} else {
 		$(".logo").css({
-			'width': "60%"
+			'width': "50%"
 		});
 		$("#header").removeClass("active");
 	}
@@ -41,42 +41,6 @@ function myFunction() {
 	var scrolled = (winScroll / height) * 100;
 	document.getElementById("myBar").style.width = scrolled + "%";
 }
-
-$(document).ready(function () {
-	var owl = $("#home .owl-carousel");
-	owl.owlCarousel({
-		rewind: true,
-		items: 1,
-		nav: false,
-		dots: false,
-		lazyLoad: true,
-		autoplay: true,
-		autoplayTimeout: 5000
-	});
-});
-
-$(document).ready(function () {
-	var owl = $("#about-us .owl-carousel");
-	owl.owlCarousel({
-		loop: true,
-		nav: true,
-		dots: true,
-		margin: 15,
-		lazyLoad: true,
-		autoplay: true,
-		autoplayHoverPause: true,
-		autoplayTimeout: 5000,
-		responsive: {
-			320: {
-				items: 1,
-				dots: false
-			},
-			768: {
-				items: 3
-			}
-		}
-	});
-});
 
 $(document).ready(function () {
 	if ($("#back-to-top").length) {
@@ -118,6 +82,7 @@ $(document).ready(function () {
 			$("#close-nav").removeClass("no-active");
 			$("#close-nav").addClass("active");
 			$("body").css("overflow", "hidden");
+			$("#mobile-language-dropdown").collapse("hide");
 		}
 	});
 	$("#close-nav").click(function () {
@@ -135,7 +100,7 @@ $('body').scrollspy({
 });
 
 $(document).ready(function () {
-	$("#nav-bar .nav-link").click(function () {
+	$("#nav .nav-link").click(function () {
 		var href = $(this).attr('href');
 		$('html, body').animate({
 			scrollTop: $(href).offset().top
@@ -150,7 +115,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-	$("#navbar .nav-link").click(function () {
+	$("#mySidenav .nav-link").click(function () {
 		var href = $(this).attr('href');
 		$('html, body').animate({
 			scrollTop: $(href).offset().top
@@ -169,7 +134,7 @@ function wow() {
 	if (windowWidth >= 768) {
 		$(".wow").each(function () {
 			var wowHeight = $(this).height();
-			$(this).attr("data-wow-offset", wowHeight);
+			$(this).attr("data-wow-offset", wowHeight - 200);
 		});
 	}
 }

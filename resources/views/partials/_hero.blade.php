@@ -9,6 +9,46 @@
     <!-- scroll-progress end -->
     <!-- Top menu start -->
     <div id="top-menu">
+		<!-- Language start -->
+        <div id="mobile-language">
+			<a class="btn-language text-uppercase" href="javascript:void(0)" data-toggle="collapse" data-target="#mobile-language-dropdown" aria-expanded="false" aria-controls="mobile-language-dropdown">
+				<span class="language">{{ config()->get('app.locale') }}</span>
+				<span class="flag-icon flag-icon-{{ config()->get('app.locale') == 'en' ? 'gb' : config()->get('app.locale') }}"></span>
+			</a>
+			<ul id="mobile-language-dropdown" class="dropdown collapse">
+				<li class="nav-item {{ config()->get('app.locale') == 'de' ? 'active' : '' }}">
+					<a href="{{ route('change-lang', 'de') }}" class="nav-link">
+						De
+						<span class="flag-icon flag-icon-de"></span>
+					</a>
+				</li>
+				<li class="nav-item {{ config()->get('app.locale') == 'en' ? 'active' : '' }}">
+					<a href="{{ route('change-lang', 'en') }}" class="nav-link">
+						En
+						<span class="flag-icon flag-icon-gb"></span>
+					</a>
+				</li>
+				<li class="nav-item {{ config()->get('app.locale') == 'it' ? 'active' : '' }}">
+					<a href="{{ route('change-lang', 'it') }}" class="nav-link">
+						It
+						<span class="flag-icon flag-icon-it"></span>
+					</a>
+				</li>
+				<li class="nav-item {{ config()->get('app.locale') == 'fr' ? 'active' : '' }}">
+					<a href="{{ route('change-lang', 'fr') }}" class="nav-link">
+						Fr
+						<span class="flag-icon flag-icon-fr"></span>
+					</a>
+				</li>
+				<li class="nav-item {{ config()->get('app.locale') == 'es' ? 'active' : '' }}">
+					<a href="{{ route('change-lang', 'es') }}" class="nav-link">
+						Es
+						<span class="flag-icon flag-icon-es"></span>
+					</a>
+				</li>
+			</ul>
+        </div>
+        <!-- Language end -->
         <!-- Sidenav start -->
         <div id="sidenav" class="hamburger hamburger--spin">
             <span class="hamburger-box">
@@ -134,24 +174,34 @@
                                 </a>
                                 <ul class="dropdown">
                                     <li class="nav-item {{ config()->get('app.locale') == 'de' ? 'active' : '' }}">
-                                        <a href="{{ route('change-lang', 'de') }}" class="nav-link">De</a>
-                                        <span class="flag-icon flag-icon-de"></span>
+                                        <a href="{{ route('change-lang', 'de') }}" class="nav-link">
+											De
+											<span class="flag-icon flag-icon-de"></span>
+										</a>
                                     </li>
                                     <li class="nav-item {{ config()->get('app.locale') == 'en' ? 'active' : '' }}">
-                                        <a href="{{ route('change-lang', 'en') }}" class="nav-link">En</a>
-                                        <span class="flag-icon flag-icon-gb"></span>
+                                        <a href="{{ route('change-lang', 'en') }}" class="nav-link">
+											En
+											<span class="flag-icon flag-icon-gb"></span>
+										</a>                                    
                                     </li>
                                     <li class="nav-item {{ config()->get('app.locale') == 'it' ? 'active' : '' }}">
-                                        <a href="{{ route('change-lang', 'it') }}" class="nav-link">It</a>
-                                        <span class="flag-icon flag-icon-it"></span>
+                                        <a href="{{ route('change-lang', 'it') }}" class="nav-link">
+											It
+											<span class="flag-icon flag-icon-it"></span>
+										</a>                                        
                                     </li>
                                     <li class="nav-item {{ config()->get('app.locale') == 'fr' ? 'active' : '' }}">
-                                        <a href="{{ route('change-lang', 'fr') }}" class="nav-link">Fr</a>
-                                        <span class="flag-icon flag-icon-fr"></span>
+                                        <a href="{{ route('change-lang', 'fr') }}" class="nav-link">
+											Fr
+											<span class="flag-icon flag-icon-fr"></span>
+										</a>                                        
                                     </li>
                                     <li class="nav-item {{ config()->get('app.locale') == 'es' ? 'active' : '' }}">
-                                        <a href="{{ route('change-lang', 'es') }}" class="nav-link">Es</a>
-                                        <span class="flag-icon flag-icon-es"></span>
+                                        <a href="{{ route('change-lang', 'es') }}" class="nav-link">
+											Es
+											<span class="flag-icon flag-icon-es"></span>
+										</a>                                        
                                     </li>
                                 </ul>
                             </li>

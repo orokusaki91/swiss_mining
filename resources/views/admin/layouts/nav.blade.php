@@ -1,3 +1,4 @@
+<h5>Dashboard</h5>
 <ul id="admin-nav">
 	<li>
 		<a href="{{ route('admin.home') }}">Home</a>
@@ -26,6 +27,7 @@
 	<li>
 		<a {{ Request::segment(2) == 'newsletter' ? "class=active" : '' }} href="{{ route('admin.newsletter') }}">Newsletters</a>
 	</li>
+	<div class="divider"></div>
 	<li>
 		<a {{ Request::segment(2) == 'change-password' ? "class=active" : '' }} href="{{ route('admin.changePass') }}">Change password</a>
 	</li>

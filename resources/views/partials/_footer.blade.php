@@ -13,9 +13,6 @@
                     <div class="link">
                         <a class="text-uppercase" href="javascript:void(0)">Agb'<span class="text-lowercase">s</span></a>
                     </div>
-                    <div class="link">
-                        <a href="javascript:void(0)">Sitemap</a>
-                    </div>
                 </div>
                 <div class="col-md-4 pb-4 pb-md-0">
                     <h4>Newsletter</h4>
