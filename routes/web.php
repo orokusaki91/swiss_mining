@@ -73,8 +73,8 @@ Route::namespace('Admin')
         Route::post('/team-update/{teamMember}', 'TeamController@update')->name('admin.team.update');
         Route::post('/team-delete/{teamMember}', 'TeamController@destroy')->name('admin.team.destroy');
         
-        Route::get('/services', 'ServiceController@index')->name('admin.services');
-        Route::post('/services-update', 'ServiceController@update')->name('admin.services.update');
+        // Route::get('/services', 'ServiceController@index')->name('admin.services');
+        // Route::post('/services-update', 'ServiceController@update')->name('admin.services.update');
 
         Route::get('/solutions', 'SolutionsController@index')->name('admin.solutions');
         Route::post('/solutions-update', 'SolutionsController@update')->name('admin.solutions.update');
