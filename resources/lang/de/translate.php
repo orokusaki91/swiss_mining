@@ -8,8 +8,8 @@ return [
     'roadmap' => 'Roadmap',
     'team' => 'Team',
     'services' => 'Dienstleistungen',
-    'swissmining-solutions' => 'Swissmining<span class="divider">Solutions</span>',
-    'swiss-turbo-token' => 'Swiss<span class="divider">Turbo</span><span class="divider">Token</span>',
+    'swissmining-solutions' => 'Swissmining<span class="divider-block">Solutions</span>',
+    'swiss-turbo-token' => 'Swiss<span class="divider">Turbo</span><span class="divider-block">Token</span>',
     'partners' => 'Partners',
     'read-more' => 'Weiterlesen',
 

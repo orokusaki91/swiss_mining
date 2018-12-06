@@ -725,7 +725,7 @@ svg {
 			display: block;
 
 			.logo {
-				width: 50%;
+				width: 80%;
 				transition: $transition;
 			}
 		}
@@ -1265,74 +1265,76 @@ svg {
 
 			.wrapper {
 				padding: 150px 0 120px;
-			}
 
-			.box {
-				padding: 5%;
-				height: 100%;
-				border-radius: 3px;
-				background-color: rgba(0, 0, 0, .5);
-				margin-bottom: 5%;
-				transition: $transition;
-
-				&:hover {
-					background-color: rgba(0, 0, 0, .8);
-				}
-
-				.item {
+				.box {
+					padding: 5%;
+					height: 100%;
 					border-radius: 3px;
-					text-align: center;
+					background-color: rgba(0, 0, 0, .5);
+					margin-bottom: 5%;
 					transition: $transition;
 
-					.profile {
-						position: relative;
+					&:hover {
+						background-color: rgba(0, 0, 0, .8);
+					}
 
-						.profile-img {
-							border-radius: 50%;
-							border: 4px solid $victoria;
-							overflow: hidden;
-							background: url('../img/team/profile-background.png') center no-repeat;
-							background-size: cover;
-							transition: $transition;
+					.item {
+						border-radius: 3px;
+						text-align: center;
+						transition: $transition;
+
+						.profile {
+							position: relative;
+
+							.profile-img {
+								border-radius: 50%;
+								border: 4px solid $victoria;
+								overflow: hidden;
+								transition: $transition;
+
+								img {
+									height: 140px;
+								}
+							}
+
+							.btn {
+								position: absolute;
+								bottom: 10%;
+								left: 5%;
+								transform: translate(-5%, 10%);
+								width: 20%;
+								background-color: transparent;
+								padding: 0;
+								border: none;
+
+								.linkedin {
+									width: 100%;
+									background-color: transparent;
+									border: none;
+								}
+							}
 						}
 
-						.btn {
-							position: absolute;
-							bottom: 10%;
-							left: 5%;
-							transform: translate(-5%, 10%);
-							width: 20%;
-							background-color: transparent;
-							padding: 0;
-							border: none;
+						.info {
+							margin-top: 5%;
 
-							.linkedin {
-								width: 100%;
-								background-color: transparent;
-								border: none;
+							.name {
+								color: $white-2;
+								margin-bottom: 1%;
+							}
+
+							.position {
+								color: #3c79c2;
+								margin-bottom: 0;
 							}
 						}
 					}
 
-					.info {
-						margin-top: 5%;
-
-						.name {
-							color: $white-2;
-							margin-bottom: 1%;
-						}
-
-						.position {
-							color: #3c79c2;
-							margin-bottom: 0;
-						}
+					.description {
+						text-align: justify;
+						margin-bottom: 0;
+						font-size: 14px;
 					}
-				}
-
-				.description {
-					text-align: justify;
-					margin-bottom: 0;
-					font-size: 14px;
 				}
 			}
 		}
@@ -1363,65 +1365,77 @@ svg {
 	#solutions,
 	#token {
 		padding-top: 55px;
-	}
 
-	.solutions,
-	.token {
-		background: url('../img/services/solutions.jpg') center no-repeat;
-		background-size: 100% 100%;
-
-		.solutions-div,
-		.token-div {
-			height: 75vh;
-			min-height: 600px;
+		.solutions,
+		.token {
+			background: url('../img/services/solutions.jpg') right center no-repeat;
+			background-size: cover;
 			position: relative;
-			text-align: right;
+			min-height: 600px;
 
-			.info {
+			.wrapper {
+				padding: 150px 0;
+
+				.info {
+					text-align: left;
+					color: $white;
+
+					p {
+						margin-bottom: 0;
+					}
+				}
+
+				.services-button {
+					position: absolute;
+					right: 5%;
+					bottom: 25px;
+					text-align: right;
+					z-index: 1;
+
+					.logo-btn {
+						width: 20%;
+						margin-bottom: 5px;
+					}
+
+					#btn-solutions,
+					#btn-token {
+						border: none;
+						color: $white;
+						background: #ED1C24;
+						padding: 10px 15px 9px;
+						border-radius: 50px;
+						width: 20%;
+						transition: $transition;
+
+						&:hover {
+							background: #d41118;
+						}
+					}
+				}
+			}
+
+			.white-background {
 				position: absolute;
-				top: 30%;
-				left: 0;
-				width: 40%;
-				text-align: left;
-				color: $white;
-
-				p {
-					margin-bottom: 0
-				}
+				bottom: 2%;
+				right: 0;
+				width: 35%;
+				transform: translate(0, -2%);
+				height: 150px;
+				background-color: $white;
+				border: 2px solid $black;
+				border-right: none;
+				border-top-left-radius: 150px;
+				border-bottom-left-radius: 150px;
 			}
 		}
 
-		.logo-btn {
-			width: 40%;
-		}
+		.token {
+			background-image: url('../img/services/turbo-token.jpg');
 
-		.services-button {
-			position: absolute;
-			right: 0;
-			bottom: 11%;
-			transform: traslate(0, -11%);
-			width: 60%;
-
-			#btn-solutions,
-			#btn-token {
-				border: none;
-				color: $white;
-				background: #ED1C24;
-				padding: 10px 15px 9px;
-				border-radius: 50px;
-				min-width: 200px;
-				transition: $transition;
-				margin-right: 5%;
-
-				&:hover {
-					background: #d41118;
-				}
+			.wrapper {
+				padding: 200px 0;
 			}
 		}
-	}
-
-	.token {
-		background-image: url('../img/services/turbo-token.jpg');
 	}
 }
 
@@ -1439,6 +1453,7 @@ svg {
 	.partners {
 		background: url('../img/partners/background.jpg') center no-repeat;
 		background-size: 100% 100%;
+		min-height: 600px;
 		padding: 100px 0;
 
 		.item-div {
@@ -1450,7 +1465,8 @@ svg {
 				background-color: rgba(0, 0, 0, .5);
 
 				img {
-					width: 35%;
+					width: 180px;
+					height: 180px;
 					margin: 10% 0;
 				}
 			}
@@ -1776,8 +1792,8 @@ footer {
 	overflow: auto;
 
 	.profile-img {
-		height: 80px;
-		width: 80px;
+		width: 100px;
+		margin-bottom: 20px;
 	}
 
 	&.home {
@@ -1828,9 +1844,18 @@ footer {
 		li {
 			list-style: none;
 
+			svg {
+				margin-right: 2px;
+			}
+
 			a {
 				color: $black;
-				font-size: 16px;
+				font-size: 17px;
+				transition: $transition;
+
+				&:hover {
+					text-decoration: underline !important;
+				}
 			}
 		}
 	}
@@ -1997,7 +2022,7 @@ footer {
 	h2 {
 		font-size: 20px;
 		margin-bottom: 20px;
-		
+
 		.divider.esp {
 			display: block;
 			margin: 0;
@@ -2203,28 +2228,22 @@ footer {
 
 			.solutions,
 			.token {
-				background-position: center;
-				background-size: 100% 100%;
+				min-height: auto;
+				background-position: 65% center;
 
-				.solutions-div,
-				.token-div {
-					padding: 10% 0;
-					min-height: auto;
-					height: auto;
-					text-align: center;
+				.wrapper {
+					padding: 15% 0;
 
 					.info {
-						position: static;
-						width: 100%;
 						background-color: rgba(0, 0, 0, .7);
 						padding: 5%;
 						border-radius: 3px;
+						margin-bottom: 150px;
 					}
 
 					.services-button {
-						position: static;
-						width: 100%;
-						margin-top: 10%;
+						right: 10%;
+						bottom: 20px;
 
 						.logo-btn {
 							width: 50%;
@@ -2232,21 +2251,22 @@ footer {
 
 						#btn-solutions,
 						#btn-token {
-							min-width: 50%;
-							margin-right: 0;
+							width: 50%;
 						}
 					}
 				}
-			}
 
-			.solutions {
-				background-image: url('../img/services/solutions-mobile.jpg');
-				background-attachment: fixed;
-				background-size: 250% 100%;
+				.white-background {
+					width: 75%;
+					bottom: 10px;
+					height: 120px;
+					border-top-left-radius: 120px;
+					border-bottom-left-radius: 120px;
+				}
 			}
 
 			.token {
-				background-image: url('../img/services/turbo-token-mobile.jpg');
+				background-position: right center;
 			}
 		}
 	}
@@ -2256,6 +2276,15 @@ footer {
 			background-size: 100% 100%;
 			background-attachment: fixed;
 			padding: 15% 0;
+
+			.item-div {
+				.item {
+					img {
+						width: 100px;
+						height: 100px;
+					}
+				}
+			}
 		}
 	}
 
@@ -2442,13 +2471,57 @@ footer {
 				min-height: auto;
 			}
 		}
+
+		#team {
+			.team {
+				.wrapper {
+					.box {
+						.item {
+							width: 150px
+						}
+					}
+				}
+			}
+		}
 	}
 
 	#services {
+
 		#solutions,
 		#token {
 			.bitcoin {
 				width: 10%;
+			}
+
+			.solutions,
+			.token {
+				background-position: 65% center;
+
+				.wrapper {
+					.services-button {
+						bottom: 25px;
+
+						.logo-btn {
+							width: 35%;
+						}
+
+						#btn-solutions,
+						#btn-token {
+							width: 35%;
+						}
+					}
+				}
+
+				.white-background {
+					width: 65%;
+					height: 130px;
+					border-top-left-radius: 130px;
+					border-bottom-left-radius: 130px;
+				}
+			}
+
+			.token {
+				background-position: 100% center;
 			}
 		}
 	}
@@ -2655,6 +2728,16 @@ footer {
 					padding: 5vh 0;
 
 					.box {
+						.item {
+							.profile {
+								.profile-img {
+									img {
+										height: 120px;
+									}
+								}
+							}
+						}
+
 						.description {
 							text-align: left;
 						}
@@ -2669,27 +2752,46 @@ footer {
 			width: 10%;
 		}
 
-		.solutions,
-		.token {
+		#solutions,
+		#token {
 
-			.solutions-div,
-			.token-div {
-				height: 60vh;
-				min-height: auto;
+			.solutions,
+			.token {
+				background-position: 65% center;
 
-				.info {
-					top: 20%;
-					font-size: 14px;
+				.wrapper {
+					.services-button {
+						bottom: 30px;
+
+						.logo-btn {
+							width: 30%;
+						}
+
+						#btn-solutions,
+						#token {
+							width: 30%;
+						}
+					}
 				}
 
-				.services-button {
-					img {
-						min-width: 200px;
-					}
+				.white-background {
+					width: 50%;
+				}
+			}
 
-					#btn-solutions,
-					#btn-token {
-						margin-right: 0;
+			.token {
+				background-position: 85% center;
+			}
+		}
+	}
+
+	#partners {
+		.partners {
+			.item-div {
+				.item {
+					img {
+						width: 120px;
+						height: 120px;
 					}
 				}
 			}
@@ -2800,7 +2902,43 @@ footer {
 			.nav-item {
 				.nav-link {
 					font-size: 12px;
-					padding: 20px;
+					padding: 20px 28px;
+				}
+			}
+		}
+	}
+
+	#about-us {
+		#team {
+			.team {
+				.wrapper {
+					.box {
+						.item {
+							.profile {
+								.profile-img {
+									img {
+										height: 140px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#services {
+
+		#solutions,
+		#token {
+
+			.solutions,
+			.token {
+				.wrapper {
+					.services-button {
+						bottom: 30px;
+					}
 				}
 			}
 		}

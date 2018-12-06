@@ -12,9 +12,9 @@
 	<li>
 		<a {{ Request::segment(2) == 'team' ? "class=active" : '' }} href="{{ route('admin.team') }}">Team</a>
 	</li>
-	<li>
+	{{-- <li>
 		<a {{ Request::segment(2) == 'services' ? "class=active" : '' }} href="{{ route('admin.services') }}">Services</a>
-	</li>
+	</li> --}}
 	<li>
 		<a {{ Request::segment(2) == 'solutions' ? "class=active" : '' }} href="{{ route('admin.solutions') }}">Solutions</a>
 	</li>
