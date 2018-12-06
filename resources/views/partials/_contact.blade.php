@@ -18,7 +18,8 @@
                             <p class="value">
                                 Web Gates GmbH<br />
                                 Frenkendörferstrasse 27<br />
-                                CH-4410 Liestal
+                                CH-4410 Liestal<br />
+                                Switzerland
                             </p>
                         </div>
                         <div class="info">

@@ -11,7 +11,8 @@ return [
     'swissmining-solutions' => 'Swissmining<span class="divider-block">Solutions</span>',
     'swiss-turbo-token' => 'Swiss<span class="divider">Turbo</span><span class="divider-block">Token</span>',
     'partners' => 'Partners',
-    'read-more' => 'Weiterlesen',
+    'read-more' => 'Mehr',
+    'capital-protection' => 'Investieren Sie mit Kapitalschutz',
 
 
     'contact' => 'Kontakt',
@@ -21,17 +22,17 @@ return [
     'phone' => 'Telefon',
 
     
-    'your-name' => 'Dein Name',
-    'your-email' => 'Dein E-Mail',
-    'subject' => 'Gegenstand',
-    'your-message' => 'Deine Nachricht',
-    'submit' => 'Einreichen',
+    'your-name' => 'Name',
+    'your-email' => 'E-Mail',
+    'subject' => 'Betreff',
+    'your-message' => 'Nachricht',
+    'submit' => 'Senden',
 
 
     'enter-email' => 'Email eingeben',
     'subscribe' => 'Abonnieren',
-    'subscribed-to-newsletters' => 'You subscribed to newsletters',
-    'email-in-system' => 'Your e-mail adress is already in newsletter system',
+    'subscribed-to-newsletters' => 'Sie haben den Newsletter abonniert',
+    'email-in-system' => 'Ihre E-Mail-Adresse befindet sich bereits im System',
 
 
     'rights-reserved' => 'Alle Rechte Vorbehalten',

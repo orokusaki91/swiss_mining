@@ -4,15 +4,15 @@
         <div class="footer-top">
             <div class="row no-guters pt-3">
                 <div class="col-md-4 pb-3 pb-md-0">
-                    <div class="text-uppercase faq">
+                    {{-- <div class="text-uppercase faq">
                         <a href="javascript:void(0)">Faq</a>
-                    </div>
+                    </div> --}}
                     <div class="link">
                         <a href="javascript:void(0)">Impressum</a>
                     </div>
-                    <div class="link">
+                    {{-- <div class="link">
                         <a class="text-uppercase" href="javascript:void(0)">Agb'<span class="text-lowercase">s</span></a>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="col-md-4 pb-4 pb-md-0">
                     <h4>Newsletter</h4>
