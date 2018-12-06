@@ -35,14 +35,14 @@ class NewsletterController extends Controller
                     'email' => $request->email
                 ]);
         
-                return redirect('/#contact')->with(['email' => 'You subscribed to newsletters']);
+                return redirect('/#contact')->with(['email' => __('translate.subscribed-to-newsletters')]);
             } else {
-                return redirect('/#contact')->with(['email' => 'Your e-mail adress is already in newsletter system']);
+                return redirect('/#contact')->with(['email' => __('translate.email-in-system')]);
             }
 
         }
 
-        return redirect('/#contact')->with(['email' => 'Please enter e-mail adress']);
+        return redirect('/#contact')->with(['email' => __('translate.enter-email')]);
     }
 
     /**

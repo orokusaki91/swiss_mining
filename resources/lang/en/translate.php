@@ -12,6 +12,7 @@ return [
     'swiss-turbo-token' => 'Swiss<span class="divider">Turbo</span><span class="divider-block">Token</span>',
     'partners' => 'Partners',
     'read-more' => 'Read more',
+    'capital-protection' => 'Invest with capital protection',
 
 
     'contact' => 'Contact',
@@ -24,7 +25,7 @@ return [
     'your-name' => 'Name',
     'your-email' => 'E-Mail',
     'subject' => 'Subject',
-    'your-message' => 'Your message',
+    'your-message' => 'Message',
     'submit' => 'Submit',
 
 

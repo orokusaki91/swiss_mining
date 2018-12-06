@@ -3,37 +3,38 @@
 return [
 
     'home' => 'Home',
-    'about-us' => 'Acerca<span class="divider">de</span><span class="divider esp">nosotros</span>',
+    'about-us' => 'Sobre<span class="divider esp">nosotros</span>',
     'mission-vision' => 'Misión<span class="divider-block-minus">-</span>visión',
     'roadmap' => 'Roadmap',
     'team' => 'Team',
-    'services' => 'Services',
+    'services' => 'Servicios',
     'swissmining-solutions' => 'Swissmining<span class="divider-block">Solutions</span>',
     'swiss-turbo-token' => 'Swiss<span class="divider">Turbo</span><span class="divider-block">Token</span>',
     'partners' => 'Partners',
-    'read-more' => 'Read more',
+    'read-more' => 'Leer más',
+    'capital-protection' => 'Invertir con protección de capital',
 
 
-    'contact' => 'Contact',
-    'name' => 'Name',
-    'adresse' => 'Adresse',
+    'contact' => 'Contacto',
+    'name' => 'Nombre',
+    'adresse' => 'Dirección',
     'email' => 'E-Mail',
-    'phone' => 'Phone',
+    'phone' => 'Teléfono',
 
     
-    'your-name' => 'Name',
+    'your-name' => 'Nombre',
     'your-email' => 'E-Mail',
-    'subject' => 'Subject',
-    'your-message' => 'Your message',
-    'submit' => 'Submit',
+    'subject' => 'Sujeto',
+    'your-message' => 'Mensaje',
+    'submit' => 'Envia',
 
 
-    'enter-email' => 'Enter E-Mail',
-    'subscribe' => 'Subscribe',
-    'subscribed-to-newsletters' => 'You subscribed to newsletters',
-    'email-in-system' => 'Your e-mail adress is already in newsletter system',
+    'enter-email' => 'Ingrese E-Mail',
+    'subscribe' => 'Suscribir',
+    'subscribed-to-newsletters' => 'Te has suscrito a las Newsletter',
+    'email-in-system' => ' Tu dirección E-Mail ya está en el sistema',
 
     
-    'rights-reserved' => 'All rights reserved',
+    'rights-reserved' => 'Todos los Derechos Reservados',
 
 ];
