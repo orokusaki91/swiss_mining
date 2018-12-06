@@ -29,5 +29,8 @@
         </div>
     </div>
     <!-- Social end -->
+	<div id="quote" class="wow slideInUp" data-wow-delay="3s">
+		<p>Invest with <span class="quote"></span>capital protection</p>
+	</div>
 </div>
 <!-- Home end -->

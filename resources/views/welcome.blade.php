@@ -6,7 +6,7 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar">
-<!--    <div id="loader"></div>-->
+    <div id="loader"></div>
 
     <div id="app">
         @include('partials._hero')

@@ -16,8 +16,8 @@
                         <div class="info">
                             <p class="key">Adresse:</p>
                             <p class="value">
-                                Web Gates GmbH
-                                Frenkendörferstrasse 27
+                                Web Gates GmbH<br />
+                                Frenkendörferstrasse 27<br />
                                 CH-4410 Liestal
                             </p>
                         </div>
