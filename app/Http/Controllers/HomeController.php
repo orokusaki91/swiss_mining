@@ -20,7 +20,7 @@ class HomeController extends Controller
 
         $team           = Team::all();
 
-        $service        = OneRowPage::where('page', 'service')->first();
+        // $service        = OneRowPage::where('page', 'service')->first();
         
         $solution       = OneRowPage::where('page', 'solutions')->first();
         
@@ -35,7 +35,7 @@ class HomeController extends Controller
                 ->with('aboutUs', $aboutUs)
                 ->with('missionVisions', $missionVisions)
                 ->with('team', $team)
-                ->with('service', $service)
+                // ->with('service', $service)
                 ->with('solution', $solution)
                 ->with('turboToken', $turboToken)
                 ->with('partners', $partners);
