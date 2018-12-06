@@ -1,11 +1,11 @@
 <!-- Services start -->
 <div id="services">
     <h2 class="wow slideInLeft">{{ __('translate.services') }}</h2>
-    <div class="container">
+    {{-- <div class="container">
         <p class="info wow slideInUp">
             {!! $service->{'body_' . $language} !!}
         </p>
-    </div>
+    </div> --}}
     <div id="solutions" class="services">
         <div class="wow slideInLeft">
             <img src="{{ asset('img/services/bitcoin.png') }}" class="bitcoin" alt="img/services/bitcoin.png" />
