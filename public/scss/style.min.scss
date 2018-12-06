@@ -740,7 +740,7 @@ svg {
 			margin: 0 3px;
 
 			.nav-link {
-				padding: 20px 25px;
+				padding: 25px;
 				color: $black;
 				font-size: 15px;
 				text-transform: uppercase;
@@ -978,6 +978,26 @@ svg {
 			}
 		}
 	}
+
+	#quote {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+
+		p {
+			margin-bottom: 0;
+			color: $white;
+			text-transform: uppercase;
+			font-size: 30px;
+			letter-spacing: 1px;
+			font-family: cyber;
+			//			background-image: $gradient-header;
+			//			-webkit-text-fill-color: transparent;
+			//			-webkit-background-clip: text;
+		}
+	}
 }
 
 /*----------------------------
@@ -1008,13 +1028,14 @@ svg {
 
 		.about-us-div {
 			position: relative;
-			height: 80vh;
+			height: 90vh;
 			min-height: 600px;
 
 			.info {
 				position: absolute;
-				top: 25%;
+				top: 50%;
 				right: 0;
+				transform: translate(0, -50%);
 				width: 40%;
 
 				.header {
@@ -1293,7 +1314,7 @@ svg {
 								transition: $transition;
 
 								img {
-									height: 140px;
+									height: 130px;
 								}
 							}
 
@@ -1371,70 +1392,67 @@ svg {
 			background: url('../img/services/solutions.jpg') right center no-repeat;
 			background-size: cover;
 			position: relative;
+			height: 80vh;
 			min-height: 600px;
 
-			.wrapper {
-				padding: 150px 0;
 
-				.info {
-					text-align: left;
-					color: $white;
+			.info {
+				position: absolute;
+				top: 50%;
+				transform: translate(0, -50%);
+				width: 40%;
+				text-align: left;
+				color: $white;
 
-					p {
-						margin-bottom: 0;
-					}
-				}
-
-				.services-button {
-					position: absolute;
-					right: 5%;
-					bottom: 25px;
-					text-align: right;
-					z-index: 1;
-
-					.logo-btn {
-						width: 20%;
-						margin-bottom: 5px;
-					}
-
-					#btn-solutions,
-					#btn-token {
-						border: none;
-						color: $white;
-						background: #ED1C24;
-						padding: 10px 15px 9px;
-						border-radius: 50px;
-						width: 20%;
-						transition: $transition;
-
-						&:hover {
-							background: #d41118;
-						}
-					}
+				p {
+					margin-bottom: 0;
 				}
 			}
+		}
 
-			.white-background {
+		.white-background {
+			position: absolute;
+			right: 0;
+			bottom: 15px;
+			transform: translate(0, 0);
+			width: 500px;
+			height: 150px;
+			background-color: $white;
+			border: 2px solid $black;
+			border-right: none;
+			border-top-left-radius: 150px;
+			border-bottom-left-radius: 150px;
+
+			.services-button {
 				position: absolute;
-				bottom: 2%;
-				right: 0;
-				width: 35%;
-				transform: translate(0, -2%);
-				height: 150px;
-				background-color: $white;
-				border: 2px solid $black;
-				border-right: none;
-				border-top-left-radius: 150px;
-				border-bottom-left-radius: 150px;
+				bottom: 15px;
+				right: 150px;
+				z-index: 1;
+
+				.logo-btn {
+					width: 200px;
+					margin-bottom: 5px;
+				}
+
+				#btn-solutions,
+				#btn-token {
+					border: none;
+					color: $white;
+					background: #ED1C24;
+					padding: 10px 15px 9px;
+					border-radius: 50px;
+					width: 200px;
+					transition: $transition;
+
+					&:hover {
+						background: #d41118;
+					}
+				}
 			}
 		}
 
 		.token {
 			background-image: url('../img/services/turbo-token.jpg');
-
-			.wrapper {
-				padding: 200px 0;
-			}
 		}
 	}
 }
@@ -2082,6 +2100,12 @@ footer {
 				}
 			}
 		}
+
+		#quote {
+			p {
+				font-size: 22px;
+			}
+		}
 	}
 
 	#about-us,
@@ -2093,16 +2117,16 @@ footer {
 
 	#about-us {
 		.about-us {
-			background-size: 200% 100%;
+			background-size: cover;
 			background-position: left center;
 
 			.about-us-div {
-				min-height: auto;
-				height: auto;
 				padding: 20% 0;
 
 				.info {
 					position: static;
+					top: auto;
+					transform: translate(0, 0);
 					width: auto;
 					background-color: rgba(0, 0, 0, .7);
 					padding: 5%;
@@ -2227,46 +2251,52 @@ footer {
 			}
 
 			.solutions,
+			.solutions,
 			.token {
-				min-height: auto;
+				min-height: 80vh;
+				height: auto;
 				background-position: 65% center;
+				padding-bottom: 5vh;
 
 				.wrapper {
-					padding: 15% 0;
+					padding: 10vh 0;
 
 					.info {
+						position: static;
+						top: auto;
+						transform: translate(0, 0);
+						width: 100%;
 						background-color: rgba(0, 0, 0, .7);
 						padding: 5%;
 						border-radius: 3px;
-						margin-bottom: 150px;
-					}
-
-					.services-button {
-						right: 10%;
-						bottom: 20px;
-
-						.logo-btn {
-							width: 50%;
-						}
-
-						#btn-solutions,
-						#btn-token {
-							width: 50%;
-						}
 					}
 				}
 
 				.white-background {
-					width: 75%;
-					bottom: 10px;
+					position: static;
 					height: 120px;
-					border-top-left-radius: 120px;
-					border-bottom-left-radius: 120px;
+					width: 80%;
+					margin-left: 20%;
+
+					.services-button {
+						text-align: right;
+						right: 60px;
+						bottom: 10px;
+
+						.logo-btn {
+							width: 150px;
+						}
+
+						#btn-solutions,
+						#btn-token {
+							width: 150px;
+						}
+					}
 				}
 			}
 
 			.token {
-				background-position: right center;
+				background-position: 90% center;
 			}
 		}
 	}
@@ -2497,26 +2527,21 @@ footer {
 			.token {
 				background-position: 65% center;
 
-				.wrapper {
+				.white-background {
+					width: 60%;
+					margin-left: 40%;
+
 					.services-button {
-						bottom: 25px;
 
 						.logo-btn {
-							width: 35%;
+							width: 160px;
 						}
 
 						#btn-solutions,
 						#btn-token {
-							width: 35%;
+							width: 160px;
 						}
 					}
-				}
-
-				.white-background {
-					width: 65%;
-					height: 130px;
-					border-top-left-radius: 130px;
-					border-bottom-left-radius: 130px;
 				}
 			}
 
@@ -2695,6 +2720,12 @@ footer {
 	}
 
 	#about-us {
+		.about-us {
+			.about-us-div {
+				height: 50vh;
+			}
+		}
+
 		#mission-vision {
 			.mission-vision-div {
 				.mission-vision {
@@ -2759,28 +2790,32 @@ footer {
 			.token {
 				background-position: 65% center;
 
-				.wrapper {
-					.services-button {
-						bottom: 30px;
-
-						.logo-btn {
-							width: 30%;
-						}
-
-						#btn-solutions,
-						#token {
-							width: 30%;
-						}
-					}
+				.info {
+					width: 45%;
 				}
 
 				.white-background {
 					width: 50%;
+					margin-left: 50%;
+
+					.services-button {
+						bottom: 20px;
+						right: 100px;
+
+						.logo-btn {
+							width: 180px;
+						}
+
+						#btn-solutions,
+						#btn-token {
+							width: 180px;
+						}
+					}
 				}
 			}
 
 			.token {
-				background-position: 85% center;
+				background-position: 70% center;
 			}
 		}
 	}
@@ -2854,6 +2889,16 @@ footer {
 		#social-bar {
 			top: 20vh;
 		}
+
+		#quote {
+			p {
+				font-size: 24px;
+
+				.quote {
+					margin: 0 120px;
+				}
+			}
+		}
 	}
 
 	#about-us {
@@ -2861,23 +2906,6 @@ footer {
 			.roadmap {
 				height: 70vh;
 				min-height: auto;
-			}
-		}
-	}
-
-	#services {
-
-		.solutions,
-		.token {
-
-			.solutions-div,
-			.token-div {
-				height: 150vh;
-				min-height: auto;
-
-				.info {
-					font-size: 12px;
-				}
 			}
 		}
 	}
@@ -2909,6 +2937,12 @@ footer {
 	}
 
 	#about-us {
+		.about-us {
+			.about-us-div {
+				height: 50vh;
+			}
+		}
+
 		#team {
 			.team {
 				.wrapper {
@@ -2935,9 +2969,17 @@ footer {
 
 			.solutions,
 			.token {
-				.wrapper {
+				min-height: 50vh;
+				height: auto;
+				background-position: 85% center;
+
+				.white-background {
+					width: 400px;
+
 					.services-button {
-						bottom: 30px;
+						bottom: 15px;
+						right: 50px;
+						bottom: 15px;
 					}
 				}
 			}
@@ -2953,7 +2995,24 @@ footer {
 	@media only screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) start
 ----------------------------*/
 
-@media only screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {}
+@media only screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+
+	#services {
+
+		#solutions,
+		#token {
+
+			.solutions,
+			.token {
+				min-height: 80vh;
+			}
+
+			.solutions {
+				background-position: 90% center;
+			}
+		}
+	}
+}
 
 /*----------------------------
 	@media only screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) end

@@ -14,29 +14,26 @@
         <div class="solutions">
             <div class="container">
 				<div class="wrapper">
-					<div class="row align-items-end">
-						<div class="col-md-6 col-lg-5">
-							<div class="info wow zoomIn">
-								<h5>
-									<b>{{ $solution->{'header_' . $language} }}</b>
-								</h5>
-								<p>
-									{!! $solution->{'body_' . $language} !!}
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="services-button wow slideInLeft">
-						<img class="logo-btn" src="{{ asset('img/logo/logo-black.png') }}" alt="img/logo/logo-black.png" />
-						<div class="btn-div">
-							<a id="btn-solutions" href="https://www.swissmining.solutions/" class="btn" target="_blank">
-								{{ __('translate.read-more') }}
-							</a>
-						</div>
+					<div class="info wow zoomIn">
+						<h5>
+							<b>{{ $solution->{'header_' . $language} }}</b>
+						</h5>
+						<p>
+							{!! $solution->{'body_' . $language} !!}
+						</p>
 					</div>
 				</div>
 			</div>
-			<div class="white-background"></div>
+			<div class="white-background">
+				<div class="services-button wow slideInLeft">
+					<img class="logo-btn" src="{{ asset('img/logo/logo-black.png') }}" alt="img/logo/logo-black.png" />
+					<div class="btn-div">
+						<a id="btn-solutions" href="https://www.swissmining.solutions/" class="btn" target="_blank">
+							{{ __('translate.read-more') }}
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
     <div id="token" class="services">
@@ -46,27 +43,24 @@
         </div>
         <div class="token">
             <div class="container">
-                <div class="wrapper">
-					<div class="row align-items-end">
-						<div class="col-md-6 col-lg-5">
-							<div class="info wow zoomIn">
-								<p>
-									{!! $turboToken->{'body_' . $language} !!}
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="services-button wow slideInLeft">
-						<img class="logo-btn" src="{{ asset('img/logo/swiss-turbo.png') }}" alt="img/logo/swiss-turbo.png" />
-						<div class="btn-div">
-							<a id="btn-token" href="https://swiss-turbo.com/" class="btn" target="_blank">
-								{{ __('translate.read-more') }}
-							</a>
-						</div>
+				<div class="wrapper">
+					<div class="info wow zoomIn">
+						<p>
+							{!! $turboToken->{'body_' . $language} !!}
+						</p>
 					</div>
 				</div>
 			</div>
-			<div class="white-background"></div>
+			<div class="white-background">
+				<div class="services-button wow slideInLeft">
+					<img class="logo-btn" src="{{ asset('img/logo/swiss-turbo.png') }}" alt="img/logo/swiss-turbo.png" />
+					<div class="btn-div">
+						<a id="btn-token" href="https://swiss-turbo.com/" class="btn" target="_blank">
+							{{ __('translate.read-more') }}
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
     </div>
 </div>
