@@ -6,6 +6,7 @@ use App\Database\OneRowPage;
 use App\Database\MissionVision;
 use App\Database\Team;
 use App\Database\Partners;
+use App\Database\Newsletter;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -39,5 +40,33 @@ class HomeController extends Controller
                 ->with('solution', $solution)
                 ->with('turboToken', $turboToken)
                 ->with('partners', $partners);
+    }
+
+    public function changeLang($lang)
+    {
+        session()->put('locale', $lang);
+
+        return redirect()->back();
+    }
+
+    public function subscribe(Request $request)
+    {
+        if ($request->email !== null) {
+            $counts = Newsletter::pluck('email');
+
+            if ($counts->count() == 0) {
+
+                Newsletter::create([
+                    'email' => $request->email
+                ]);
+        
+                return redirect('/#contact')->with(['email' => __('translate.subscribed-to-newsletters')]);
+            } else {
+                return redirect('/#contact')->with(['email' => __('translate.email-in-system')]);
+            }
+
+        }
+
+        return redirect('/#contact')->with(['email' => __('translate.enter-email')]);
     }
 }
