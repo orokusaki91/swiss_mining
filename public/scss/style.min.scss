@@ -990,7 +990,7 @@ svg {
 			margin-bottom: 0;
 			color: $white;
 			text-transform: uppercase;
-			font-size: 20px;
+			font-size: 30px;
 			letter-spacing: 1px;
 			font-family: cyber;
 			//			background-image: $gradient-header;
@@ -2103,7 +2103,7 @@ footer {
 
 		#quote {
 			p {
-				font-size: 22px;
+				font-size: 14px;
 			}
 		}
 	}
@@ -2893,10 +2893,6 @@ footer {
 		#quote {
 			p {
 				font-size: 24px;
-
-				.quote {
-					margin: 0 120px;
-				}
 			}
 		}
 	}
