@@ -11,7 +11,7 @@
 		<a href="{{ route('admin.aboutUs') }}">About us</a>
 	</li>
 	<li>
-		<a href="{{ route('admin.missionVision') }}">Mission and Vision</a>
+		<a href="{{ route('admin.missionVision') }}">Mission - Vision</a>
 	</li>
 	<li>
 		<a href="{{ route('admin.team') }}">Team</a>

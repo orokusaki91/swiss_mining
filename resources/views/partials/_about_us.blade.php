@@ -110,10 +110,10 @@
                 <div class="container">
                     <div class="row">
                         @foreach($team as $member)
-							<div class="col-md-6">
+							<div class="col-md-6 mb-3">
 								<div class="box wow zoomIn wow zoomIn">
 									<div class="row">
-										<div class="col-md-6 col-lg-4 mb-2 mb-md-0">
+										<div class="col-md-6 col-lg-4">
 											<div class="item">
 												<div class="profile">
 													<div class="profile-img">

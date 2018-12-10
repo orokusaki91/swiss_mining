@@ -4,7 +4,7 @@
 
 @include('admin.flash')
 
-<div style="height: 80px; width:80px; margin-bottom:40px;">
+<div class="profile-img">
     <img src="{{ asset($partner->image) }}">
 </div>
 

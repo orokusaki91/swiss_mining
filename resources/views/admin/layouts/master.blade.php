@@ -9,10 +9,19 @@
 <body>
 	@if (Request::segment(2) != 'home')
 	<div id="vertical-menu">
-		@include('admin.layouts.nav')
+		<div class="wrapper">
+			@include('admin.layouts.nav')
+		</div>
 	</div>
 	@endif
 	<div id="admin-content" class="{{ Request::segment(2) == 'home' ? 'home' : '' }}">
+		@if (Request::segment(2) != 'home')
+			<div id="top-bar" class="d-md-none">
+				<button class="btn btn-vertical-menu">
+					<i class="fas fa-bars"></i>
+				</button>
+			</div>
+		@endif
 		@yield('main')
 	</div>
 	@yield('scripts')
