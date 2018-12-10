@@ -1,5 +1,5 @@
-<h5>Dashboard</h5>
 <ul id="admin-nav">
+	<h5>Dashboard</h5>
 	<li>
 		<a href="{{ route('admin.home') }}">Home</a>
 	</li>
@@ -7,7 +7,7 @@
 		<a {{ Request::segment(2) == 'about-us' ? "class=active" : '' }} href="{{ route('admin.aboutUs') }}">About us</a>
 	</li>
 	<li>
-		<a {{ Request::segment(2) == 'mission-vision' ? "class=active" : '' }} href="{{ route('admin.missionVision') }}">Mission and Vision</a>
+		<a {{ Request::segment(2) == 'mission-vision' ? "class=active" : '' }} href="{{ route('admin.missionVision') }}">Mission - Vision</a>
 	</li>
 	<li>
 		<a {{ Request::segment(2) == 'team' ? "class=active" : '' }} href="{{ route('admin.team') }}">Team</a>
