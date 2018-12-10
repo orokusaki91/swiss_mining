@@ -984,7 +984,6 @@ svg {
 		bottom: 0;
 		left: 0;
 		right: 0;
-		transform: translate(0, 0);
 		text-align: center;
 
 		p {
@@ -2137,6 +2136,8 @@ footer {
 		}
 
 		#quote {
+			bottom: -5vh;
+
 			p {
 				font-size: 14px;
 			}

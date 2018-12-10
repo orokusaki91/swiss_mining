@@ -29,7 +29,7 @@
         </div>
     </div>
     <!-- Social end -->
-	<div id="quote">
+	<div id="quote"  class="wow slideInUp" data-wow-delay="3s">
 		<p>{{ __('translate.capital-protection') }}</p>
 	</div>
 </div>
