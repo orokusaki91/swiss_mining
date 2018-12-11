@@ -12,7 +12,7 @@
 
 		<label for="about">About Member</label>
 		<div class="row">
-			<div class="col-md-6 mb-3">
+			<div class="col-md-8 col-lg-6 mb-3">
 				<textarea name="about" cols="30" rows="10"></textarea>
 			</div>
 		</div>

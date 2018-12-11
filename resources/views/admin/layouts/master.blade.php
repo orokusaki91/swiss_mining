@@ -23,6 +23,9 @@
 					<i class="fas fa-bars"></i>
 				</button>
 			</div>
+			<!-- Close nav start -->
+			<div id="close-nav" class="d-md-none"></div>
+			<!-- Close nav end -->
 		@endif
 		@yield('main')
 	</div>
