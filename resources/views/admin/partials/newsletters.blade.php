@@ -19,7 +19,7 @@
                     <td>
                         <form action="{{ route('admin.newsletter.destroy', $newsletter->id) }}" method="POST">
                             @csrf
-                            <button type="submit" class="btn btn-danger">DELETE this email from list</button>
+                            <button type="submit" class="btn btn-danger newsletter">DELETE this email from list</button>
                         </form>
                     </td>
                 </tr>

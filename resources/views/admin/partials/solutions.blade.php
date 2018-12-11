@@ -9,23 +9,23 @@
 <form class="admin-form" action="{{ route('admin.solutions.update') }}" method="POST">
     @csrf
 	<div class="row">
-		<div class="col-md-3">
+		<div class="col-md-6 col-lg-3">
 			<label for="header">Header - EN</label>
 			<input type="text" name="header_en" value="{{ $solution->header_en }}" />
 		</div>
-		<div class="col-md-3">
+		<div class="col-md-6 col-lg-3">
 			<label for="header">Header - DE</label>
 			<input type="text" name="header_de" value="{{ $solution->header_de }}" />
 		</div>
-		<div class="col-md-3">
+		<div class="col-md-6 col-lg-3">
 			<label for="header">Header - FR</label>
 			<input type="text" name="header_fr" value="{{ $solution->header_fr }}" />
 		</div>
-		<div class="col-md-3">
+		<div class="col-md-6 col-lg-3">
 			<label for="header">Header - IT</label>
 			<input type="text" name="header_it" value="{{ $solution->header_it }}" />
 		</div>
-		<div class="col-md-3">
+		<div class="col-md-6 col-lg-3">
 			<label for="header">Header - ES</label>
 			<input type="text" name="header_es" value="{{ $solution->header_es }}" />
 		</div>
