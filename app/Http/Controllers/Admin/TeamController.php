@@ -42,11 +42,7 @@ class TeamController extends Controller
     public function store(TeamCreateRequest $request)
     {
         $image = $request->file('image');
-        $name = $request->name . time() . '.' . $image->getClientOriginalExtension();
-        $folder = '/img/team/profile-pictures/';
-        $saveFolder = public_path($folder);
-        $image->move($saveFolder, $name);
-        $dbPath = $folder . $name;
+        $dbPath = uploadPublicImage($image, $request->name, '/img/team/profile-pictures/');
 
         Team::create([
             'name' => $request->name,

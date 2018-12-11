@@ -52,7 +52,7 @@ class HomeController extends Controller
     public function subscribe(Request $request)
     {
         if ($request->email !== null) {
-            $counts = Newsletter::pluck('email');
+            $counts = Newsletter::where('email', $request->email)->get();
 
             if ($counts->count() == 0) {
 

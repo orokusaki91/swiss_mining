@@ -14,13 +14,15 @@
         </thead>
         <tbody>
             @foreach ($newsletters as $newsletter)
-                <td>{{ $newsletter->email }}</td>
-                <td>
-                    <form action="{{ route('admin.newsletter.destroy', $newsletter->id) }}" method="POST">
-                        @csrf
-                        <button type="submit" class="btn btn-danger">DELETE this email from list</button>
-                    </form>
-                </td>
+                <tr>
+                    <td>{{ $newsletter->email }}</td>
+                    <td>
+                        <form action="{{ route('admin.newsletter.destroy', $newsletter->id) }}" method="POST">
+                            @csrf
+                            <button type="submit" class="btn btn-danger">DELETE this email from list</button>
+                        </form>
+                    </td>
+                </tr>
             @endforeach
         </tbody>
     </table>

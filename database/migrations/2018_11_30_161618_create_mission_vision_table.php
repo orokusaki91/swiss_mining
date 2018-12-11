@@ -13,7 +13,7 @@ class CreateMissionVisionTable extends Migration
      */
     public function up()
     {
-        Schema::create('mision_vision', function (Blueprint $table) {
+        Schema::create('mission_vision', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->text('body_en')->nullable(false);
@@ -32,6 +32,6 @@ class CreateMissionVisionTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mision_vision');
+        Schema::dropIfExists('mission_vision');
     }
 }
