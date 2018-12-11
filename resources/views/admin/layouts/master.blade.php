@@ -4,6 +4,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	@include('partials._header')
+	{{-- JQuery --}}
+	<script type="text/javascript" src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
 
 </head>
 <body>
@@ -24,6 +26,9 @@
 		@endif
 		@yield('main')
 	</div>
+	
+	<script type="text/javascript" src="{{ asset('js/admin.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/all.min.js') }}"></script>
 	@yield('scripts')
 </body>
 </html> 

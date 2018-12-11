@@ -41,11 +41,7 @@ class PartnersController extends Controller
     public function store(CreatePartnerRequest $request)
     {
         $image = $request->file('image');
-        $name = time() . $request->name . '.' . $image->getClientOriginalExtension();
-        $folder = '/img/partners/';
-        $saveFolder = public_path($folder);
-        $image->move($saveFolder, $name);
-        $dbPath = $folder . $name;
+        $dbPath = uploadPublicImage($image, $request->name, '/img/partners/');
 
         Partners::create([
             'name' => $request->name,
