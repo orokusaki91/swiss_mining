@@ -4,10 +4,10 @@
 		<a href="{{ route('admin.home') }}">Home</a>
 	</li>
 	<li>
-		<a {{ Request::segment(2) == 'about-us' ? "class=active" : '' }} href="{{ route('admin.aboutUs') }}">About us</a>
+		<a {{ Request::segment(2) == 'about-us' ? "class=active" : '' }} href="{{ route('admin.aboutUs') }}">About<span>us</span></a>
 	</li>
 	<li>
-		<a {{ Request::segment(2) == 'mission-vision' ? "class=active" : '' }} href="{{ route('admin.missionVision') }}">Mission - Vision</a>
+		<a {{ Request::segment(2) == 'mission-vision' ? "class=active" : '' }} href="{{ route('admin.missionVision') }}">Mission<span class="minus">-</span>Vision</a>
 	</li>
 	<li>
 		<a {{ Request::segment(2) == 'team' ? "class=active" : '' }} href="{{ route('admin.team') }}">Team</a>
@@ -19,7 +19,7 @@
 		<a {{ Request::segment(2) == 'solutions' ? "class=active" : '' }} href="{{ route('admin.solutions') }}">Solutions</a>
 	</li>
 	<li>
-		<a {{ Request::segment(2) == 'turbo-token' ? "class=active" : '' }} href="{{ route('admin.turboToken') }}">Turbo token</a>
+		<a {{ Request::segment(2) == 'turbo-token' ? "class=active" : '' }} href="{{ route('admin.turboToken') }}">Turbo<span>token</span></a>
 	</li>
 	<li>
 		<a {{ Request::segment(2) == 'partners' ? "class=active" : '' }} href="{{ route('admin.partners') }}">Partners</a>
@@ -29,7 +29,7 @@
 	</li>
 	<div class="divider"></div>
 	<li>
-		<a {{ Request::segment(2) == 'change-password' ? "class=active" : '' }} href="{{ route('admin.changePass') }}">Change password</a>
+		<a {{ Request::segment(2) == 'change-password' ? "class=active" : '' }} href="{{ route('admin.changePass') }}">Change<span>password</span></a>
 	</li>
 	<li>
 		<a href="{{ route('logout') }}">Logout</a>
