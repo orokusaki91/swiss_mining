@@ -97,8 +97,8 @@ Route::namespace('Admin')
         Route::post('/partners-delete/{partner}', 'PartnersController@destroy')->name('admin.partners.destroy');
     
         // Newsletters
-        Route::get('admin/newsletter', 'NewsletterController@index')->name('admin.newsletter');
-        Route::post('admin/newsletter-delete/{newsletter}', 'NewsletterController@destroy')->name('admin.newsletter.destroy');
+        Route::get('newsletter', 'NewsletterController@index')->name('admin.newsletter');
+        Route::post('newsletter-delete/{newsletter}', 'NewsletterController@destroy')->name('admin.newsletter.destroy');
 
         // Change password
         Route::get('/change-password', 'Auth\ChangePasswordController@index')->name('admin.changePass');
