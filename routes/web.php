@@ -1,6 +1,5 @@
 <?php
 
-//INSERT INTO `swiss`.`users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES ('1', 'test', 'a@a.com', NULL, '$2y$10$JbNUq9p.bl5Rv.Q1ED/tWeDJNWyUkTRVOQqJHTuUQNm5cwR3UQcpK', NULL, '2018-11-29 11:24:37', '2018-11-29 11:24:37');
 
 /*
 |--------------------------------------------------------------------------
