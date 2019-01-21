@@ -20,6 +20,8 @@ Route::get('/lang/{lang}', 'HomeController@changeLang')->name('change-lang');
 
 Route::post('/newsletter', 'HomeController@subscribe')->name('newsletter');
 
+Route::get('/impressum', 'HomeController@impressum')->name('impressum');
+
 Route::get('/admin', function(){
     return redirect()->route('login');
 });

@@ -8,7 +8,7 @@
                         <a href="javascript:void(0)">Faq</a>
                     </div> --}}
                     <div class="link">
-                        <a href="javascript:void(0)">Impressum</a>
+                        <a href="{{ route('impressum') }}">Impressum</a>
                     </div>
                     {{-- <div class="link">
                         <a class="text-uppercase" href="javascript:void(0)">Agb'<span class="text-lowercase">s</span></a>

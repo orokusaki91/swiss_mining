@@ -69,4 +69,9 @@ class HomeController extends Controller
 
         return redirect('/#contact')->with(['email' => __('translate.enter-email')]);
     }
+
+    public function impressum()
+    {
+        return view('partials.impressum');
+    }
 }
