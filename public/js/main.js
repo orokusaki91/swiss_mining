@@ -1,9 +1,17 @@
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-// particlesJS.load('particles-home', 'json/particles-home.json', function () {});
+particlesJS.load("particles-home", "json/particles-home.json", function() {});
 
-// particlesJS.load('particles-roadmap', 'json/particles-roadmap.json', function () {});
+particlesJS.load(
+    "particles-roadmap",
+    "json/particles-roadmap.json",
+    function() {}
+);
 
-// particlesJS.load('particles-contact', 'json/particles-contact.json', function () {});
+particlesJS.load(
+    "particles-contact",
+    "json/particles-contact.json",
+    function() {}
+);
 
 $(document).ready(function() {
     var height = $("footer").outerHeight();
