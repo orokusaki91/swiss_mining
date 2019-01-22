@@ -27,7 +27,7 @@ class TeamCreateRequest extends FormRequest
             'name'     => 'required',
             'about'    => 'required',
             'image'    => 'required|max:1024|mimes:jpeg,jpg,png',
-            'linkedin' => 'required|url'
+            'linkedin' => 'nullable|url'
         ];
     }
 }

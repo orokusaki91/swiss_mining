@@ -118,14 +118,20 @@
 												<div class="profile">
 													<div class="profile-img">
 														<img src="{{ asset("{$member->image}") }}" alt="img/team/profile.png" />
-													</div>
-													<button class="btn">
-														<img src="{{ asset('img/team/linkedin.png') }}" class="linkedin" alt="img/team/linkedin.png" />
-													</button>
+                                                    </div>
+                                                    @if($member->linkedin != null)
+                                                    <a href="{{ $member->linkedin }}" target="_blank">
+                                                        <button class="btn">
+                                                            <img src="{{ asset('img/team/linkedin.png') }}" class="linkedin" alt="img/team/linkedin.png" />
+                                                        </button>
+                                                    </a>
+                                                    @endif
 												</div>
 												<div class="info">
-													<p class="name">{{ $member->name }}</p>
-													<a href="{{ $member->linkedin }}" class="position" target="_blank">LinkedIn Profile</a>
+                                                    <p class="name">{{ $member->name }}</p>
+                                                    @if($member->linkedin != null)
+                                                        <a href="{{ $member->linkedin }}" class="position" target="_blank">LinkedIn Profile</a>
+                                                    @endif
 												</div>
 											</div>
 										</div>

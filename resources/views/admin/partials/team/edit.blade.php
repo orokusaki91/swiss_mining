@@ -23,7 +23,7 @@
 		</div>
 
 		<label for="linkedin">LinkedIn</label>
-		<p class="text-muted">Example: "https://www.linkedin.com/specific-url-of-profile/"</p>
+		<p class="text-muted">Example: "https://www.linkedin.com/specific-url-of-profile/" or leave blank</p>
 		<input type="url" name="linkedin" value="{{ $teamMember->linkedin }}"/>
 	</div>
 

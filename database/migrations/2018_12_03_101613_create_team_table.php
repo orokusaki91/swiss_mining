@@ -18,7 +18,7 @@ class CreateTeamTable extends Migration
             $table->string('name');
             $table->text('about');
             $table->text('image');
-            $table->string('linkedin');
+            $table->string('linkedin')->nullable();
             $table->timestamps();
         });
     }

@@ -26,7 +26,7 @@ class TeamUpdateRequest extends FormRequest
         return [
             'name'    => 'required',
             'about'    => 'required',
-            'linkedin' => 'required|url'
+            'linkedin' => 'nullable|url'
         ];
     }
 }
