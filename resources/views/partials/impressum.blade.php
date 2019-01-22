@@ -9,7 +9,65 @@
     <div id="loader"></div>
 
     <div id="app">
-        @include('partials._hero')
+        <!-- mobile start -->
+<div id="mobile" class="d-lg-none">
+    <!-- scroll-progress start -->
+    <div class="scroll-progress">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
+    <!-- scroll-progress end -->
+    <!-- mySidenav start -->
+    <div id="mySidenav">
+        <div class="navbar-logo">
+            <a href="{{ route('index') }}">
+                <img src="{{ asset('img/logo/swiss-mining.png') }}" alt="img/logo/swiss-mining.png" />
+            </a>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">
+                        {{ __('translate.home') }}
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- mySidenav end -->
+    <!-- Close nav start -->
+    <div id="close-nav"></div>
+    <!-- Close nav end -->
+</div>
+<!-- mobile end -->
+<!-- Header start -->
+<header id="header" class="fixed-top d-none d-lg-block">
+    <div class="container-fluid">
+        <!-- Navbar start -->
+        <div id="navbar">
+            <div class="row align-items-md-center">
+                <div class="col-lg-2">
+                    <div id="logo">
+                        <a href="{{ route('index') }}">
+                            <img src="{{ asset('img/logo/swiss-mining.png') }}" class="logo" alt="img/logo/swiss-mining.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <nav id="nav-bar" class="navbar float-md-right pr-md-0">
+                        <ul id="nav" class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('index') }}">{{ __('translate.home') }}</a>
+                            </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar end -->
+    </div>
+</header>
+<!-- Header end -->
 
         <div id="content">
             <div class="container" style="margin-top:150px;">
