@@ -2160,12 +2160,7 @@ footer {
             background-attachment: fixed;
             padding: 15% 0;
             .item-div {
-                .item {
-                    img {
-                        width: 100px;
-                        height: 100px;
-                    }
-                }
+                height: 25vh;
             }
         }
     }
@@ -2479,6 +2474,13 @@ footer {
             }
             .token {
                 background-position: 100% center;
+            }
+        }
+    }
+    #partners {
+        .partners {
+            .item-div {
+                height: 70vh;
             }
         }
     }
@@ -2812,12 +2814,7 @@ footer {
     #partners {
         .partners {
             .item-div {
-                .item {
-                    img {
-                        width: 120px;
-                        height: 120px;
-                    }
-                }
+                height: 20vh;
             }
         }
     }
@@ -2914,6 +2911,13 @@ footer {
             .roadmap {
                 height: 70vh;
                 min-height: auto;
+            }
+        }
+    }
+    #partners {
+        .partners {
+            .item-div {
+                height: 60vh;
             }
         }
     }
