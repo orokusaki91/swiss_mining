@@ -18,7 +18,7 @@
 		</div>
 
 		<label for="linkedin">LinkedIn Profile</label>
-		<p class="text-muted">Example: "https://www.linkedin.com/specific-url-of-profile/" or leave blank</p>
+		<p class="text-muted">Example: "https://www.linkedin.com/specific-url-of-profile/" or leave it blank</p>
 		<input type="url" name="linkedin" value="{{ old('linkedin') }}"/>
 
 		<label for="image">Picture</label>
