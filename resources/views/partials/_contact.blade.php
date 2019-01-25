@@ -19,7 +19,8 @@
                                 Web Gates GmbH<br />
                                 Frenkendörferstrasse 27<br />
                                 CH-4410 Liestal<br />
-                                Switzerland
+                                Switzerland<br />
+                                +41 61 923 08 08
                             </p>
                         </div>
                         <div class="info">
