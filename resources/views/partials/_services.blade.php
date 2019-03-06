@@ -7,7 +7,7 @@
         </p>
     </div> --}}
     <div id="solutions" class="services">
-        <div class="wow slideInLeft">
+        {{-- <div class="wow slideInLeft">
             <img src="{{ asset('img/services/bitcoin.png') }}" class="bitcoin" alt="img/services/bitcoin.png" />
             <h3>{!! __('translate.swissmining-solutions') !!}</h3>
         </div>
@@ -35,7 +35,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> --}}
     <div id="token" class="services">
         <div class="wow slideInLeft">
             <img src="{{ asset('img/services/bitcoin.png') }}" class="bitcoin" alt="img/services/bitcoin.png" />

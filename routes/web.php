@@ -82,8 +82,8 @@ Route::namespace('Admin')
         // Route::post('/services-update', 'ServiceController@update')->name('admin.services.update');
 
         // Solutions
-        Route::get('/solutions', 'SolutionsController@index')->name('admin.solutions');
-        Route::post('/solutions-update', 'SolutionsController@update')->name('admin.solutions.update');
+        // Route::get('/solutions', 'SolutionsController@index')->name('admin.solutions');
+        // Route::post('/solutions-update', 'SolutionsController@update')->name('admin.solutions.update');
 
         // Turbo Token
         Route::get('/turbo-token', 'TurboTokenController@index')->name('admin.turboToken');

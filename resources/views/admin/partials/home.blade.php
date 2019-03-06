@@ -19,9 +19,9 @@
 	{{-- <li>
 		<a href="{{ route('admin.services') }}">Services</a>
 	</li> --}}
-	<li>
+	{{-- <li>
 		<a href="{{ route('admin.solutions') }}">Solutions</a>
-	</li>
+	</li> --}}
 	<li>
 		<a href="{{ route('admin.turboToken') }}">Turbo Token</a>
 	</li>

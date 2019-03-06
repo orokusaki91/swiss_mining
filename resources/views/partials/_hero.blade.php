@@ -1,4 +1,3 @@
-<!-- mobile start -->
 <div id="mobile" class="d-lg-none">
     <!-- scroll-progress start -->
     <div class="scroll-progress">
@@ -92,7 +91,7 @@
                     </button>
                 </li>
                 <li id="dropdown-services" class="nav-item collapse">
-                    <a href="#solutions" class="nav-link">{!! __('translate.swissmining-solutions') !!}</a>
+                    {{-- <a href="#solutions" class="nav-link">{!! __('translate.swissmining-solutions') !!}</a> --}}
                     <a href="#token" class="nav-link">{!! __('translate.swiss-turbo-token') !!}</a>
                 </li>
                 <li class="nav-item">
@@ -150,9 +149,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#services">{{ __('translate.services') }}</a>
                                 <ul class="dropdown">
-                                    <li class="nav-item">
+                                    {{-- <li class="nav-item">
                                         <a href="#solutions" class="nav-link">{!! __('translate.swissmining-solutions') !!}</a>
-                                    </li>
+                                    </li> --}}
                                     <li class="nav-item">
                                         <a href="#token" class="nav-link">{!! __('translate.swiss-turbo-token') !!}</a>
                                     </li>
@@ -213,4 +212,4 @@
         <!-- Navbar end -->
     </div>
 </header>
-<!-- Header end -->
+<!-- Header end
