@@ -22,9 +22,9 @@
 	{{-- <li>
 		<a href="{{ route('admin.solutions') }}">Solutions</a>
 	</li> --}}
-	<li>
+	{{-- <li>
 		<a href="{{ route('admin.turboToken') }}">Turbo Token</a>
-	</li>
+	</li> --}}
 	<li>
 		<a href="{{ route('admin.partners') }}">Partners</a>
 	</li>
