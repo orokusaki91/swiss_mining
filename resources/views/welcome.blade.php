@@ -14,7 +14,7 @@
         <div id="content">
             @include('partials._home')
             @include('partials._about_us')
-            @include('partials._services')
+            {{-- @include('partials._services') --}}
             @include('partials._partners')
             @include('partials._contact')
         </div>

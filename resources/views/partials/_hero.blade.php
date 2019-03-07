@@ -90,10 +90,10 @@
                         <i class="fas fa-arrow-right"></i>
                     </button>
                 </li>
-                <li id="dropdown-services" class="nav-item collapse">
+                {{-- <li id="dropdown-services" class="nav-item collapse"> --}}
                     {{-- <a href="#solutions" class="nav-link">{!! __('translate.swissmining-solutions') !!}</a> --}}
-                    <a href="#token" class="nav-link">{!! __('translate.swiss-turbo-token') !!}</a>
-                </li>
+                    {{-- <a href="#token" class="nav-link">{!! __('translate.swiss-turbo-token') !!}</a> --}}
+                {{-- </li> --}}
                 <li class="nav-item">
                     <a class="nav-link" href="#partners">
                         {{ __('translate.partners') }}
@@ -146,17 +146,17 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a class="nav-link" href="#services">{{ __('translate.services') }}</a>
-                                <ul class="dropdown">
+                                <ul class="dropdown"> --}}
                                     {{-- <li class="nav-item">
                                         <a href="#solutions" class="nav-link">{!! __('translate.swissmining-solutions') !!}</a>
                                     </li> --}}
-                                    <li class="nav-item">
+                                    {{-- <li class="nav-item">
                                         <a href="#token" class="nav-link">{!! __('translate.swiss-turbo-token') !!}</a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> --}}
                             <li class="nav-item">
                                 <a class="nav-link" href="#partners">{{ __('translate.partners') }}</a>
                             </li>

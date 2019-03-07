@@ -18,9 +18,9 @@
 	{{-- <li>
 		<a {{ Request::segment(2) == 'solutions' ? "class=active" : '' }} href="{{ route('admin.solutions') }}">Solutions</a>
 	</li> --}}
-	<li>
+	{{-- <li>
 		<a {{ Request::segment(2) == 'turbo-token' ? "class=active" : '' }} href="{{ route('admin.turboToken') }}">Turbo<span>token</span></a>
-	</li>
+	</li> --}}
 	<li>
 		<a {{ Request::segment(2) == 'partners' ? "class=active" : '' }} href="{{ route('admin.partners') }}">Partners</a>
 	</li>
