@@ -162,23 +162,23 @@ $(document).ready(function () {
     });
 });
 
-// $(document).ready(function() {
-//     $("#mySidenav .nav-link").click(function() {
-//         var href = $(this).attr("href");
-//         $("html, body").animate(
-//             {
-//                 scrollTop: $(href).offset().top
-//             },
-//             1000
-//         );
-//         $("#mySidenav").removeClass("active");
-//         $(".hamburger").removeClass("is-active");
-//         $("#close-nav").removeClass("active");
-//         document.body.style.overflowY = "auto";
-//         $("#dropdown-about-us").collapse("hide");
-//         $("#dropdown-services").collapse("hide");
-//     });
-// });
+$(document).ready(function() {
+    $("#mySidenav .nav-link").click(function() {
+        var href = $(this).attr("href");
+        $("html, body").animate(
+            {
+                scrollTop: $(href).offset().top
+            },
+            1000
+        );
+        $("#mySidenav").removeClass("active");
+        $(".hamburger").removeClass("is-active");
+        $("#close-nav").removeClass("active");
+        document.body.style.overflowY = "auto";
+        $("#dropdown-about-us").collapse("hide");
+        $("#dropdown-services").collapse("hide");
+    });
+});
 
 function wow() {
     var windowWidth = $(window).width();
